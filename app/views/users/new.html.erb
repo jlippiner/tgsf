@@ -1,0 +1,35 @@
+<h1>Please create an account</h1>
+
+<p>Before you can take our survey, we need to create an account.  Please complete the form below:</p>
+
+<div>
+  <%= error_messages_for "user" %>
+</div>
+
+<% form_for @user do |f| %>
+  <table border="0" cellpadding="5">
+    <tr>
+      <td width="100">
+        Name:
+      </td>
+      <td>
+        <%= f.text_field :name %>
+      </td>
+    </tr>
+    <tr><td>Email:</td>
+    <td><%= f.text_field :email %></td>
+    </tr>
+    <tr>
+      <td width="100">
+        Disease:
+      </td>
+      <td>
+        <%= f.text_field :disease %>
+      </td>
+    </tr>
+    <tr><td></td>
+    <td align="right">
+      <%= submit_tag  "Submit" %>
+    </td></tr>
+  </table>
+<% end %>

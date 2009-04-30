@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  question: MyString
+  is_personal: false
+
+two:
+  question: MyString
+  is_personal: false

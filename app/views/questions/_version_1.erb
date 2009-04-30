@@ -1,0 +1,27 @@
+<div class="rnd2_content">
+  <center>
+    <div style="width:650px;text-align:left">
+    <div style="font-weight:bold;font-size:12pt;margin:10px;" class="row">
+      <div class="left">
+      <%= answer.question.question %>
+      </div>
+      <div class="right" id="chars_left">
+        300
+      </div>
+    </div>
+
+    <div style="width:650px">
+      <% form_for answer do |f| %>
+        <%= f.hidden_field :question_id %>
+        <%= f.hidden_field :user_id %>
+        <%= hidden_field_tag "step", step %>
+        <%= hidden_field_tag "version", 1 %>
+        <%= text_area :answer, :answer, :size => "80x4" %>
+        <div align="right" style="margin-top:20px;">
+          <%= submit_tag "Submit"  %>
+        </div>
+      <% end  %>
+    </div>
+    </div>
+  </center>  
+</div>

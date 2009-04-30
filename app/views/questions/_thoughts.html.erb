@@ -1,0 +1,22 @@
+<h1>What did you think?</h1>
+
+<p>Thank you for your answers.  We will compile everyone's answers and send them out to the group.</p>
+
+<p>In the meantime, please share with us your thoughts on what you just did.  How was it answering those five questions?
+  Did you find it difficult, enjoyable, a way to vent, something to avoid, etc?  We want to know how you FELT
+about going through and answering questions this specific way.</p>
+
+<p>Thank you!</p>
+
+<div class="rnd2_content">
+  <center>
+    <div style="width:650px;text-align:left">
+  <% form_for user do |f| %>
+    <%= f.text_area :thoughts, :size => "80x10" %>
+    <div align="right" style="margin-top:20px;">
+      <%= submit_tag "Submit"  %>
+    </div>
+  <% end %>
+  </div>
+  </center>
+</div>
