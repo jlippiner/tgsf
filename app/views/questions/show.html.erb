@@ -1,3 +1,13 @@
 <h2><%= "Question #{@step} of 5" %></h2>
 
 <%= render :partial => "version_1", :locals => {:answer => @answer, :step => @step} %>
+
+<% if !@question.answers.blank? %>
+<h2>Other Member's Answers</h2>
+
+<% @question.answers.each do |answer| %>
+   <div class="rnd2_content" style="border-bottom:1px dotted gray">
+     <%= answer.answer %>
+   </div>
+<%  end %>
+<% end %>
