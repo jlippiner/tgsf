@@ -39,14 +39,22 @@ ActionController::Routing::Routes.draw do |map|
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing the them or commenting them out if you're using named routes and resources.
   map.resources :users
-  map.resources :answers
+  map.resources :answers  
 
   map.with_options(:controller => "questions", :name_prefix => "question_") do |question|
     question.survey 'questions/:userid/:step', :action => "survey", :controller => "questions"
     question.answer "questions/:userid/:version/:step/:questionid", :action => "record_answer", :controller => "questions"
     map.resources :questions
   end
+
+  map.with_options(:controller => "pages", :name_prefix => "page_") do |page|
+    pages = %w(donation gallery our_story aboutsma)
+    pages.each {|p|
+      page.send(p.intern, "#{p}", :action => "#{p}", :controller => "pages")
+    }
+  end
   
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
+  map.root :controller => "pages"
 end

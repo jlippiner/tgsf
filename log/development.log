@@ -5915,3 +5915,4412 @@ Migrating to LoadQuestionsData (20090430185205)
   [4;35;1mSQL (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
   [4;36;1mSQL (1.7ms)[0m   [0;1mdescribe `users`[0m
   [4;35;1mSQL (1.1ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 11:50:01) [GET]
+
+ActionController::RoutingError (No route matches "/donate" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 11:50:06) [GET]
+
+ActionController::RoutingError (No route matches "/donate.html" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-05-01 12:05:57) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 97ms (View: 95, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:05:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:05:58) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/welcome.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:05:58) [GET]
+
+ActionController::RoutingError (No route matches "/images/img_nav/path.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-05-01 12:06:39) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:39) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:39) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/welcome.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DonateController#index (for 127.0.0.1 at 2009-05-01 12:06:42) [GET]
+Rendering template within layouts/application
+Rendering donate/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/donate]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/donate.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OurStoryController#index (for 127.0.0.1 at 2009-05-01 12:06:51) [GET]
+Rendering template within layouts/application
+Rendering our_story/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/our_story.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OurStoryController#index (for 127.0.0.1 at 2009-05-01 12:06:54) [GET]
+Rendering template within layouts/application
+Rendering our_story/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:54) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:54) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/our_story.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:06:56) [GET]
+
+ActionController::RoutingError (No route matches "/index.aspx" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OurStoryController#index (for 127.0.0.1 at 2009-05-01 12:08:14) [GET]
+Rendering template within layouts/application
+Rendering our_story/index
+
+ActionView::TemplateError (undefined local variable or method `welcome_path' for #<ActionView::Base:0x2582724>) on line #32 of app/views/layouts/application.html.erb:
+29:               <tr>
+30:                 <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+31:                     <tr>
+32:                       <td width="32%" rowspan="2"><%= link_to image_tag("logo_TGSF.gif", :alt => "The Gwendolyn Strong Foundation"), welcome_path %></td>
+33:                       <td width="68%" height="40" class="header"><img src="images/img_icons/icon_home.gif" alt="" width="8" height="9" /> <a href="index.aspx">Home</a> | <a href="contact.aspx">Contact Us</a></td>
+34:                     </tr>
+35:                     <tr>
+
+    app/views/layouts/application.html.erb:32
+
+Rendered rescues/_trace (93.1ms)
+Rendered rescues/_request_and_response (1.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OurStoryController#index (for 127.0.0.1 at 2009-05-01 12:08:15) [GET]
+Rendering template within layouts/application
+Rendering our_story/index
+
+ActionView::TemplateError (undefined local variable or method `welcome_path' for #<ActionView::Base:0x25a12a0>) on line #32 of app/views/layouts/application.html.erb:
+29:               <tr>
+30:                 <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+31:                     <tr>
+32:                       <td width="32%" rowspan="2"><%= link_to image_tag("logo_TGSF.gif", :alt => "The Gwendolyn Strong Foundation"), welcome_path %></td>
+33:                       <td width="68%" height="40" class="header"><img src="images/img_icons/icon_home.gif" alt="" width="8" height="9" /> <a href="index.aspx">Home</a> | <a href="contact.aspx">Contact Us</a></td>
+34:                     </tr>
+35:                     <tr>
+
+    app/views/layouts/application.html.erb:32
+
+Rendered rescues/_trace (102.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OurStoryController#index (for 127.0.0.1 at 2009-05-01 12:08:27) [GET]
+Rendering template within layouts/application
+Rendering our_story/index
+
+ActionView::TemplateError (undefined local variable or method `welcome_index_path' for #<ActionView::Base:0x26241f0>) on line #32 of app/views/layouts/application.html.erb:
+29:               <tr>
+30:                 <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+31:                     <tr>
+32:                       <td width="32%" rowspan="2"><%= link_to image_tag("logo_TGSF.gif", :alt => "The Gwendolyn Strong Foundation"), welcome_index_path %></td>
+33:                       <td width="68%" height="40" class="header"><img src="images/img_icons/icon_home.gif" alt="" width="8" height="9" /> <a href="index.aspx">Home</a> | <a href="contact.aspx">Contact Us</a></td>
+34:                     </tr>
+35:                     <tr>
+
+    app/views/layouts/application.html.erb:32
+
+Rendered rescues/_trace (49.6ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OurStoryController#index (for 127.0.0.1 at 2009-05-01 12:08:33) [GET]
+Rendering template within layouts/application
+Rendering our_story/index
+
+ActionView::TemplateError (undefined local variable or method `index_path' for #<ActionView::Base:0x2486d5c>) on line #32 of app/views/layouts/application.html.erb:
+29:               <tr>
+30:                 <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+31:                     <tr>
+32:                       <td width="32%" rowspan="2"><%= link_to image_tag("logo_TGSF.gif", :alt => "The Gwendolyn Strong Foundation"), index_path %></td>
+33:                       <td width="68%" height="40" class="header"><img src="images/img_icons/icon_home.gif" alt="" width="8" height="9" /> <a href="index.aspx">Home</a> | <a href="contact.aspx">Contact Us</a></td>
+34:                     </tr>
+35:                     <tr>
+
+    app/views/layouts/application.html.erb:32
+
+Rendered rescues/_trace (38.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OurStoryController#index (for 127.0.0.1 at 2009-05-01 12:08:34) [GET]
+Rendering template within layouts/application
+Rendering our_story/index
+
+ActionView::TemplateError (undefined local variable or method `index_path' for #<ActionView::Base:0x24e260c>) on line #32 of app/views/layouts/application.html.erb:
+29:               <tr>
+30:                 <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+31:                     <tr>
+32:                       <td width="32%" rowspan="2"><%= link_to image_tag("logo_TGSF.gif", :alt => "The Gwendolyn Strong Foundation"), index_path %></td>
+33:                       <td width="68%" height="40" class="header"><img src="images/img_icons/icon_home.gif" alt="" width="8" height="9" /> <a href="index.aspx">Home</a> | <a href="contact.aspx">Contact Us</a></td>
+34:                     </tr>
+35:                     <tr>
+
+    app/views/layouts/application.html.erb:32
+
+Rendered rescues/_trace (37.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing OurStoryController#index (for 127.0.0.1 at 2009-05-01 12:08:54) [GET]
+Rendering template within layouts/application
+Rendering our_story/index
+Completed in 10ms (View: 9, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:08:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:08:54) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:08:54) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/our_story.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-05-01 12:08:55) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:08:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:08:55) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:08:55) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/welcome.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-05-01 12:09:35) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 11ms (View: 9, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (8.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:09:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:09:35) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:09:35) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/welcome.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DonateController#index (for 127.0.0.1 at 2009-05-01 12:12:16) [GET]
+Rendering template within layouts/application
+Rendering donate/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/donate]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/donate.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:17) [GET]
+
+ActionController::RoutingError (No route matches "/img_buttons/btn_donatenow_lg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DonateController#index (for 127.0.0.1 at 2009-05-01 12:12:18) [GET]
+Rendering template within layouts/application
+Rendering donate/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/donate]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/donate.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:18) [GET]
+
+ActionController::RoutingError (No route matches "/img_buttons/btn_donatenow_lg.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DonateController#index (for 127.0.0.1 at 2009-05-01 12:12:26) [GET]
+Rendering template within layouts/application
+Rendering donate/index
+Completed in 13ms (View: 10, DB: 0) | 200 OK [http://localhost/donate]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/donate.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DonateController#index (for 127.0.0.1 at 2009-05-01 12:12:37) [GET]
+Rendering template within layouts/application
+Rendering donate/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/donate]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:37) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:12:37) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/donate.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DonateController#index (for 127.0.0.1 at 2009-05-01 12:13:01) [GET]
+Rendering template within layouts/application
+Rendering donate/index
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://localhost/donate]
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:13:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:13:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:13:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/donate.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DonateController#index (for 127.0.0.1 at 2009-05-01 12:13:31) [GET]
+Rendering template within layouts/application
+Rendering donate/index
+Completed in 7ms (View: 5, DB: 0) | 200 OK [http://localhost/donate]
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:13:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:13:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:13:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/donate.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing DonateController#index (for 127.0.0.1 at 2009-05-01 12:13:49) [GET]
+Rendering template within layouts/application
+Rendering donate/index
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/donate]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:13:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:13:49) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:13:49) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/donate.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-05-01 12:14:05) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:14:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:14:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:14:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/welcome.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:15:26) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/pages/donation]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:15:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:15:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:15:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:15:26) [GET]
+
+ActionController::RoutingError (No route matches "/pages/images/img_icons/icon_home.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:15:27) [GET]
+
+ActionController::RoutingError (No route matches "/pages/images/img_nav/what_we_do.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:15:27) [GET]
+
+ActionController::RoutingError (No route matches "/pages/images/img_nav/get_involved.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:15:27) [GET]
+
+ActionController::RoutingError (No route matches "/pages/images/img_nav/press.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:16:48) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/pages/donation]
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:16:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:16:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:16:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:16:48) [GET]
+
+ActionController::RoutingError (No route matches "/pages/images/img_icons/icon_home.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:16:48) [GET]
+
+ActionController::RoutingError (No route matches "/pages/images/img_nav/what_we_do.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:16:48) [GET]
+
+ActionController::RoutingError (No route matches "/pages/images/img_nav/get_involved.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:16:48) [GET]
+
+ActionController::RoutingError (No route matches "/pages/images/img_nav/press.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:16:53) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/donation]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:16:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:16:53) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:16:53) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:17:07) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/donation]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:17:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:17:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:17:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:17:58) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/donation]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:17:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:17:58) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:17:58) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:18:04) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+
+ActionView::TemplateError (undefined local variable or method `our_story_index_path' for #<ActionView::Base:0x24825a4>) on line #38 of app/views/layouts/application.html.erb:
+35:                     <tr>
+36:                       <td valign="bottom"><table width="602" border="0" align="right" cellpadding="0" cellspacing="0">
+37:                           <tr>
+38:                             <td><%= link_to image_tag("img_nav/our_story.gif"), our_story_index_path, :class => "rollover"    %></td>
+39:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/img_nav/what_we_do_down.gif',1)"><img src="images/img_nav/what_we_do.gif" alt="What We Do" width="125" height="36" border="0" id="Image3" /></a></td>
+40:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/img_nav/get_involved_down.gif',1)"><img src="images/img_nav/get_involved.gif" alt="Get Involved" width="132" height="36" border="0" id="Image4" /></a></td>
+41:                             <td><td><%= link_to image_tag("img_nav/donate.gif"), donate_index_path, :class => "rollover"    %></td></td>
+
+    app/views/layouts/application.html.erb:38
+
+Rendered rescues/_trace (97.3ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:18:31) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+
+ActionView::TemplateError (undefined local variable or method `our_story_index_path' for #<ActionView::Base:0x247ee2c>) on line #38 of app/views/layouts/application.html.erb:
+35:                     <tr>
+36:                       <td valign="bottom"><table width="602" border="0" align="right" cellpadding="0" cellspacing="0">
+37:                           <tr>
+38:                             <td><%= link_to image_tag("img_nav/our_story.gif"), our_story_index_path, :class => "rollover"    %></td>
+39:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/img_nav/what_we_do_down.gif',1)"><img src="images/img_nav/what_we_do.gif" alt="What We Do" width="125" height="36" border="0" id="Image3" /></a></td>
+40:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/img_nav/get_involved_down.gif',1)"><img src="images/img_nav/get_involved.gif" alt="Get Involved" width="132" height="36" border="0" id="Image4" /></a></td>
+41:                             <td><td><%= link_to image_tag("img_nav/donate.gif"), donate_index_path, :class => "rollover"    %></td></td>
+
+    app/views/layouts/application.html.erb:38
+
+Rendered rescues/_trace (98.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:18:36) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+
+ActionView::TemplateError (undefined local variable or method `our_story_index_path' for #<ActionView::Base:0x24585b0>) on line #38 of app/views/layouts/application.html.erb:
+35:                     <tr>
+36:                       <td valign="bottom"><table width="602" border="0" align="right" cellpadding="0" cellspacing="0">
+37:                           <tr>
+38:                             <td><%= link_to image_tag("img_nav/our_story.gif"), our_story_index_path, :class => "rollover"    %></td>
+39:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/img_nav/what_we_do_down.gif',1)"><img src="images/img_nav/what_we_do.gif" alt="What We Do" width="125" height="36" border="0" id="Image3" /></a></td>
+40:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/img_nav/get_involved_down.gif',1)"><img src="images/img_nav/get_involved.gif" alt="Get Involved" width="132" height="36" border="0" id="Image4" /></a></td>
+41:                             <td><td><%= link_to image_tag("img_nav/donate.gif"), donate_index_path, :class => "rollover"    %></td></td>
+
+    app/views/layouts/application.html.erb:38
+
+Rendered rescues/_trace (102.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:18:37) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+
+ActionView::TemplateError (undefined local variable or method `our_story_index_path' for #<ActionView::Base:0x25a76a0>) on line #38 of app/views/layouts/application.html.erb:
+35:                     <tr>
+36:                       <td valign="bottom"><table width="602" border="0" align="right" cellpadding="0" cellspacing="0">
+37:                           <tr>
+38:                             <td><%= link_to image_tag("img_nav/our_story.gif"), our_story_index_path, :class => "rollover"    %></td>
+39:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/img_nav/what_we_do_down.gif',1)"><img src="images/img_nav/what_we_do.gif" alt="What We Do" width="125" height="36" border="0" id="Image3" /></a></td>
+40:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/img_nav/get_involved_down.gif',1)"><img src="images/img_nav/get_involved.gif" alt="Get Involved" width="132" height="36" border="0" id="Image4" /></a></td>
+41:                             <td><td><%= link_to image_tag("img_nav/donate.gif"), donate_index_path, :class => "rollover"    %></td></td>
+
+    app/views/layouts/application.html.erb:38
+
+Rendered rescues/_trace (36.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:19:04) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+
+ActionView::TemplateError (undefined local variable or method `page_donate_path' for #<ActionView::Base:0x2637cf0>) on line #41 of app/views/layouts/application.html.erb:
+38:                             <td><%= link_to image_tag("img_nav/our_story.gif"), page_our_story_path, :class => "rollover"    %></td>
+39:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/img_nav/what_we_do_down.gif',1)"><img src="images/img_nav/what_we_do.gif" alt="What We Do" width="125" height="36" border="0" id="Image3" /></a></td>
+40:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/img_nav/get_involved_down.gif',1)"><img src="images/img_nav/get_involved.gif" alt="Get Involved" width="132" height="36" border="0" id="Image4" /></a></td>
+41:                             <td><td><%= link_to image_tag("img_nav/donate.gif"), page_donate_path, :class => "rollover"    %></td></td>
+42:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','images/img_nav/press_down.gif',1)"><img src="images/img_nav/press.gif" alt="Press" width="111" height="36" border="0" id="Image6" /></a></td>
+43:                           </tr>
+44:                       </table></td>
+
+    app/views/layouts/application.html.erb:41
+
+Rendered rescues/_trace (45.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:19:16) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+Completed in 74ms (View: 72, DB: 0) | 200 OK [http://localhost/donation]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:19:20) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/donation]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:19:24) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/donation]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-05-01 12:19:26) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/welcome.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 12:19:29) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:19:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 12:20:31) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+
+ActionView::TemplateError (undefined local variable or method `page_our_story_path' for #<ActionView::Base:0x24a9a64>) on line #38 of app/views/layouts/application.html.erb:
+35:                     <tr>
+36:                       <td valign="bottom"><table width="602" border="0" align="right" cellpadding="0" cellspacing="0">
+37:                           <tr>
+38:                             <td><%= link_to image_tag("img_nav/our_story.gif"), page_our_story_path, :class => "rollover"    %></td>
+39:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/img_nav/what_we_do_down.gif',1)"><img src="images/img_nav/what_we_do.gif" alt="What We Do" width="125" height="36" border="0" id="Image3" /></a></td>
+40:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/img_nav/get_involved_down.gif',1)"><img src="images/img_nav/get_involved.gif" alt="Get Involved" width="132" height="36" border="0" id="Image4" /></a></td>
+41:                             <td><td><%= link_to image_tag("img_nav/donate.gif"), page_donation_path, :class => "rollover"    %></td></td>
+
+    app/views/layouts/application.html.erb:38
+
+Rendered rescues/_trace (89.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 12:20:32) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+
+ActionView::TemplateError (undefined local variable or method `page_our_story_path' for #<ActionView::Base:0x25a0198>) on line #38 of app/views/layouts/application.html.erb:
+35:                     <tr>
+36:                       <td valign="bottom"><table width="602" border="0" align="right" cellpadding="0" cellspacing="0">
+37:                           <tr>
+38:                             <td><%= link_to image_tag("img_nav/our_story.gif"), page_our_story_path, :class => "rollover"    %></td>
+39:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/img_nav/what_we_do_down.gif',1)"><img src="images/img_nav/what_we_do.gif" alt="What We Do" width="125" height="36" border="0" id="Image3" /></a></td>
+40:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/img_nav/get_involved_down.gif',1)"><img src="images/img_nav/get_involved.gif" alt="Get Involved" width="132" height="36" border="0" id="Image4" /></a></td>
+41:                             <td><td><%= link_to image_tag("img_nav/donate.gif"), page_donation_path, :class => "rollover"    %></td></td>
+
+    app/views/layouts/application.html.erb:38
+
+Rendered rescues/_trace (38.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 12:21:38) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+
+ActionView::TemplateError (undefined local variable or method `page_donation_path' for #<ActionView::Base:0x248329c>) on line #41 of app/views/layouts/application.html.erb:
+38:                             <td><%= link_to image_tag("img_nav/our_story.gif"), "our_story", :class => "rollover"    %></td>
+39:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image3','','images/img_nav/what_we_do_down.gif',1)"><img src="images/img_nav/what_we_do.gif" alt="What We Do" width="125" height="36" border="0" id="Image3" /></a></td>
+40:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/img_nav/get_involved_down.gif',1)"><img src="images/img_nav/get_involved.gif" alt="Get Involved" width="132" height="36" border="0" id="Image4" /></a></td>
+41:                             <td><td><%= link_to image_tag("img_nav/donate.gif"), page_donation_path, :class => "rollover"    %></td></td>
+42:                             <td><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image6','','images/img_nav/press_down.gif',1)"><img src="images/img_nav/press.gif" alt="Press" width="111" height="36" border="0" id="Image6" /></a></td>
+43:                           </tr>
+44:                       </table></td>
+
+    app/views/layouts/application.html.erb:41
+
+Rendered rescues/_trace (41.3ms)
+Rendered rescues/_request_and_response (3.1ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 12:21:52) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 10ms (View: 7, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:21:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:21:52) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:21:52) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#oasdfasd (for 127.0.0.1 at 2009-05-01 12:21:57) [GET]
+
+ActionController::UnknownAction (No action responded to oasdfasd. Actions: donation and our_story):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#asdfasd (for 127.0.0.1 at 2009-05-01 12:22:02) [GET]
+
+ActionController::UnknownAction (No action responded to asdfasd. Actions: donation and our_story):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:22:51) [GET]
+
+ActionController::RoutingError (No route matches "/asdfasd" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-05-01 12:22:54) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 19ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:22:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:22:55) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:22:55) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/welcome.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing WelcomeController#index (for 127.0.0.1 at 2009-05-01 12:31:50) [GET]
+Rendering template within layouts/application
+Rendering welcome/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:31:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:31:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:31:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/welcome.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:35:00) [GET]
+
+ActionController::RoutingError (No route matches "/index.aspx" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:35:02) [GET]
+
+ActionController::RoutingError (No route matches "/index.aspx" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-01 12:35:05) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:35:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:35:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:35:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-01 12:37:15) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 15ms (View: 13, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (4.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:37:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:37:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:37:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:39:05) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 59ms (View: 58, DB: 1) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (1.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:05) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#donation (for 127.0.0.1 at 2009-05-01 12:39:12) [GET]
+Rendering template within layouts/application
+Rendering pages/donation
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://localhost/donation]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:12) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:12) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:12) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 12:39:30) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:30) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-01 12:39:32) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:32) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:32) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:32) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:39:35) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:35) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:35) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:39:35) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:43:45) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:43:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:43:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:43:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:43:57) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 16ms (View: 15, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:43:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:43:57) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:43:57) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:45:22) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 11ms (View: 8, DB: 1) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:45:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:45:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:45:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:45:37) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 14ms (View: 12, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:45:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:45:37) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:45:37) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:45:48) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:46:17) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:46:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:46:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:46:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:46:31) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:46:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:46:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:46:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:47:23) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:47:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:47:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:47:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:47:37) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:47:37) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:47:37) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:47:37) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:48:08) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:48:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:48:08) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:48:08) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:48:10) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/donate_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:48:11) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/get_involved_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:48:11) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/donate_down_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:48:11) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/press_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:48:11) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/donate_down_down_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:48:11) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/donate_down_down_down_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:48:11) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/get_involved_down_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:48:12) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/what_we_do_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:48:14) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/get_involved_down_down_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:49:19) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:49:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:49:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:49:20) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:49:22) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/press_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:49:22) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/donate_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:49:25) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/press_down_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:50:01) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:50:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:50:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:50:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:50:41) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 7ms (View: 3, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:50:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:50:41) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:50:41) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:50:48) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/press_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:50:49) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/press_down_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:51:10) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:51:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:51:10) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:51:10) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:52:50) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:52:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:52:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:52:50) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:53:59) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+ERROR: compiling _run_erb_app47views47layouts47application46html46erb RAISED compile error
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:40: syntax error, unexpected '}', expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/our_story#{'_down' if (params[:action]=='our_story'}).gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                               ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:40: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/our_story#{'_down' if (params[:action]=='our_story'}).gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                                                                                ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:41: unknown regexp options - what
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:41: unmatched (: /td>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/what_we_do.gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                     ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/what_we_do.gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                                     ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:42: unknown regexp options - gt
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:42: unmatched (: /td>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/get_involved.gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                       ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/get_involved.gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                                       ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:43: unknown regexp options - dat
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:43: unmatched (: /td>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/donate.gif"), page_donation_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                      ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/donate.gif"), page_donation_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                                ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:44: unknown regexp options - pr
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:44: unmatched (: /td>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:44: syntax error, unexpected tSTRING_BEG, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/press.gif"), page_donation_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                     ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/press.gif"), page_donation_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                               ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:46: unknown regexp options - tabl
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:46: syntax error, unexpected '<'
+@output_buffer.concat "                      </table></td>\n"
+                                                      ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:47: unknown regexp options - tr
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:47: syntax error, unexpected $undefined
+@output_buffer.concat "                    </tr>\n"
+                                                 ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:48: unknown regexp options - td
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:48: syntax error, unexpected $undefined
+@output_buffer.concat "                </table></td>\n"
+                                                     ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:54: unknown regexp options - dv
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:54: syntax error, unexpected $undefined
+@output_buffer.concat "                  </div>\n"
+                                                ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:55: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "\n"
+                        ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:56: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "\n"
+                        ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:57: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "                  "; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n"
+                                                                                                           ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:59: unknown regexp options - tr
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:59: syntax error, unexpected $undefined
+@output_buffer.concat "              </tr>\n"
+                                           ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:60: unknown regexp options - td
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:60: syntax error, unexpected $undefined
+@output_buffer.concat "          </table></td>\n"
+                                               ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:62: unknown regexp options - tabl
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:62: syntax error, unexpected $undefined
+@output_buffer.concat "      </table>\n"
+                                      ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:64: unknown regexp option - a
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:64: syntax error, unexpected '<'
+@output_buffer.concat "    <div id=\"footer\">&copy; 2009 The Gwendolyn Strong Foundation. All Rights Reserved.  |  <a href=\"#\">Terms of Use</a></div>\n"
+                                                                                                                                                   ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:65: unknown regexp options - bdy
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:65: syntax error, unexpected $undefined
+@output_buffer.concat "  </body>\n"
+                                 ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:66: unterminated string meets end of file
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:66: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR
+Function body:           def _run_erb_app47views47layouts47application46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n"
+@output_buffer.concat "<html xmlns=\"http://www.w3.org/1999/xhtml\">\n"
+@output_buffer.concat "  <head>\n"
+@output_buffer.concat "    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" />\n"
+@output_buffer.concat "    <title>The Gwendolyn Strong Foundation</title>\n"
+@output_buffer.concat "    "; @output_buffer.concat(( stylesheet_link_tag 'styles', 'jquery-ui-1.7.1.custom' ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat(( javascript_include_tag 'jquery.min', 'jquery-ui-1.7.1.custom.mirn', 'application', params[:controller] ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    "; @output_buffer.concat((  yield :head ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "    <script type=\"text/javascript\">\n"
+@output_buffer.concat "      $(function() {\n"
+@output_buffer.concat "        $('.rollover').hover(function() {\n"
+@output_buffer.concat "          var currentImg = $(this).find('img');\n"
+@output_buffer.concat "          var hoverImg = currentImg.attr('src').replace(/.gif/,'_down.gif');          \n"
+@output_buffer.concat "          currentImg.attr('src', hoverImg);\n"
+@output_buffer.concat "          currentImg.attr('hover', currentImg.attr('src'));\n"
+@output_buffer.concat "        }, function() {\n"
+@output_buffer.concat "          var currentImg = $(this).find('img');          \n"
+@output_buffer.concat "          var hoverImg = currentImg.attr('src').replace(/_down/,'');          \n"
+@output_buffer.concat "          currentImg.attr('src', hoverImg);\n"
+@output_buffer.concat "          currentImg.attr('hover', currentImg.attr('src'));\n"
+@output_buffer.concat "        });\n"
+@output_buffer.concat "      });\n"
+@output_buffer.concat "    </script>\n"
+@output_buffer.concat "  </head>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "  <body>\n"
+@output_buffer.concat "    <div id=\"container\">\n"
+@output_buffer.concat "      <table width=\"917\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\">\n"
+@output_buffer.concat "        <tr>\n"
+@output_buffer.concat "          <td><table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\n"
+@output_buffer.concat "              <tr>\n"
+@output_buffer.concat "                <td><table width=\"100%\" border=\"0\" align=\"center\" cellpadding=\"0\" cellspacing=\"0\">\n"
+@output_buffer.concat "                    <tr>\n"
+@output_buffer.concat "                      <td width=\"32%\" rowspan=\"2\">"; @output_buffer.concat(( link_to image_tag("logo_TGSF.gif", :alt => "The Gwendolyn Strong Foundation"), root_path ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "                      <td width=\"68%\" height=\"40\" class=\"header\"><img src=\"images/img_icons/icon_home.gif\" alt=\"\" width=\"8\" height=\"9\" /> <a href=\"index.aspx\">Home</a> | <a href=\"contact.aspx\">Contact Us</a></td>\n"
+@output_buffer.concat "                    </tr>\n"
+@output_buffer.concat "                    <tr>\n"
+@output_buffer.concat "                      <td valign=\"bottom\"><table width=\"602\" border=\"0\" align=\"right\" cellpadding=\"0\" cellspacing=\"0\">\n"
+@output_buffer.concat "                          <tr>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/our_story#{'_down' if (params[:action]=='our_story'}).gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/what_we_do.gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/get_involved.gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/donate.gif"), page_donation_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/press.gif"), page_donation_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+@output_buffer.concat "                          tr>\n"
+@output_buffer.concat "                      </table></td>\n"
+@output_buffer.concat "                    </tr>\n"
+@output_buffer.concat "                </table></td>\n"
+@output_buffer.concat "              </tr>\n"
+@output_buffer.concat "              <tr>\n"
+@output_buffer.concat "                <td class=\"main\">\n"
+@output_buffer.concat "                  <div id=\"flash\">\n"
+@output_buffer.concat "                    "; @output_buffer.concat(( render_flash_messages  ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                  </div>\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "\n"
+@output_buffer.concat "                  "; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n"
+@output_buffer.concat "                </td>\n"
+@output_buffer.concat "              </tr>\n"
+@output_buffer.concat "          </table></td>\n"
+@output_buffer.concat "        </tr>\n"
+@output_buffer.concat "      </table>\n"
+@output_buffer.concat "    </div>\n"
+@output_buffer.concat "    <div id=\"footer\">&copy; 2009 The Gwendolyn Strong Foundation. All Rights Reserved.  |  <a href=\"#\">Terms of Use</a></div>\n"
+@output_buffer.concat "  </body>\n"
+@output_buffer.concat "</html>\n"
+@output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:66:in `compile!'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:61:in `compile'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_view/renderable.rb:28:in `render'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_view/template.rb:194:in `render_template'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:260:in `render'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:347:in `_render_with_layout'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_view/base.rb:257:in `render'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1241:in `render_for_file'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:937:in `render_without_benchmark'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:51:in `render'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1317:in `default_render'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:1329:in `perform_action_without_filters'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:617:in `call_filters'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:10:in `realtime'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/activesupport-2.3.2/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/flash.rb:141:in `perform_action'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `send'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:523:in `process_without_filters'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/filters.rb:606:in `process'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:391:in `process'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/base.rb:386:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/routing/route_set.rb:433:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:88:in `dispatch'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:111:in `_call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:82:in `initialize'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:29:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:9:in `cache'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/query_cache.rb:28:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/activerecord-2.3.2/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/head.rb:9:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/methodoverride.rb:24:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/params_parser.rb:15:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/rewindable_input.rb:25:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/session/cookie_store.rb:93:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/reloader.rb:9:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/failsafe.rb:11:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `synchronize'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/lock.rb:11:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/dispatcher.rb:106:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/static.rb:31:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:46:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `each'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/urlmap.rb:40:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/rails-2.3.2/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/content_length.rb:13:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/chunked.rb:15:in `call'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:61:in `process'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/actionpack-2.3.2/lib/action_controller/vendor/rack-1.0/rack/handler/mongrel.rb:34:in `run'
+/Users/joshua.lippiner/.gem/ruby/1.8/gems/rails-2.3.2/lib/commands/server.rb:111
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:40: syntax error, unexpected '}', expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/our_story#{'_down' if (params[:action]=='our_story'}).gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                               ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:40: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/our_story#{'_down' if (params[:action]=='our_story'}).gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                                                                                ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:41: unknown regexp options - what
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:41: unmatched (: /td>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/what_we_do.gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                     ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/what_we_do.gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                                     ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:42: unknown regexp options - gt
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:42: unmatched (: /td>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/get_involved.gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                       ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:42: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/get_involved.gif"), page_our_story_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                                       ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:43: unknown regexp options - dat
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:43: unmatched (: /td>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/donate.gif"), page_donation_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                      ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/donate.gif"), page_donation_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                                ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:44: unknown regexp options - pr
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:44: unmatched (: /td>\n"
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:44: syntax error, unexpected tSTRING_BEG, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/press.gif"), page_donation_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                     ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:44: syntax error, unexpected tIDENTIFIER, expecting ')'
+@output_buffer.concat "                          <td>"; @output_buffer.concat(( link_to image_tag("img_nav/press.gif"), page_donation_path, :class => "rollover"    ).to_s); @output_buffer.concat "</td>\n"
+                                                                                                                                                               ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:46: unknown regexp options - tabl
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:46: syntax error, unexpected '<'
+@output_buffer.concat "                      </table></td>\n"
+                                                      ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:47: unknown regexp options - tr
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:47: syntax error, unexpected $undefined
+@output_buffer.concat "                    </tr>\n"
+                                                 ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:48: unknown regexp options - td
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:48: syntax error, unexpected $undefined
+@output_buffer.concat "                </table></td>\n"
+                                                     ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:54: unknown regexp options - dv
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:54: syntax error, unexpected $undefined
+@output_buffer.concat "                  </div>\n"
+                                                ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:55: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "\n"
+                        ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:56: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "\n"
+                        ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:57: syntax error, unexpected $undefined, expecting ')'
+@output_buffer.concat "                  "; @output_buffer.concat(( yield ).to_s); @output_buffer.concat "\n"
+                                                                                                           ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:59: unknown regexp options - tr
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:59: syntax error, unexpected $undefined
+@output_buffer.concat "              </tr>\n"
+                                           ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:60: unknown regexp options - td
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:60: syntax error, unexpected $undefined
+@output_buffer.concat "          </table></td>\n"
+                                               ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:62: unknown regexp options - tabl
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:62: syntax error, unexpected $undefined
+@output_buffer.concat "      </table>\n"
+                                      ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:64: unknown regexp option - a
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:64: syntax error, unexpected '<'
+@output_buffer.concat "    <div id=\"footer\">&copy; 2009 The Gwendolyn Strong Foundation. All Rights Reserved.  |  <a href=\"#\">Terms of Use</a></div>\n"
+                                                                                                                                                   ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:65: unknown regexp options - bdy
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:65: syntax error, unexpected $undefined
+@output_buffer.concat "  </body>\n"
+                                 ^
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:66: unterminated string meets end of file
+/Users/joshua.lippiner/Projects/TGSF/app/views/layouts/application.html.erb:66: syntax error, unexpected tSTRING_END, expecting tSTRING_CONTENT or tREGEXP_END or tSTRING_DBEG or tSTRING_DVAR) on line #40 of app/views/layouts/application.html.erb:
+37:                     <tr>
+38:                       <td valign="bottom"><table width="602" border="0" align="right" cellpadding="0" cellspacing="0">
+39:                           <tr>
+40:                           <td><%= link_to image_tag("img_nav/our_story#{'_down' if (params[:action]=='our_story'}).gif"), page_our_story_path, :class => "rollover"    %></td>
+41:                           <td><%= link_to image_tag("img_nav/what_we_do.gif"), page_our_story_path, :class => "rollover"    %></td>
+42:                           <td><%= link_to image_tag("img_nav/get_involved.gif"), page_our_story_path, :class => "rollover"    %></td>
+43:                           <td><%= link_to image_tag("img_nav/donate.gif"), page_donation_path, :class => "rollover"    %></td>
+
+    app/views/layouts/application.html.erb:66:in `compile!'
+
+Rendered rescues/_trace (37.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 12:54:11) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 12:54:45) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:45) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:45) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:45) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:45) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:45) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:45) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:46) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:47) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:47) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:47) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:47) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:47) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:48) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:48) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:48) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:48) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:48) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:49) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:49) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:49) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:49) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:49) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:49) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:49) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:49) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:50) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:50) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:51) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:51) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:51) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:51) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:57) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:58) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:59) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:59) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:54:59) [GET]
+  Parameters: {"1240950899"=>nil}
+
+ActionController::RoutingError (No route matches "/images/img_nav/our_story_down_down.gif" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 12:59:29) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 9ms (View: 7, DB: 1) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:59:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:59:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:59:30) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 12:59:48) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:59:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:59:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 12:59:48) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:00:16) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:00:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:00:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:00:17) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:01:06) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:01:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:01:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:01:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:01:18) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:01:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:01:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:01:18) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:02:49) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 58ms (View: 56, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:02:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:02:49) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:02:49) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:03:19) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 11ms (View: 9, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:03:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:03:19) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:03:19) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:04:26) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:04:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:04:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:04:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:04:47) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 21ms (View: 16, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:04:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:04:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:04:47) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:05:00) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:05:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:05:00) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:05:01) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:05:05) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:05:39) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 62ms (View: 60, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:05:39) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:05:39) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:05:40) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:05:51) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:05:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:05:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:05:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:07:16) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 10ms (View: 8, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:07:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:07:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:07:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (2.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:07:31) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 14ms (View: 12, DB: 3) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:07:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:07:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:07:31) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:08:07) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:07) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#our_story (for 127.0.0.1 at 2009-05-01 13:08:24) [GET]
+Rendering template within layouts/application
+Rendering pages/our_story
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/our_story]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-01 13:08:27) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:28) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-01 13:08:40) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:40) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:40) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#index (for 127.0.0.1 at 2009-05-01 13:08:52) [GET]
+Rendering template within layouts/application
+Rendering pages/index
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:52) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:52) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 13:08:55) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 4ms (View: 2, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:55) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:08:55) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 13:10:24) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 11ms (View: 9, DB: 2) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:10:25) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:10:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:10:25) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 13:10:51) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 12ms (View: 10, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:10:51) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:10:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:10:51) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 13:11:26) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 11ms (View: 10, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:11:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:11:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:11:26) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PagesController#aboutsma (for 127.0.0.1 at 2009-05-01 13:11:45) [GET]
+Rendering template within layouts/application
+Rendering pages/aboutsma
+Completed in 19ms (View: 9, DB: 0) | 200 OK [http://localhost/aboutsma]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:11:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:11:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-01 13:11:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/pages.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

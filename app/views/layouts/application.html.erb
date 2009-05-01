@@ -4,25 +4,53 @@
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <title>The Gwendolyn Strong Foundation</title>
     <%= stylesheet_link_tag 'styles', 'jquery-ui-1.7.1.custom' %>
-    <%= javascript_include_tag 'jquery.min', 'jquery-ui-1.7.1.custom.min', 'application', params[:controller] %>
+    <%= javascript_include_tag 'jquery.min', 'jquery-ui-1.7.1.custom.mirn', 'application', params[:controller] %>
     <%=  yield :head %>
-  </head>
+    <script type="text/javascript">
+      $(function() {
+        var keepImage;
+        $('.rollover').hover(function() {          
+          var currentImg = $(this).find('img');
+          keepImage = currentImg.attr('src').indexOf('_down')>0
+          if(!keepImage) {
+            log('over')
+            var hoverImg = currentImg.attr('src').replace(/.gif/,'_down.gif');
+            currentImg.attr('src', hoverImg);
+            currentImg.attr('hover', currentImg.attr('src'));
+          }
+        }, function() {          
+           if(!keepImage) {
+            var currentImg = $(this).find('img');
+            var hoverImg = currentImg.attr('src').replace(/_down/,'');
+            currentImg.attr('src', hoverImg);
+            currentImg.attr('hover', currentImg.attr('src'));
+          }          
+        });
+      });
+    </script>
   </head>
 
   <body>
     <div id="container">
-
       <table width="917" border="0" align="center" cellpadding="0" cellspacing="0">
         <tr>
           <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
               <tr>
                 <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
                     <tr>
-                      <td width="32%" rowspan="2"><a href="index.aspx"><img src="/images/logo_TGSF.gif" alt="The Gwendolyn Strong Foundation" width="282" height="109" border="0" /></a></td>
-                      <td width="68%" height="40" class="header"><img src="/images/img_icons/icon_home.gif" alt="" width="8" height="9" /> <a href="index.aspx">Home</a> | <a href="contact.aspx">Contact Us</a></td>
+                      <td width="32%" rowspan="2"><%= link_to image_tag("logo_TGSF.gif", :alt => "The Gwendolyn Strong Foundation"), root_path %></td>
+                      <td width="68%" height="40" class="header"><img src="images/img_icons/icon_home.gif" alt="" width="8" height="9" /> <a href="index.aspx">Home</a> | <a href="contact.aspx">Contact Us</a></td>
                     </tr>
                     <tr>
-                      <td valign="bottom"></td>
+                      <td valign="bottom"><table width="602" border="0" align="right" cellpadding="0" cellspacing="0">
+                          <tr>
+                          <td><%= link_to image_tag("img_nav/our_story#{'_down' if (@our_story_active)}.gif"), page_our_story_path, :class => "rollover"    %></td>
+                          <td><%= link_to image_tag("img_nav/what_we_do.gif"), page_our_story_path, :class => "rollover"    %></td>
+                          <td><%= link_to image_tag("img_nav/get_involved.gif"), page_our_story_path, :class => "rollover"    %></td>
+                          <td><%= link_to image_tag("img_nav/donate.gif"), page_donation_path, :class => "rollover"    %></td>
+                          <td><%= link_to image_tag("img_nav/press.gif"), page_donation_path, :class => "rollover"    %></td>
+                          tr>
+                      </table></td>
                     </tr>
                 </table></td>
               </tr>
@@ -31,9 +59,9 @@
                   <div id="flash">
                     <%= render_flash_messages  %>
                   </div>
-                  
-                  
-                  <%= yield %>                                            
+
+
+                  <%= yield %>
                 </td>
               </tr>
           </table></td>
