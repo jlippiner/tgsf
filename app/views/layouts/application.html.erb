@@ -42,8 +42,9 @@
                         <%= link_to image_tag("logo_TGSF.gif", :alt => "The Gwendolyn Strong Foundation"), root_path %>
                         </td>
                       <td width="68%" height="40" class="header" valign="top">
-                        <img src="images/img_icons/icon_home.gif" alt="" width="8" height="9" />
-                        <a href="index.aspx">Home</a> | <a href="contact.aspx">Contact Us</a>
+                        <%= link_to image_tag("img_icons/icon_home.gif"), root_path %>
+                          <%= link_to "Home", root_path %> |
+                          <%= link_to "Contact Us", page_contact_us_path %>
                         </td>
                     </tr>
                     <tr>
@@ -77,6 +78,10 @@
         </tr>
       </table>
     </div>
-    <div id="footer">&copy; 2009 The Gwendolyn Strong Foundation. All Rights Reserved.  |  <a href="#">Terms of Use</a></div>
+    <div id="footer">&copy; 2009 The Gwendolyn Strong Foundation. All Rights Reserved.  |  <a href="#">Terms of Use</a>
+    <div style="margin:10px">
+      <%= link_to "Design by Create Method", "http://www.createmethod.com", :target => "_blank" %>
+    </div>
+    </div>
   </body>
 </html>

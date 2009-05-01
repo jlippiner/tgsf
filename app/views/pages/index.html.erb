@@ -18,10 +18,8 @@
                   <tr>
                     <td><img src="images/img_icons/icon_awareness.gif" alt="" width="38" height="38" /></td>
                     <td>
-                      <a href="<%= url_for page_aboutsma_path %>">
                         <h2>Awareness</h2>
-                        <p>GSF will create and support, at every level and at every stage, educational efforts to further awareness about SMA.</p>
-                      </a>
+                        <p>GSF will create and support, at every level and at every stage, educational efforts to further awareness about SMA.</p>                      
                     </td>
                   </tr>
                   <tr>
@@ -102,12 +100,12 @@
                   <tr id="line">
                   <td width="34%"><%= link_to image_tag("img_icons/icon_twitter.gif"), "http://twitter.com/gsfoundation" , :target => "_blank" %></td>
                     <td width="66%"><%= link_to "Follow us on Twitter!", "http://twitter.com/gsfoundation", :target => "_blank" %>
-                      <p>Stay current with our stories and experiences</p></td>
+                      <p>Stay current with the TGSF on Twitter</p></td>
                   </tr>
                   <tr id="xline">
-                    <td><img src="images/img_icons/icon_fb.gif" alt="" width="48" height="48" /></td>
-                    <td><a href="#">Cause on Facebook</a>
-                    <p>Doloremque laudantium, totam rem aperiam.</p></td>
+                  <td><%= link_to image_tag("img_icons/icon_fb.gif"), "http://apps.facebook.com/causes/278809?m=cc366e79", :target => "_blank" %></td>
+                    <td><%= link_to "Cause on Facebook", "http://apps.facebook.com/causes/278809?m=cc366e79", :target => "_blank" %>
+                    <p>Stay connected with GSF through Facebook</p></td>
                   </tr>
                 </table>
               </div>
