@@ -13,21 +13,21 @@
                   <tr>
                     <td width="21%"><img src="images/img_icons/icon_research.gif" alt="" width="38" height="38" /></td>
                     <td width="79%"><h2>Research</h2>
-                    <p>Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p></td>
+                    <p>GSF seeks to provide SMA research organizations and the scientific community the resources necessary to end SMA.</p></td>
                   </tr>
                   <tr>
                     <td><img src="images/img_icons/icon_awareness.gif" alt="" width="38" height="38" /></td>
                     <td>
                       <a href="<%= url_for page_aboutsma_path %>">
                         <h2>Awareness</h2>
-                        <p>Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p>
+                        <p>GSF will create and support, at every level and at every stage, educational efforts to further awareness about SMA.</p>
                       </a>
                     </td>
                   </tr>
                   <tr>
                     <td><img src="images/img_icons/icon_support.gif" alt="" width="38" height="38" /></td>
                     <td><h2>Support</h2>
-                    <p>Doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo.</p></td>
+                    <p>GSF will create and support programs focused on helping those impacted by life-altering diseases through their critical post-diagnosis journey.</p></td>
                   </tr>
                 </table>
               </div>
@@ -38,14 +38,16 @@
         <tr>
           <td>&nbsp;</td>
         </tr>
+        <!--
         <tr>
           <td><a href="secondlevel.html"><img src="images/img_buttons/btn_getinvolved.gif" alt="Get Involved - Find out what's new!" width="256" height="72" /></a></td>
         </tr>
+        -->
         <tr>
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td><a href="#"><img src="images/img_buttons/btn_newlydiagnosed.gif" alt="Newly Diagnosed? Click here" width="257" height="31" /></a></td>
+        <td><%= link_to image_tag("img_buttons/btn_newlydiagnosed.gif", :alt=>"Newly Diagnosed? Click here"), page_newly_diagnosed_path %></td>
         </tr>
     </table></td>
     <td class="content"><table width="414" border="0" cellspacing="0" cellpadding="0">
@@ -53,13 +55,15 @@
           <td bgcolor="#45331A"><img src="images/img_pics/pic_gwendolyn_hp.jpg" alt="" width="414" height="284" /></td>
         </tr>
         <tr>
-          <td id="note"><p><img src="images/img_headings/h_ourmission.gif" alt="Our Mission" width="137" height="26" /></p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.</td>
+          <td id="note"><p><img src="images/img_headings/h_ourmission.gif" alt="Our Mission" width="137" height="26" /></p>
+          The Gwendolyn Strong Foundation (GSF) seeks to raise awareness about and fund research for Spinal Muscular Atrophy (SMA), the leading genetic killer of young children, and support those impacted by SMA and other life-altering diseases.
+          </td>
         </tr>
+        <!-- OLD GALLERY LOCATION
         <tr>
-          <td class="gallery"><h1>View Gallery</h1>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-          <p><img src="images/img_pics/pic_gallery_strip.jpg" alt="" width="330" height="56" /></p></td>
+          
         </tr>
+        -->
     </table></td>
     <td class="rg"><table width="220" border="0" cellspacing="0" cellpadding="0">
         <tr>
@@ -82,7 +86,9 @@
           <td>&nbsp;</td>
         </tr>
         <tr>
-          <td><a href="#"><img src="images/img_buttons/btn_donatenow_lg.jpg" alt="Show your support - Donate Now!" width="220" height="61" /></a></td>
+          <td>
+            <%= link_to image_tag('img_buttons/btn_donatenow_lg.jpg', :alt => "Show your support - Donate Now!"), page_donation_path %>
+          </td>
         </tr>
         <tr>
           <td>&nbsp;</td>
@@ -94,9 +100,9 @@
               <div class="rnd_content">
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
                   <tr id="line">
-                    <td width="34%"><img src="images/img_icons/icon_twitter.gif" alt="" width="48" height="48" /></td>
-                    <td width="66%"><a href="#">Follow us on Twitter!</a>
-                    <p>Doloremque laudantium, totam rem aperiam.</p></td>
+                  <td width="34%"><%= link_to image_tag("img_icons/icon_twitter.gif"), "http://twitter.com/gsfoundation" , :target => "_blank" %></td>
+                    <td width="66%"><%= link_to "Follow us on Twitter!", "http://twitter.com/gsfoundation", :target => "_blank" %>
+                      <p>Stay current with our stories and experiences</p></td>
                   </tr>
                   <tr id="xline">
                     <td><img src="images/img_icons/icon_fb.gif" alt="" width="48" height="48" /></td>
