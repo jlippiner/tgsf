@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   end
 
   def donation
+    @donation_active = true
   end
 
   def aboutsma
