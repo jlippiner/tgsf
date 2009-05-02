@@ -40,12 +40,12 @@
                     <tr>
                       <td width="32%" rowspan="2">
                         <%= link_to image_tag("logo_TGSF.gif", :alt => "The Gwendolyn Strong Foundation"), root_path %>
-                        </td>
+                      </td>
                       <td width="68%" height="40" class="header" valign="top">
                         <%= link_to image_tag("img_icons/icon_home.gif"), root_path %>
-                          <%= link_to "Home", root_path %> |
-                          <%= link_to "Contact Us", page_contact_us_path %>
-                        </td>
+                        <%= link_to "Home", root_path %> |
+                        <%= link_to "Contact Us", page_contact_us_path %>
+                      </td>
                     </tr>
                     <tr>
                       <td valign="bottom" align="right" class="" style="padding-top:20px">
@@ -79,9 +79,18 @@
       </table>
     </div>
     <div id="footer">&copy; 2009 Gwendolyn Strong Foundation. All Rights Reserved.  |  <a href="#">Terms of Use</a>
-    <div style="margin:10px">
-      <%= link_to "Design by Create Method", "http://www.createmethod.com", :target => "_blank" %>
+      <div style="margin:10px">
+        <%= link_to "Design by Create Method", "http://www.createmethod.com", :target => "_blank" %>
+      </div>
     </div>
-    </div>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-8641341-1");
+        pageTracker._trackPageview();
+      } catch(err) {}</script>
   </body>
 </html>
