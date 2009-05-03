@@ -6,8 +6,17 @@
 <h2>Other Member's Answers</h2>
 
 <% @question.answers.each do |answer| %>
-   <div class="rnd2_content" style="border-bottom:1px dotted gray">
-     <%= answer.answer %>
+   <div class="rnd2_content" style="border-bottom:1px dotted gray;padding:3px">
+     <table border="0" cellpadding="5">
+           <tr>
+             <td>
+                 <%= image_tag @user.avatar.url(:medium) %>
+             </td>
+             <td>
+               <%= answer.answer %>
+             </td>
+           </tr>
+         </table>
    </div>
 <%  end %>
 <% end %>

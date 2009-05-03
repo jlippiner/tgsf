@@ -6,7 +6,7 @@
   <%= error_messages_for "user" %>
 </div>
 
-<% form_for @user do |f| %>
+<% form_for @user, :html => { :multipart => true }  do |f| %>
   <table border="0" cellpadding="5">
     <tr>
       <td width="100">
@@ -26,6 +26,10 @@
       <td>
         <%= f.text_field :disease %>
       </td>
+    </tr>
+    <tr>
+      <td>Please update a profile picture: </td>
+      <td><%= f.file_field :avatar %></td>
     </tr>
     <tr><td></td>
     <td align="right">
