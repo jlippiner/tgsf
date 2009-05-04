@@ -5,10 +5,10 @@
     <table border="0" cellpadding="5">
       <tr>
         <td>
-          <%= image_tag u.avatar.url(:medium) %>
+          <%= image_tag u.avatar.url() %>
         </td>
         <td>
-          <b style="font-size:110%"><%= "#{u.name} - #{u.email}" %></b>
+          <b style="font-size:110%"><%= "[#{u.id}] #{u.name} - #{u.email}" %></b>
           <div style="margin-top:3px;"><%= "#{u.disease} #{u.relation_to_disease} since #{ Date::MONTHNAMES[u.diagnosis_month]} #{u.diagnosis_year}" %></div>
         
         </td>

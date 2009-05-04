@@ -28,15 +28,14 @@ class QuestionsController < ApplicationController
 
   def admin_view
     @questions = Question.find(:all)
-    @question = Question.new    
+    @question = Question.new
+    render :admin_view
   end
 
   def create
     if Question.create(params[:question])
       flash.notice = "Question Added"
-      @questions = Question.find(:all)
-      @question = Question.new
-      render :action => "admin_view"
+      admin_view
     end
   end
 
@@ -50,9 +49,7 @@ class QuestionsController < ApplicationController
     rescue
 
     end
-    @questions = Question.find(:all)
-    @question = Question.new    
-    render :action => "admin_view"
+    admin_view
   end
 
  

@@ -6,7 +6,7 @@
       <%= answer.question.question %>
       </div>
       <div class="right" id="chars_left">
-        300
+        400
       </div>
     </div>
 
@@ -16,7 +16,7 @@
         <%= f.hidden_field :user_id %>
         <%= hidden_field_tag "step", step %>
         <%= hidden_field_tag "version", 1 %>
-        <%= text_area :answer, :answer, :size => "80x4" %>
+        <%= text_area :answer, :answer, :size => "80x5" %>
         <div align="right" style="margin-top:20px;">
           <%= submit_tag "Submit"  %>
         </div>

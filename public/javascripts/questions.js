@@ -17,6 +17,6 @@ function limitChars(textid, limit, infodiv)
 
 $(function(){
     $('#answer_answer').keyup(function(){
-        limitChars('answer_answer', 300, 'chars_left');
+        limitChars('answer_answer', 400, 'chars_left');
     }).focus();
 });
