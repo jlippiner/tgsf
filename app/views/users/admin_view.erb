@@ -1,0 +1,27 @@
+<h1>Admin >> Users</h1>
+
+<% @users.each do |u| %>
+  <div class="rnd2_content" style="margin:5px">
+    <table border="0" cellpadding="5">
+      <tr>
+        <td>
+          <%= image_tag u.avatar.url(:medium) %>
+        </td>
+        <td>
+          <b style="font-size:110%"><%= "#{u.name} - #{u.email}" %></b>
+          <div style="margin-top:3px;"><%= "#{u.disease} #{u.relation_to_disease} since #{ Date::MONTHNAMES[u.diagnosis_month]} #{u.diagnosis_year}" %></div>
+        
+        </td>
+      </tr>
+    </table>
+    <div>
+      <h2>Questions & Answers</h2>
+      <% u.answers.each do |a| %>
+        <div style="padding:3px;border-bottom:1px dashed gray">
+          <%= "<b>#{a.question.question}</b>" %><br>
+          <%= a.answer  %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>

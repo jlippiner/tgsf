@@ -31,6 +31,16 @@ class QuestionsController < ApplicationController
     @question = Question.new    
   end
 
+  def create
+    if Question.create(params[:question])
+      flash.notice = "Question Added"
+      @questions = Question.find(:all)
+      @question = Question.new
+      render :action => "admin_view"
+    end
+  end
+
+
   def destroy
     begin
       question = Question.find(params[:id])
@@ -45,13 +55,6 @@ class QuestionsController < ApplicationController
     render :action => "admin_view"
   end
 
-  def create
-    if Question.create(params[:question])
-      flash.notice = "Question Added"
-      @questions = Question.find(:all)
-      @question = Question.new
-      render :action => "admin_view"
-    end
-  end
+ 
 
 end

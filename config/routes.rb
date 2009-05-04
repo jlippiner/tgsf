@@ -38,10 +38,7 @@ ActionController::Routing::Routes.draw do |map|
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing the them or commenting them out if you're using named routes and resources.
-  map.resources :users
-  map.resources :answers  
-
-  map.with_options(:controller => "questions", :name_prefix => "question_") do |question|
+    map.with_options(:controller => "questions", :name_prefix => "question_") do |question|
     question.connect 'questions/admin_view',  :action => "admin_view"
     question.survey 'questions/show/:userid/:step', :action => "survey", :controller => "questions"
     question.answer "questions/show/:userid/:version/:step/:questionid", :action => "record_answer", :controller => "questions"
@@ -54,7 +51,12 @@ ActionController::Routing::Routes.draw do |map|
       page.send(p.intern, "#{p}", :action => "#{p}", :controller => "pages")
     }
   end
-  
+
+  map.connect 'users/admin_view', :action => "admin_view", :controller => "users"
+  map.resources :users
+  map.resources :answers
+
+
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
   map.root :controller => "pages"

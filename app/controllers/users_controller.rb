@@ -40,4 +40,8 @@ class UsersController < ApplicationController
     end
   end
 
+  def admin_view
+    @users = User.find(:all)
+  end
+
 end
