@@ -27,5 +27,8 @@
       <h2>Thoughts</h2>
       <%= u.thoughts %>
     </div>
+    <div style="margin-top:20px;">
+      <%= link_to "Delete User?", u, :method => "delete", :confirm => "Delete this user and answers?" %>
+    </div>
   </div>
 <% end %>

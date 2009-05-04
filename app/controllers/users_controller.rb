@@ -42,6 +42,15 @@ class UsersController < ApplicationController
 
   def admin_view
     @users = User.find(:all)
+    render :admin_view
+  end
+
+  def destroy
+    user = User.find(params[:id])
+    if user.destroy
+      flash.warning=("User deleted!")
+      admin_view
+    end
   end
 
 end

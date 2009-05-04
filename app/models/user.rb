@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :answers
+  has_many :answers, :dependent => :destroy
 
   validates_presence_of :email, :name, :disease, :diagnosis_month, :diagnosis_year, :relation_to_disease
   validates_format_of  :email,
