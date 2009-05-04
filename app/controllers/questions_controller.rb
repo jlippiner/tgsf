@@ -1,17 +1,20 @@
 class QuestionsController < ApplicationController
+    
   def index
   end
 
   def show
     @user = User.find_by_id(params[:id])
+     @total_questions = Question.count
     render :action => "index"
   end
 
   def survey
     @user = User.find_by_id(params[:userid])
     @step = params[:step]
+    @total_questions = Question.count
 
-    if @step.to_i <= 4
+    if @step.to_i <= @total_questions
 
       #    get new question
       already_taken = @user.answers.size == 0 ? 0 : @user.answers.collect {|x| x.question_id}.join(",")

@@ -7,9 +7,9 @@
     <%= image_tag @user.avatar.url %>
   </div>
    <div style="width:650px;text-align:left;font-size:12pt;float:left">
-    <p>You are about to answer four questions about your experience.</p>
+     <p>You are about to answer <%= @total_questions.to_words %> questions about your experience.</p>
 
-    <p>Take as much time as you want, but you only get 300 characters per answer :)</p>
+    <p>Take as much time as you want, but you only get 400 characters per answer :)</p>
 
     <p style="margin-top:20px;font-weight:bold"><%= link_to "Click here to begin...", question_survey_path(@user.id, 1) %></p>
   </div>
