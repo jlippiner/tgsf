@@ -1,0 +1,14 @@
+<h1>Admin >> Questions</h1>
+<% @questions.each do |q| %>
+  <li>
+    <%= q.question %><span style="padding-left:5px"><%= link_to "[X]", q, :method => :delete, :confirm => "Are you sure you want to delete this question?"  %></span>
+  </li>
+<% end  %>
+
+<div>
+  <h2>Add New Question:</h2>
+  <% form_for @question do |f| %>
+      <%= f.text_field :question, :size => 60 %>
+      <%= submit_tag %>
+  <% end %>
+</div>

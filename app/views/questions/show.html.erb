@@ -10,10 +10,11 @@
      <table border="0" cellpadding="5">
            <tr>
              <td>
-                 <%= image_tag @user.avatar.url(:medium) %>
+                 <%= image_tag answer.user.avatar.url(:medium) %>
              </td>
              <td>
-               <%= answer.answer %>
+               <%= answer.answer %><br>
+               <div style="color:gray;font-style:italic;margin-top:3px;"><%= "#{answer.user.name} #{answer.user.disease} #{answer.user.relation_to_disease} since #{ Date::MONTHNAMES[answer.user.diagnosis_month]} #{answer.user.diagnosis_year}" %></div>
              </td>
            </tr>
          </table>

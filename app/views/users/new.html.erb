@@ -9,7 +9,7 @@
 <% form_for @user, :html => { :multipart => true }  do |f| %>
   <table border="0" cellpadding="5">
     <tr>
-      <td width="100">
+      <td width="150">
         Name:
       </td>
       <td>
@@ -27,6 +27,23 @@
         <%= f.text_field :disease %>
       </td>
     </tr>
+    <tr>
+        <td>
+          How are you related to the affected?
+        </td>
+        <td>
+          <%= select "user", "relation_to_disease", ["Diagnosed","Caregiver","Other"], :prompt => "Choose" %>
+        </td>
+      </tr>
+    <tr>
+        <td>
+          When was the diagnosis?
+        </td>
+        <td>
+          <%= select_month @user.diagnosis_month, :prompt => 'Choose month',:field_name => 'diagnosis_month', :prefix => "user" %>
+          <%= select_year 0, :prompt => 'Choose year',:field_name => 'diagnosis_year', :start_year => 1930, :end_year => Date.today.year, :prefix => "user" %>
+        </td>
+      </tr>
     <tr>
       <td>Please update a profile picture: </td>
       <td><%= f.file_field :avatar %></td>

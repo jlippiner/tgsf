@@ -42,8 +42,9 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :answers  
 
   map.with_options(:controller => "questions", :name_prefix => "question_") do |question|
-    question.survey 'questions/:userid/:step', :action => "survey", :controller => "questions"
-    question.answer "questions/:userid/:version/:step/:questionid", :action => "record_answer", :controller => "questions"
+    question.connect 'questions/admin_view',  :action => "admin_view"
+    question.survey 'questions/show/:userid/:step', :action => "survey", :controller => "questions"
+    question.answer "questions/show/:userid/:version/:step/:questionid", :action => "record_answer", :controller => "questions"
     map.resources :questions
   end
 

@@ -12,7 +12,9 @@ class UsersController < ApplicationController
 
     if @user
       #      flash.notice = "Sorry but you can only take the survey once."
-      redirect_to question_path(@user)
+      @user.update_attributes(params[:user])
+      @user.answers.delete_all
+      redirect_to question_path(@user)  if @user.update_attributes(params[:user])
     else
       @user = User.new(params[:user])
 
