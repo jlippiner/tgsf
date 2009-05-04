@@ -21,6 +21,6 @@ class User < ActiveRecord::Base
     :convert_options => {
     :thumb => "-border 5 -frame 3x3",
     :tiny => "-border 5 -frame 3x3",
-    :medium => "-border 2 -frame75x75>"
+    :medium => "-border 2 -frame 1x1"
     }
 end

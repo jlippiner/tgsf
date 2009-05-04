@@ -2,11 +2,12 @@
 
 <%= render :partial => "version_1", :locals => {:answer => @answer, :step => @step} %>
 
-<% if !@question.answers.blank? %>
+<% if @question.answers.size > 0 %>
 <h2>Other Member's Answers</h2>
 
 <% @question.answers.each do |answer| %>
-   <div class="rnd2_content" style="border-bottom:1px dotted gray;padding:3px">
+    <% if answer.user %>
+  <div class="rnd2_content" style="border-bottom:1px dotted gray;padding:3px">
      <table border="0" cellpadding="5">
            <tr>
              <td>
@@ -19,5 +20,6 @@
            </tr>
          </table>
    </div>
+   <% end %>
 <%  end %>
 <% end %>
