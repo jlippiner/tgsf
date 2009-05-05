@@ -4,7 +4,8 @@
 
 <% if @question.answers.size > 0 %>
 <h2>Other Member's Answers</h2>
-<p>Below are answers that other people have given to the question.  While they might not be in the same exact situation as you, there answers might provide some guidance.</p>
+<p style="margin-bottom:30px;">Below are answers that other people have given to the question.  While they might not be in the same exact situation as you, there answers might provide some guidance.</p>
+
 <% @question.answers.each do |answer| %>
     <% if answer.user %>
   <div class="rnd2_content" style="border-bottom:1px dotted gray;padding:3px">

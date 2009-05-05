@@ -25125,3 +25125,347 @@ ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.c
   /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-05-04 20:10:11) [GET]
+Redirected to http://localhost:3004/users/new
+Completed in 3ms (DB: 0) | 302 Found [http://localhost/users/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-05-04 20:10:11) [GET]
+  [4;36;1mUser Columns (11.7ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/application
+Rendering users/new
+Completed in 125ms (View: 92, DB: 12) | 200 OK [http://localhost/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:11) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:11) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-05-04 20:10:21) [POST]
+  Parameters: {"user"=>{"diagnosis_year"=>"1931", "diagnosis_month"=>"2", "name"=>"Josh 4", "relation_to_disease"=>"Caregiver", "disease"=>"Cancer", "email"=>"jlippiner@gmail.com"}, "commit"=>"Submit", "authenticity_token"=>"s6SpRtLkv5zJVptmVFhzejk1b6rp9ZWjRjoKAMznVvI="}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'jlippiner@gmail.com') LIMIT 1[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `avatar_updated_at`, `diagnosis_month`, `diagnosis_year`, `updated_at`, `avatar_file_name`, `avatar_file_size`, `thoughts`, `relation_to_disease`, `avatar_content_type`, `survey_number`, `email`, `created_at`, `disease`) VALUES('Josh 4', NULL, 2, 1931, '2009-05-05 00:10:21', NULL, NULL, NULL, 'Caregiver', NULL, NULL, 'jlippiner@gmail.com', '2009-05-05 00:10:21', 'Cancer')[0m
+[paperclip] Saving attachments.
+  [4;35;1mSQL (0.5ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3004/questions/5
+Completed in 30ms (DB: 4) | 302 Found [http://localhost/users]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#show (for 127.0.0.1 at 2009-05-04 20:10:21) [GET]
+  Parameters: {"id"=>"5"}
+  [4;36;1mUser Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (5.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '5') LIMIT 1[0m
+  [4;36;1mQuestion Columns (3.3ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSELECT count(*) AS count_all FROM `questions` [0m
+Rendering template within layouts/application
+Rendering questions/index
+Completed in 47ms (View: 19, DB: 13) | 200 OK [http://localhost/questions/5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#survey (for 127.0.0.1 at 2009-05-04 20:10:23) [GET]
+  Parameters: {"step"=>"1", "userid"=>"5"}
+  [4;36;1mUser Columns (12.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '5') LIMIT 1[0m
+  [4;36;1mQuestion Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSELECT count(*) AS count_all FROM `questions` [0m
+  [4;36;1mAnswer Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `answers`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `answers` WHERE (`answers`.user_id = 5) [0m
+  [4;36;1mQuestion Load (0.3ms)[0m   [0;1mSELECT * FROM `questions` WHERE (id NOT IN (0)) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering questions/show
+Rendered questions/_version_1 (6.4ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `answers` WHERE (`answers`.question_id = 53) [0m
+  [4;36;1mAnswer Load (0.2ms)[0m   [0;1mSELECT * FROM `answers` WHERE (`answers`.question_id = 53) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Completed in 112ms (View: 66, DB: 19) | 200 OK [http://localhost/questions/show/5/1]
+  [4;35;1mSQL (0.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:23) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#survey (for 127.0.0.1 at 2009-05-04 20:10:44) [GET]
+  Parameters: {"step"=>"1", "userid"=>"5"}
+  [4;35;1mUser Columns (3.7ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '5') LIMIT 1[0m
+  [4;35;1mQuestion Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `questions` [0m
+  [4;35;1mAnswer Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `answers`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `answers` WHERE (`answers`.user_id = 5) [0m
+  [4;35;1mQuestion Load (0.2ms)[0m   [0mSELECT * FROM `questions` WHERE (id NOT IN (0)) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering questions/show
+Rendered questions/_version_1 (4.3ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `answers` WHERE (`answers`.question_id = 53) [0m
+  [4;35;1mAnswer Load (0.2ms)[0m   [0mSELECT * FROM `answers` WHERE (`answers`.question_id = 53) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Completed in 48ms (View: 19, DB: 9) | 200 OK [http://localhost/questions/show/5/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:44) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:44) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#survey (for 127.0.0.1 at 2009-05-04 20:10:45) [GET]
+  Parameters: {"step"=>"1", "userid"=>"5"}
+  [4;36;1mUser Columns (11.8ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.8ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '5') LIMIT 1[0m
+  [4;36;1mQuestion Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `questions` [0m
+  [4;36;1mAnswer Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `answers`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM `answers` WHERE (`answers`.user_id = 5) [0m
+  [4;36;1mQuestion Load (0.2ms)[0m   [0;1mSELECT * FROM `questions` WHERE (id NOT IN (0)) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering questions/show
+Rendered questions/_version_1 (4.2ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `answers` WHERE (`answers`.question_id = 53) [0m
+  [4;36;1mAnswer Load (0.2ms)[0m   [0;1mSELECT * FROM `answers` WHERE (`answers`.question_id = 53) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Completed in 57ms (View: 15, DB: 18) | 200 OK [http://localhost/questions/show/5/1]
+  [4;35;1mSQL (1.3ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#survey (for 127.0.0.1 at 2009-05-04 20:10:52) [GET]
+  Parameters: {"step"=>"1", "userid"=>"5"}
+  [4;35;1mUser Columns (2.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = '5') LIMIT 1[0m
+  [4;35;1mQuestion Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `questions`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT count(*) AS count_all FROM `questions` [0m
+  [4;35;1mAnswer Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `answers`[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM `answers` WHERE (`answers`.user_id = 5) [0m
+  [4;35;1mQuestion Load (0.3ms)[0m   [0mSELECT * FROM `questions` WHERE (id NOT IN (0)) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering questions/show
+Rendered questions/_version_1 (4.0ms)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM `answers` WHERE (`answers`.question_id = 53) [0m
+  [4;35;1mAnswer Load (0.2ms)[0m   [0mSELECT * FROM `answers` WHERE (`answers`.question_id = 53) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Completed in 52ms (View: 19, DB: 9) | 200 OK [http://localhost/questions/show/5/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:52) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing QuestionsController#survey (for 127.0.0.1 at 2009-05-04 20:10:58) [GET]
+  Parameters: {"step"=>"1", "userid"=>"5"}
+  [4;36;1mUser Columns (12.3ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.3ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = '5') LIMIT 1[0m
+  [4;36;1mQuestion Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `questions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `questions` [0m
+  [4;36;1mAnswer Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `answers`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM `answers` WHERE (`answers`.user_id = 5) [0m
+  [4;36;1mQuestion Load (0.2ms)[0m   [0;1mSELECT * FROM `questions` WHERE (id NOT IN (0)) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering questions/show
+Rendered questions/_version_1 (4.7ms)
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM `answers` WHERE (`answers`.question_id = 53) [0m
+  [4;36;1mAnswer Load (0.2ms)[0m   [0;1mSELECT * FROM `answers` WHERE (`answers`.question_id = 53) [0m
+  [4;35;1mUser Load (0.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mUser Load (0.2ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 4) [0m
+Completed in 116ms (View: 20, DB: 17) | 200 OK [http://localhost/questions/show/5/1]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/jquery-ui-1.7.1.custom" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-04 20:10:59) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-ui-1.7.1.custom.mirn" with {:method=>:get}):
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `debug_load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/lib/ruby-debug.rb:96:in `main'
+  /Users/joshua.lippiner/.gem/ruby/1.8/gems/ruby-debug-ide-0.3.1/bin/rdebug-ide:76
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19:in `load'
+  /Users/joshua.lippiner/.gem/ruby/1.8/bin/rdebug-ide:19
+
+Rendering rescues/layout (not_found)
