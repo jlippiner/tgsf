@@ -26,12 +26,6 @@ namespace :production do
 
     puts "starting mongrel"
     %x{#{ssh_command} "/usr/local/bin/mongrel_rails start -c /users/home/hihadmin/sites/#{application}/#{env} -p #{port} -d -e #{env} -a 127.0.0.1 -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"}
-
-    puts "stopping mongrel for tgsf"
-    %x{#{ssh_command} "/usr/local/bin/mongrel_rails stop -P /users/home/hihadmin/var/run/mongrel-#{application}_production-#{port}.pid"}
-
-    puts "starting mongrel for tgsf"
-    %x{#{ssh_command} "/usr/local/bin/mongrel_rails start -c /users/home/hihadmin/sites/#{application}/production -p #{port} -d -e production -a 127.0.0.1 -P /users/home/hihadmin/var/run/mongrel-#{application}_production-#{port}.pid"}
   end
 end
 

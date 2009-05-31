@@ -2,6 +2,25 @@
 // This file is automatically included by javascript_include_tag :defaults
 $(document).ready(function() {
 
+    var keepImage;
+    $('.rollover').hover(function() {
+        var currentImg = $(this).find('img');
+        keepImage = currentImg.attr('src').indexOf('_down')>0
+        if(!keepImage) {
+            log('over')
+            var hoverImg = currentImg.attr('src').replace(/.gif/,'_down.gif');
+            currentImg.attr('src', hoverImg);
+            currentImg.attr('hover', currentImg.attr('src'));
+        }
+    }, function() {
+        if(!keepImage) {
+            var currentImg = $(this).find('img');
+            var hoverImg = currentImg.attr('src').replace(/_down/,'');
+            currentImg.attr('src', hoverImg);
+            currentImg.attr('hover', currentImg.attr('src'));
+        }
+    });
+
     jQuery.fn.showFlash = function() {
         log(this.selector)
         $(this.selector).show('normal').fadeTo(5000, 1).fadeOut(2000)
