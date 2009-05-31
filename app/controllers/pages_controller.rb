@@ -1,4 +1,8 @@
 class PagesController < ApplicationController
+  def index
+    @index_active = true
+  end
+
   def our_story
     @our_story_active = true
   end
@@ -13,6 +17,7 @@ class PagesController < ApplicationController
 
   def get_involved
     @get_involved_active = true
+    @index_active = true
   end
 
   def press
@@ -48,13 +53,12 @@ class PagesController < ApplicationController
   end
 
 
-
   def sub_layout
     if @our_story_active 
       "our_story"
     elsif @what_we_do_active
       "what_we_do"
-    elsif params[:action]=='index'
+    elsif @index_active
       "public"
     else
       "pages"
