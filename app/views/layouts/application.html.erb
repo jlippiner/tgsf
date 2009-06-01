@@ -2,7 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-    <title>The Gwendolyn Strong Foundation</title>
+    <title>The Gwendolyn Strong Foundation - <%= @meta_subtitle %></title>
+    <meta name="keywords" content="<%= @meta_keywords %>" />
+    <meta name="description" content="<%= @meta_description %>" />
     <%= stylesheet_link_tag 'styles', 'jquery-ui-1.7.1.custom' %>
     <%= javascript_include_tag 'jquery.min', 'jquery-ui-1.7.1.custom.mirn', 'application', params[:controller] %>
     <%=  yield :head %>

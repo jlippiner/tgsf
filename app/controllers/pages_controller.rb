@@ -18,6 +18,9 @@ class PagesController < ApplicationController
   def get_involved
     @get_involved_active = true
     @index_active = true
+
+    @meta_description = "Sponsor-A-Mile to END SMA.  Help end the #1 genetic killer of infants."
+    @meta_keywords = "SMA, sponsor, disease, infants"
   end
 
   def press
