@@ -25,7 +25,7 @@ class PagesController < ApplicationController
     @donations = Donation.find_all_by_campaign('SAM')
     [1, 2, 3, 4].inject(0) { |result, element| result + element } 
     @raised = @donations.inject(0) {|sum,n| sum + n.amount.to_i}
-    @percent = (@raised / 50000)
+    @percent = (@raised.to_f / 50000)
   end
 
   def press
