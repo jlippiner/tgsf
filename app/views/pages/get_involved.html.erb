@@ -110,6 +110,7 @@
         <!-- METER -->
         <div id="progress">
           <div class="pad">
+            <h3>Thank You To Our <%= @donations.size %> Supporters</h3>
             <div id="progressBar">
               <div id="mercury"><span id="raised">$<%= @raised %></span></div>
             </div>
@@ -136,6 +137,7 @@
                   </span>
                 </div>
               <% end %>
+              <div></div>
             </div>
           </div>
         </center>
@@ -156,8 +158,8 @@
 
     $("div.scrollable").scrollable({
       vertical:true,
-      size: 3,
-      interval: 2000,
+      size: 4,
+      interval: 3000,
       loop: true,
       speed: 600,
       onBeforeSeek: function() {
