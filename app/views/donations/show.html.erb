@@ -1,0 +1,31 @@
+<%= link_to "<< Donations", donations_path %>
+
+
+<p>
+  <b>Name:</b>
+  <%=h @donation.name %>
+</p>
+
+<p>
+  <b>campaign:</b>
+  <%=h @donation.campaign %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @donation.location %>
+</p>
+
+<p>
+  <b>Donation date:</b>
+  <%=h @donation.donation_date %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%=h @donation.amount %>
+</p>
+
+
+<%= link_to 'Edit', edit_donation_path(@donation) %> |
+<%= link_to 'Back', donations_path %>

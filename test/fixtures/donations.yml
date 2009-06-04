@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  cause: MyString
+  location: MyString
+  donation_date: 2009-06-04 16:40:06
+  amount: 9.99
+
+two:
+  name: MyString
+  cause: MyString
+  location: MyString
+  donation_date: 2009-06-04 16:40:06
+  amount: 9.99

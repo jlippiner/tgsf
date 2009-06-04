@@ -1,0 +1,51 @@
+
+/* root element for scrollable */
+div.scrollable {  
+	
+	/* required settings */
+	position:relative;
+	overflow:hidden;	
+
+	/* vertical scrollers have typically larger height than width */	
+	height: 307px;	 
+	width: 275px;
+	
+	/* decoration */
+	padding:0px 10px;
+	border:1px outset #ccc;
+	background-color:#E1EDA6;
+
+}
+
+/* root element for scrollable items */
+div.scrollable div.items {	
+	position:absolute;
+	
+	/* this time we have very large space for height */	
+	height:20000em;	
+	
+	/* decoration */
+	margin-top:10px;
+}
+
+/* 
+	same settings as in horizontal scroller except that these items 
+	are not floated
+*/
+div.scrollable div.items div {
+	text-align:center;
+	width:270px;
+	padding:25px 0px;
+	font-size:30px;
+	font-family: 'bitstream vera sans';
+	border:1px outset #ccc;
+	background-color: #fff;
+	-moz-border-radius:5px;
+	margin-bottom:10px;
+}
+
+/* active item */
+div.scrollable div.items div.active {
+	border:1px inset #ccc;		
+	background-color:#fff;
+}

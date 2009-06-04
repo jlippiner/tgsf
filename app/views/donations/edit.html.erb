@@ -1,0 +1,34 @@
+<%= link_to "<< Donations", donations_path %>
+
+<h1>Editing donation</h1>
+
+<% form_for(@donation) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :campaign %><br />
+    <%= f.text_field :campaign %>
+  </p>
+  <p>
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </p>
+  <p>
+    <%= f.label :donation_date %><br />
+    <%= f.datetime_select :donation_date %>
+  </p>
+  <p>
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @donation %> |
+<%= link_to 'Back', donations_path %>

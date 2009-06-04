@@ -1,0 +1,51 @@
+<%= link_to "<< Donations", donations_path %>
+
+<h1>New donation</h1>
+
+<h2>Bulk Import</h2>
+<p>All records must be in the following format. Please each record on a new line:</p>
+<p><b>
+    NAME;LOCATION;CAUSE;AMOUNT;[DONATION DATE=Today]
+</b></p>
+<div style="width:610px">
+<% form_for(@donation) do |f| %>
+      <%= text_area_tag "bulk", @records, :style => "width:600px;height:200px"  %>
+      <div align="right" style="margin-top:15px;">
+        <%= submit_tag "Submit" %>
+      </div>
+<% end %>
+</div>
+
+<hr>
+
+<h2>Individual Donation</h2>
+
+<% form_for(@donation) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :campaign %><br />
+    <%= f.text_field :campaign %>
+  </p>
+  <p>
+    <%= f.label :location %><br />
+    <%= f.text_field :location %>
+  </p>
+  <p>
+    <%= f.label :donation_date %><br />
+    <%= f.datetime_select :donation_date %>
+  </p>
+  <p>
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back'; donations_path %>

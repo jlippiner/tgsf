@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :donations
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -55,6 +57,7 @@ ActionController::Routing::Routes.draw do |map|
   map.connect 'users/admin_view', :action => "admin_view", :controller => "users"
   map.resources :users
   map.resources :answers
+  map.resources :donations
 
 
   map.connect ':controller/:action/:id'

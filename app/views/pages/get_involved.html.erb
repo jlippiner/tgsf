@@ -1,3 +1,25 @@
+<% content_for :head do  %>
+  <%= javascript_include_tag "tools.scrollable-1.0.3.min" %>
+  <%= stylesheet_link_tag "scrollable-vertical" %>
+  <style type="text/css">
+    #progress {height:44px;margin-bottom:11px;margin-top:20px}
+    .pad {margin:0pt auto;width:300px;}
+    #progress h3 {float:left;height:22px;margin:6px 6px 0pt 0pt;width:100%;}
+    .hide {float:left;margin-left:-999em;}
+    #progressBar {background:transparent url(/images/meter/progressBg.gif) repeat-x scroll left top;border:1px solid #000000;float:left;height:16px;margin-top:7px;width:100%;}
+    #progressBar #mercury {width:0%;}
+    #progressBar #mercury {background:transparent url(/images/meter/mercuryBg.gif) repeat-x scroll left top;border-right:1px solid #AC7B00;height:16px;}
+    #progressBar #mercury #raised {display:none;float:right;font-size:10px;height:16px;line-height:16px;padding:0pt 5px 0pt 0pt;text-align:right;width:95px}
+    #progress #key div {float:left;font-size:10px;width:33%}
+    #progress #left {text-align:left;}
+    #progress #center {text-align:center;}
+    #progress #right {text-align:right;}
+    #progressBar #mercury .beyond {background:transparent url(/images/meter/beyond.gif) no-repeat scroll right top;font-size:11px;font-weight:bold;}
+
+  </style>
+<% end %>
+
+
 <table width="100%" border="0" cellspacing="0" cellpadding="5">
   <tr>
     <td width="569" class="incontent">
@@ -83,9 +105,69 @@
           <a href="http://www.addthis.com/bookmark.php?v=250" onmouseover="return addthis_open(this, '', 'http://www.gwendolynstrongfoundation.org/get_involved', 'Sponsor-A-Mile To End SMA')" onmouseout="addthis_close()" onclick="return addthis_sendto()"><img src="http://s7.addthis.com/static/btn/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js?pub=strongbill"></script>
           <!-- AddThis Button END -->
         </div>
+
+        <% if(@donations.size > 3) %>
+        <!-- METER -->
+        <div id="progress">
+          <div class="pad">
+            <div id="progressBar">
+              <div id="mercury"><span id="raised">$<%= @raised %></span></div>
+            </div>
+            <div id="seasonal"></div><br><br>
+            <div id="key">
+              <div id="left">$0</div>
+              <div id="center">$25,000</div>
+              <div id="right">$50,000</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- root element for scrollable -->
+        <br>
+        <center>
+          <div class="scrollable" style="height:250px">
+            <!-- root element for the items -->
+            <div class="items">
+              <% @donations.each do |d| %>
+                <div>
+                  <%= d.name %><br>
+                  <span style="font-size:10pt">
+                    <%= d.location %>
+                  </span>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </center>
+        <% end %>
+
       </div>
     </td>
   </tr>
 </table>
+
+<script type="text/javascript">
+  $(document).ready(function(){ // on document load
+    // Using multiple unit types within one animation.
+    $("#mercury").animate({width: "<%= "#{@percent}%" %>"}, 10,'' ,function(){
+      $(this).find("#raised").show()
+    }
+  ); // animate a div
+
+    $("div.scrollable").scrollable({
+      vertical:true,
+      size: 3,
+      interval: 2000,
+      loop: true,
+      speed: 600,
+      onBeforeSeek: function() {
+        this.getItems().fadeTo(300, 0.2);
+      },
+      onSeek: function() {
+        this.getItems().fadeTo(300, 1);
+      }
+    });
+  });
+</script>
 
 
