@@ -131,7 +131,7 @@
               <div class="items">
                 <% @donations.each do |d| %>
                   <div class="<%= 'highlight' if d.highlight %>">
-                    <%= d.name %><br>
+                    <%= d.name.titleize %><br>
                     <span style="font-size:10pt">
                       <%= d.location %>
                     </span>
