@@ -112,7 +112,7 @@
           <div class="pad">
             <h3>Thank You To Our <%= @donations.size %> Supporters</h3>
             <div id="progressBar">
-              <div id="mercury"><span id="raised">$<%= @raised %></span></div>
+              <div id="mercury"><span id="raised">$<%= number_with_precision(@raised,0)%></span></div>
             </div>
             <div id="seasonal"></div><br><br>
             <div id="key">
@@ -159,7 +159,7 @@
     $("div.scrollable").scrollable({
       vertical:true,
       size: 4,
-      interval: 3000,
+      interval: 2000,
       loop: true,
       speed: 600,
       onBeforeSeek: function() {

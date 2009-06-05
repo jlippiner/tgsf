@@ -22,8 +22,7 @@ class PagesController < ApplicationController
     @meta_description = "Sponsor-A-Mile to END SMA.  Help end the #1 genetic killer of infants."
     @meta_keywords = "SMA, sponsor, disease, infants"
 
-    @donations = Donation.find_all_by_campaign('SAM')
-    [1, 2, 3, 4].inject(0) { |result, element| result + element } 
+    @donations = Donation.find_all_by_campaign('SAM').sort_by { rand }
     @raised = @donations.inject(0) {|sum,n| sum + n.amount.to_i}
     @percent = (@raised.to_f / 50000) * 100
   end
