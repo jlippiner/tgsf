@@ -22,29 +22,42 @@ class PagesController < ApplicationController
     @meta_description = "Sponsor-A-Mile to END SMA.  Help end the #1 genetic killer of infants."
     @meta_keywords = "SMA, sponsor, disease, infants"
 
-    @donations = Donation.find_all_by_campaign('SAM').sort_by { rand }
+    sponsored = Donation.for_campaign('SAM').highlighted.sort_by {rand}
+    not_sponsored = Donation.for_campaign('SAM').not_highlighted.sort_by {rand}
+    @donations = alternate(not_sponsored,sponsored)
     @raised = @donations.inject(0) {|sum,n| sum + n.amount.to_i}
     @percent = (@raised.to_f / 50000) * 100
   end
+
+  def alternate(a,b)
+    larger,smaller = (a.length >= b.length) ? [a,b] : [b,a]
+    new_array = []
+    (0...larger.size).each {|ndx|
+      new_array << larger[ndx]
+      new_array << smaller[ndx] if smaller[ndx]
+    }
+    new_array
+  end
+
 
   def press
     @press_active = true
   end
 
   def about_gwendolyn
-      @our_story_active = true
+    @our_story_active = true
   end
 
   def about_sma
-      @our_story_active = true
+    @our_story_active = true
   end
 
   def newly_diagnosed
-      @our_story_active = true
+    @our_story_active = true
   end
 
   def gallery
-      @our_story_active = true
+    @our_story_active = true
   end
 
   def awareness

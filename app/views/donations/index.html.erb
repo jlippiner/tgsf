@@ -10,7 +10,7 @@
   </tr>
 
 <% @donations.each do |donation| %>
-  <tr>
+  <tr style="background-color:<%= donation.highlight ? 'yellow' : 'white' %>">
     <td><%=h donation.name %></td>
     <td><%=h donation.campaign %></td>
     <td><%=h donation.location %></td>

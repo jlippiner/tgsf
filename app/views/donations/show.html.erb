@@ -1,6 +1,7 @@
 <%= link_to "<< Donations", donations_path %>
 
 
+
 <p>
   <b>Name:</b>
   <%=h @donation.name %>
@@ -24,6 +25,10 @@
 <p>
   <b>Amount:</b>
   <%=h @donation.amount %>
+</p>
+
+<p style="background-color:<%= @donation.highlight ? 'yellow' : 'white' %>">
+  Highlighted: <%= @donation.highlight %>
 </p>
 
 

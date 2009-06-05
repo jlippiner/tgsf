@@ -107,40 +107,40 @@
         </div>
 
         <% if(@donations.size > 3) %>
-        <!-- METER -->
-        <div id="progress">
-          <div class="pad">
-            <h3>Thank You To Our <%= @donations.size %> Supporters</h3>
-            <div id="progressBar">
-              <div id="mercury"><span id="raised">$<%= number_with_precision(@raised,0)%></span></div>
-            </div>
-            <div id="seasonal"></div><br><br>
-            <div id="key">
-              <div id="left">$0</div>
-              <div id="center">$25,000</div>
-              <div id="right">$50,000</div>
+          <!-- METER -->
+          <div id="progress">
+            <div class="pad">
+              <h3>Thank You To Our <%= @donations.size %> Supporters</h3>
+              <div id="progressBar">
+                <div id="mercury"><span id="raised"><%= comma_numbers(@raised.to_i)%></span></div>
+              </div>
+              <div id="seasonal"></div><br><br>
+              <div id="key">
+                <div id="left">$0</div>
+                <div id="center">$25,000</div>
+                <div id="right">$50,000</div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- root element for scrollable -->
-        <br>
-        <center>
-          <div class="scrollable" style="height:250px">
-            <!-- root element for the items -->
-            <div class="items">
-              <% @donations.each do |d| %>
-                <div>
-                  <%= d.name %><br>
-                  <span style="font-size:10pt">
-                    <%= d.location %>
-                  </span>
-                </div>
-              <% end %>
-              <div></div>
+          <!-- root element for scrollable -->
+          <br>
+          <center>
+            <div class="scrollable" style="height:250px">
+              <!-- root element for the items -->
+              <div class="items">
+                <% @donations.each do |d| %>
+                  <div class="<%= 'highlight' if d.highlight %>">
+                    <%= d.name %><br>
+                    <span style="font-size:10pt">
+                      <%= d.location %>
+                    </span>
+                  </div>
+                <% end %>
+                <div></div>
+              </div>
             </div>
-          </div>
-        </center>
+          </center>
         <% end %>
 
       </div>
