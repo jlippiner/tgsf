@@ -1,7 +1,6 @@
 
 /* root element for scrollable */
 div.scrollable {  
-	
 	/* required settings */
 	position:relative;
 	overflow:hidden;	
@@ -11,11 +10,12 @@ div.scrollable {
 	width: 275px;
 	
 	/* decoration */
-	padding:0px 10px;
+	padding:0px 5px 0px 5px;
+        margin:0px;
 	border:1px outset #ccc;
 	background-color:#E1EDA6;
-
 }
+
 
 /* root element for scrollable items */
 div.scrollable div.items {	
@@ -35,7 +35,7 @@ div.scrollable div.items {
 div.scrollable div.items div {
 	text-align:center;
 	width:270px;
-	padding:5px 0px;
+	padding:5px 0px 0px 0px;
 	font-size:18px;
 	font-family: 'bitstream vera sans';
 	border:1px outset #ccc;
