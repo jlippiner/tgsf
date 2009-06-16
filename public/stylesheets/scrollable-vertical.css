@@ -6,8 +6,8 @@ div.scrollable {
 	overflow:hidden;	
 
 	/* vertical scrollers have typically larger height than width */	
-	height: 307px;	 
-	width: 275px;
+	height: 250px;
+	width: 250px;
 	
 	/* decoration */
 	padding:0px 5px 0px 5px;
@@ -34,7 +34,7 @@ div.scrollable div.items {
 */
 div.scrollable div.items div {
 	text-align:center;
-	width:270px;
+	width:240px;
 	padding:5px 0px 0px 0px;
 	font-size:18px;
 	font-family: 'bitstream vera sans';
