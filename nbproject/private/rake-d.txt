@@ -53,6 +53,7 @@ gems\:install=Installs all required gems.
 gems\:refresh_specs=Regenerate gem specifications in correct format.
 gems\:unpack=Unpacks all required gems into vendor/gems.
 gems\:unpack\:dependencies=Unpacks all required gems and their dependencies into vendor/gems.
+github\:update=Push to Joyent production environment
 log\:clear=Truncates all *.log files in log/ to zero bytes
 middleware=Prints out your Rack middleware stack
 notes=Enumerate all annotations
@@ -65,6 +66,7 @@ paperclip\:refresh=Refreshes both metadata and thumbnails.
 paperclip\:refresh\:metadata=Regenerates content_type/size metadata for a given CLASS (and optional ATTACHMENT).
 paperclip\:refresh\:thumbnails=Regenerates thumbnails for a given CLASS (and optional ATTACHMENT).
 production\:deploy=Push to Joyent production environment
+production\:restart=Restart Joyent production environment
 rails\:freeze\:edge=Lock to latest Edge Rails, for a specific release use RELEASE=1.2.0
 rails\:freeze\:gems=Lock this application to the current gems (by unpacking them into vendor/rails)
 rails\:template=Applies the template supplied by LOCATION=/path/to/template

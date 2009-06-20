@@ -2,7 +2,14 @@
 
 
 <ul>
-  <li>
+  <% @presses.each do |press| %>
+    <li>
+      <%= press.story_date_at.strftime('%m/%d/%Y') %> - <%= link_to "#{press.item} - #{press.source}", press.link, :target => "_blank" %>
+      <div><%= press.comment %></div>
+    </li>
+  <% end %>
+
+  <!--<li>
     <%= link_to "iParenting.com Dad Of The Month May 2009", "http://www.iparenting.com/dad/6443.php", :target => "_blank" %>
   </li>
   <li>
@@ -12,4 +19,5 @@
   <li>
     <%= link_to "Couple finds strength in fighting for a cure - Daily Sound", "http://www.thedailysound.com/061909smatrip"%>
   </li>
+  -->
 </ul>

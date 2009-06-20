@@ -1,0 +1,28 @@
+<h1>Listing presses</h1>
+
+<table>
+  <tr>
+    <th>Item</th>
+    <th>Source</th>
+    <th>Story date at</th>
+    <th>Link</th>
+    <th>Comment</th>
+  </tr>
+
+<% @presses.each do |press| %>
+  <tr>
+    <td><%=h press.item %></td>
+    <td><%=h press.source %></td>
+    <td><%=h press.story_date_at %></td>
+    <td><%=h press.link %></td>
+    <td><%=h press.comment %></td>
+    <td><%= link_to 'Show', press %></td>
+    <td><%= link_to 'Edit', edit_press_path(press) %></td>
+    <td><%= link_to 'Destroy', press, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New press', new_press_path %>

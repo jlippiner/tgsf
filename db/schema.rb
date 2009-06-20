@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090605152007) do
+ActiveRecord::Schema.define(:version => 20090620001551) do
 
   create_table "answers", :force => true do |t|
     t.text     "answer"
@@ -28,6 +28,16 @@ ActiveRecord::Schema.define(:version => 20090605152007) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "highlight"
+  end
+
+  create_table "presses", :force => true do |t|
+    t.string   "item"
+    t.string   "source"
+    t.date     "story_date_at"
+    t.string   "link"
+    t.text     "comment"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "questions", :force => true do |t|

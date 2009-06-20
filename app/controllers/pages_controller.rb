@@ -41,6 +41,7 @@ class PagesController < ApplicationController
 
 
   def press
+    @presses = Press.all
     @press_active = true
   end
 

@@ -30,6 +30,23 @@ namespace :production do
   end
 end
 
+namespace :production do
+  desc "Restart Joyent production environment"
+  task :restart do
+    ssh_command = "ssh hih_joyent"
+    application = "tgsf"
+    env         = "production"
+    port        = "10062"
+
+    puts "stopping mongrel"
+    %x{#{ssh_command} "/usr/local/bin/mongrel_rails stop -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"}
+
+
+    puts "starting mongrel"
+    %x{#{ssh_command} "/usr/local/bin/mongrel_rails start -c /users/home/hihadmin/sites/#{application}/#{env} -p #{port} -d -e #{env} -a 127.0.0.1 -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"}
+  end
+end
+
 namespace :github do
   desc "Push to Joyent production environment"
   task :update do
