@@ -39,6 +39,7 @@ doc\:clobber_plugins=Remove plugin documentation
 doc\:clobber_rails=Remove rdoc products
 doc\:guides=Generate Rails guides
 doc\:plugins=Generate documentation for all installed plugins
+doc\:plugins\:haml=Generate documentation for the haml plugin
 doc\:plugins\:number_to_words=Generate documentation for the number_to_words plugin
 doc\:plugins\:paperclip=Generate documentation for the paperclip plugin
 doc\:plugins\:render-flash=Generate documentation for the render-flash plugin
