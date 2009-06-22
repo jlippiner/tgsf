@@ -63,8 +63,8 @@ namespace :github do
     unless comment = ENV["c"]
       puts "you must provide a comment"
     else
-      puts "moving to wripple directory"
-      %w{wrpl}
+      puts "moving to #{application} directory"
+      %w{"#{application}"}
 
       puts "updating modified files"
       %x{git diff}
