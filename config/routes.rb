@@ -52,7 +52,7 @@ ActionController::Routing::Routes.draw do |map|
   end
 
   map.with_options(:controller => "pages", :name_prefix => "page_") do |page|
-    pages = %w(donation gallery our_story about_sma get_involved press contact_us newly_diagnosed gallery what_we_do awareness support research about_gwendolyn)
+    pages = %w(donation gallery our_story about_sma get_involved press contact_us newly_diagnosed gallery what_we_do awareness support research about_gwendolyn testing)
     pages.each {|p|
       page.send(p.intern, "#{p}", :action => "#{p}", :controller => "pages")
     }
