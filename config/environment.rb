@@ -20,6 +20,11 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "twitter4r", :lib => "twitter", :version => ">=0.2.4"
+  config.gem "json"
+  config.gem "ym4r"
+  config.gem "sunlight"
+  config.gem "haml"
+  
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named

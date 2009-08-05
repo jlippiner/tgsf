@@ -39,10 +39,12 @@ namespace :production do
     port        = "10062"
 
     puts "stopping mongrel"
+    puts "/usr/local/bin/mongrel_rails stop -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"
     %x{#{ssh_command} "/usr/local/bin/mongrel_rails stop -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"}
 
 
     puts "starting mongrel"
+    puts "/usr/local/bin/mongrel_rails start -c /users/home/hihadmin/sites/#{application}/#{env} -p #{port} -d -e #{env} -a 127.0.0.1 -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"
     %x{#{ssh_command} "/usr/local/bin/mongrel_rails start -c /users/home/hihadmin/sites/#{application}/#{env} -p #{port} -d -e #{env} -a 127.0.0.1 -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"}
   end
 end
