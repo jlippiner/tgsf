@@ -14,7 +14,13 @@ class TwitterController < ApplicationController
   def create
     if zipcode_valid(params[:zipcode])
       get_members(params[:zipcode])
-      render :tweet
+      if @members_of_congress.empty?
+        flash.error = "We could not find any reps for that zipcode.  Please double check and try again."
+        index
+      else
+        flash.clear
+        render :tweet
+      end
     else
       flash.error = "Please enter a valid US zip code"
       index
@@ -47,7 +53,7 @@ class TwitterController < ApplicationController
           else
             rep_post = rep_post + ", S. 1158! http://bit.ly/aml9l"
           end
-         twitter.status(:post, rep_post)
+          twitter.status(:post, rep_post)
         end
 
         # Update their status
@@ -67,7 +73,7 @@ class TwitterController < ApplicationController
 
         # Redirect
         thankyou
-        
+
       rescue Exception => e
         flash.error = "We could not authenticate that username and password.  Please try again"
         render :tweet
@@ -76,6 +82,7 @@ class TwitterController < ApplicationController
   end
 
   def thankyou
+    flash.clear
     render :thankyou
   end
 
