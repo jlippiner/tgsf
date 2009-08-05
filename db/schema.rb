@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090805184853) do
+ActiveRecord::Schema.define(:version => 20090805213225) do
 
   create_table "answers", :force => true do |t|
     t.text     "answer"
@@ -29,6 +29,25 @@ ActiveRecord::Schema.define(:version => 20090805184853) do
     t.datetime "updated_at"
     t.boolean  "highlight"
   end
+
+  create_table "jobs", :force => true do |t|
+    t.string   "worker_class"
+    t.string   "worker_method"
+    t.text     "args"
+    t.text     "result"
+    t.integer  "priority"
+    t.integer  "progress"
+    t.string   "state"
+    t.integer  "lock_version",  :default => 0
+    t.datetime "start_at"
+    t.datetime "started_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "jobs", ["priority"], :name => "index_jobs_on_priority"
+  add_index "jobs", ["start_at"], :name => "index_jobs_on_start_at"
+  add_index "jobs", ["state"], :name => "index_jobs_on_state"
 
   create_table "presses", :force => true do |t|
     t.string   "item"

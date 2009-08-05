@@ -1,5 +1,4 @@
 require 'sunlight'
-require 'twitter'
 
 class TwitterController < ApplicationController
   layout 'twitter'
@@ -59,13 +58,7 @@ class TwitterController < ApplicationController
         twitter.friend(:add, 'EndSMAdotcom') unless twitter.my(:friends).detect {|x| x.screen_name == 'EndSMAdotcom'} if params[:follow]
 
         # DM their friends if selected
-        if params[:dm]
-          dm_post = "Hey. Check this out - http://EndSMA.org/twitter. Pretty cool way to help fight this disease."
-          followers = twitter.my(:followers)
-          followers.each do |follower|
-            twitter.message(:post, dm_post, follower)
-          end
-        end
+        Job.enqueue!(TweetDm,:main,username,password) if params[:dm]
 
         # Log what happened
         Tweet.create({:zipcode => params[:zipcode],
