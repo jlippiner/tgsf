@@ -1,0 +1,134 @@
+%table{ :cellspacing => "0", :border => "0", :cellpadding => "0", :width => "100%" }
+  %tr
+    %td.lf
+      %table{ :cellspacing => "0", :border => "0", :cellpadding => "0", :width => "100%" }
+        %tr
+          %td
+            #rnd_container
+              %b.rnd_top
+                %b.rnd_b1
+                %b.rnd_b2
+                %b.rnd_b3
+                %b.rnd_b4
+              .rnd_content
+                %table{ :cellspacing => "0", :border => "0", :cellpadding => "0", :width => "100%" }
+                  %tr
+                    %td{ :colspan => "2" }
+                      %h1
+                        Our Goals
+                  %tr
+                    %td{ :width => "21%" }
+                      = link_to image_tag('img_icons/icon_research.gif', :border => "0", :alt => "Research"), page_research_path
+                    %td{ :width => "79%" }
+                      %a{ :href => url_for(page_research_path) }
+                        %h2
+                          Research
+                        %p
+                          GSF seeks to provide SMA research organizations and the scientific community the resources necessary to end SMA.
+                  %tr
+                    %td
+                      = link_to image_tag('img_icons/icon_awareness.gif', :border => "0", :alt => "Awareness"), page_awareness_path
+                    %td
+                      %a{ :href => url_for(page_awareness_path) }
+                        %h2
+                          Awareness
+                        %p
+                          GSF will create and support, at every level and at every stage, educational efforts to further awareness about SMA.
+                  %tr
+                    %td
+                      = link_to image_tag('img_icons/icon_support.gif', :border => "0", :alt => "Support"), page_support_path
+                    %td
+                      %a{ :href => url_for(page_support_path) }
+                        %h2
+                          Support
+                        %p
+                          GSF will create and support programs focused on helping those impacted by life-altering diseases through their critical post-diagnosis journey.
+              %b.rnd_bottom
+                %b.rnd_b4
+                %b.rnd_b3
+                %b.rnd_b2
+                %b.rnd_b1
+        %tr
+          %td
+            \&nbsp;
+        /
+          <tr>
+          <td><a href="secondlevel.html"><img src="images/img_buttons/btn_getinvolved.gif" alt="Get Involved - Find out what's new!" width="256" height="72" /></a></td>
+          </tr>
+        %tr
+          %td
+            \&nbsp;
+        %tr
+          %td
+            = link_to image_tag("img_buttons/btn_newlydiagnosed.gif", :alt=>"Newly Diagnosed? Click here"), page_newly_diagnosed_path
+    %td.content
+      %table{ :cellspacing => "0", :border => "0", :cellpadding => "0", :width => "414" }
+        %tr
+          %td{ :bgcolor => "#45331A" }
+            %img{ :src => "images/img_pics/pic_gwendolyn_hp.jpg", :height => "284", :alt => "", :width => "414" }
+        %tr
+          %td#note
+            %p
+              %img{ :src => "images/img_headings/h_ourmission.gif", :height => "26", :alt => "Our Mission", :width => "137" }
+            The Gwendolyn Strong Foundation (GSF) seeks to raise awareness about and fund research for Spinal Muscular Atrophy (SMA), the leading genetic killer of young children, and support those impacted by SMA and other life-altering diseases.
+        %tr
+          %td.gallery
+            %h1
+              View Gallery
+            %p
+              = link_to image_tag("img_pics/pic_gallery_strip.jpg"), page_gallery_path
+    %td.rg
+      %table{ :cellspacing => "0", :border => "0", :cellpadding => "0", :width => "220" }
+        %tr
+          %td
+            /
+              <div id="rnd_container">
+              <b class="rnd_top"><b class="rnd_b1"></b><b class="rnd_b2"></b><b class="rnd_b3"></b><b class="rnd_b4"></b></b>
+              
+              <div class="rnd_content">
+              <h1>Featured Video</h1>
+              <img src="images/img_pics/pic_gwendolyn_video.jpg" alt="" width="190" height="120"/>
+              <p>&amp;nbsp;</p>
+              </div>
+              <b class="rnd_bottom"><b class="rnd_b4"></b><b class="rnd_b3"></b><b class="rnd_b2"></b><b class="rnd_b1"></b></b>
+              </div>
+        %tr
+          %td
+            \&nbsp;
+        %tr
+          %td
+            = link_to image_tag('img_buttons/btn_donatenow_lg.jpg', :alt => "Show your support - Donate Now!"), page_donation_path
+        %tr
+          %td
+            \&nbsp;
+        %tr
+          %td{ :align => "center" }
+            #rnd_container
+              %b.rnd_top
+                %b.rnd_b1
+                %b.rnd_b2
+                %b.rnd_b3
+                %b.rnd_b4
+              .rnd_content
+                %table{ :cellspacing => "0", :border => "0", :cellpadding => "0", :width => "100%" }
+                  %tr#line
+                    %td{ :width => "34%" }
+                      = link_to image_tag("img_icons/icon_twitter.gif"), "http://twitter.com/gsfoundation" , :target => "_blank"
+                    %td{ :width => "66%" }
+                      = link_to "Follow us on Twitter!", "http://twitter.com/gsfoundation", :target => "_blank"
+                      %p
+                        Stay current with GSF on Twitter
+                  %tr#xline
+                    %td
+                      = link_to image_tag("img_icons/icon_fb.gif"), "http://apps.facebook.com/causes/278809?m=cc366e79", :target => "_blank"
+                    %td
+                      = link_to "Cause on Facebook", "http://apps.facebook.com/causes/278809?m=cc366e79", :target => "_blank"
+                      %p
+                        Stay connected with GSF through Facebook
+              %b.rnd_bottom
+                %b.rnd_b4
+                %b.rnd_b3
+                %b.rnd_b2
+                %b.rnd_b1
+            %div{ :style => "padding:15px 0px" }
+              = link_to image_tag("posters/sponsor_button.gif", :width => "200", :border => "0"), page_get_involved_path

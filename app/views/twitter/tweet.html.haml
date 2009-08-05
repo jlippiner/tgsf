@@ -1,0 +1,52 @@
+.uparrow
+  = image_tag("/images/twitter/arr2.gif", :border => "0", :align => "bottom" )
+  
+#box
+  .tweet
+    Let's send your Reps a message that we want to End SMA!!
+  
+    #reps
+      %p
+        - @members_of_congress.each do |rep|
+          .rep
+            %b
+              = "@#{rep.twitter_id} - #{rep.title}. #{rep.firstname} #{rep.lastname} " unless rep.twitter_id.blank?
+              = "\##{rep.title}#{rep.firstname}#{rep.lastname}" if rep.twitter_id.blank?
+            = "(#{rep.party}. #{rep.state})"
+        
+      .message
+        It is important to me that you cosponsor the #SMATreatmentAccelerationAct, <a href="http://bit.ly/1W0Lr" target="_blank">H.R. 2149</a> & 
+        <a href="http://bit.ly/aml9l" target="_blank">S. 1158</a>!
+  
+    %p
+      Please enter your Twitter information below. 
+      %i 
+        We respect your privacy.
+  
+    - form_tag(twitter_tweetit_path, :id => "tweet_form") do
+      = hidden_field_tag "zipcode", params[:zipcode]
+      %table.twitter
+        %tr
+          %th
+            Twitter username or email: 
+          %td
+            = text_field_tag "username", nil
+        %tr
+          %th
+            Twitter password:
+          %td
+            = password_field_tag "password", nil
+        %tr
+          %td
+          %td
+            = check_box_tag "follow", "true", true
+            = label_tag "follow", "Follow EndSMAdotcom on Twitter"
+        %tr
+          %td
+          %td
+            = check_box_tag "dm", "true", false
+            = label_tag "dm", "DM your followers to help end SMA!"
+        
+      #submit
+        = image_submit_tag "/images/twitter/tweet_button.jpg", :id => "tweet_submit" 
+        

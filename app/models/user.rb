@@ -1,3 +1,25 @@
+# == Schema Information
+# Schema version: 20090620001551
+#
+# Table name: users
+#
+#  id                  :integer(4)      not null, primary key
+#  name                :string(255)
+#  email               :string(255)
+#  survey_number       :integer(4)
+#  thoughts            :text
+#  created_at          :datetime
+#  updated_at          :datetime
+#  disease             :string(255)
+#  avatar_file_name    :string(255)
+#  avatar_content_type :string(255)
+#  avatar_file_size    :integer(4)
+#  avatar_updated_at   :datetime
+#  diagnosis_month     :integer(4)
+#  diagnosis_year      :integer(4)
+#  relation_to_disease :string(255)
+#
+
 class User < ActiveRecord::Base
   has_many :answers, :dependent => :destroy
 

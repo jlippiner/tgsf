@@ -1,0 +1,118 @@
+--- !ruby/object:Gem::Specification 
+name: twitter4r
+version: !ruby/object:Gem::Version 
+  version: 0.3.1
+platform: ruby
+authors: 
+- Susan Potter
+autorequire: twitter
+bindir: bin
+cert_chain: []
+
+date: 2009-05-11 00:00:00 -04:00
+default_executable: 
+dependencies: 
+- !ruby/object:Gem::Dependency 
+  name: json
+  type: :runtime
+  version_requirement: 
+  version_requirements: !ruby/object:Gem::Requirement 
+    requirements: 
+    - - ">="
+      - !ruby/object:Gem::Version 
+        version: 1.1.1
+    version: 
+description: 
+email: twitter4r-users@googlegroups.com
+executables: []
+
+extensions: []
+
+extra_rdoc_files: 
+- README
+- CHANGES
+- TODO
+- MIT-LICENSE
+files: 
+- lib/twitter.rb
+- lib/twitter/config.rb
+- lib/twitter/model.rb
+- lib/twitter/ext/stdlib.rb
+- lib/twitter/ext.rb
+- lib/twitter/meta.rb
+- lib/twitter/client.rb
+- lib/twitter/console.rb
+- lib/twitter/client/graph.rb
+- lib/twitter/client/blocks.rb
+- lib/twitter/client/profile.rb
+- lib/twitter/client/status.rb
+- lib/twitter/client/timeline.rb
+- lib/twitter/client/favorites.rb
+- lib/twitter/client/account.rb
+- lib/twitter/client/base.rb
+- lib/twitter/client/messaging.rb
+- lib/twitter/client/friendship.rb
+- lib/twitter/client/search.rb
+- lib/twitter/client/user.rb
+- lib/twitter/client/auth.rb
+- lib/twitter/version.rb
+- lib/twitter/extras.rb
+- lib/twitter/core.rb
+- spec/twitter/client_spec.rb
+- spec/twitter/ext/stdlib_spec.rb
+- spec/twitter/console_spec.rb
+- spec/twitter/version_spec.rb
+- spec/twitter/model_spec.rb
+- spec/twitter/config_spec.rb
+- spec/twitter/client/messaging_spec.rb
+- spec/twitter/client/friendship_spec.rb
+- spec/twitter/client/graph_spec.rb
+- spec/twitter/client/base_spec.rb
+- spec/twitter/client/favorites_spec.rb
+- spec/twitter/client/account_spec.rb
+- spec/twitter/client/status_spec.rb
+- spec/twitter/client/search_spec.rb
+- spec/twitter/client/blocks_spec.rb
+- spec/twitter/client/timeline_spec.rb
+- spec/twitter/client/auth_spec.rb
+- spec/twitter/client/user_spec.rb
+- spec/twitter/client/profile_spec.rb
+- spec/twitter/extras_spec.rb
+- spec/twitter/meta_spec.rb
+- spec/twitter/core_spec.rb
+- README
+- CHANGES
+- TODO
+- MIT-LICENSE
+has_rdoc: true
+homepage: http://twitter4r.rubyforge.org
+licenses: []
+
+post_install_message: 
+rdoc_options: []
+
+require_paths: 
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: 1.8.2
+  version: 
+required_rubygems_version: !ruby/object:Gem::Requirement 
+  requirements: 
+  - - ">="
+    - !ruby/object:Gem::Version 
+      version: "0"
+  version: 
+requirements: 
+- Ruby 1.8.4+
+- json gem, version 0.4.3 or higher
+- jcode (for unicode support)
+rubyforge_project: twitter4r
+rubygems_version: 1.3.4
+signing_key: 
+specification_version: 3
+summary: A clean Twitter client API in pure Ruby. Will include Twitter add-ons also in Ruby.
+test_files: []
+

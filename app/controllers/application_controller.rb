@@ -7,9 +7,6 @@ class ApplicationController < ActionController::Base
 
   def sub_layout
     "public"
-    (1..10).each do |x|
-      
-    end
   end
 
 

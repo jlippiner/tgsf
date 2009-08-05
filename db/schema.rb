@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090620001551) do
+ActiveRecord::Schema.define(:version => 20090805184853) do
 
   create_table "answers", :force => true do |t|
     t.text     "answer"
@@ -43,6 +43,17 @@ ActiveRecord::Schema.define(:version => 20090620001551) do
   create_table "questions", :force => true do |t|
     t.string   "question"
     t.boolean  "is_personal", :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tweets", :force => true do |t|
+    t.string   "zipcode"
+    t.string   "twitter_id"
+    t.boolean  "sent_dm"
+    t.boolean  "is_following"
+    t.integer  "number_of_friends"
+    t.integer  "number_of_followers"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

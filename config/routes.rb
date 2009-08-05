@@ -23,7 +23,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # Sample resource route with sub-resources:
   #   map.resources :products, :has_many => [ :comments, :sales ], :has_one => :seller
-  
+
   # Sample resource route with more complex sub-resources
   #   map.resources :products do |products|
   #     products.resources :comments
@@ -44,11 +44,18 @@ ActionController::Routing::Routes.draw do |map|
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing the them or commenting them out if you're using named routes and resources.
-    map.with_options(:controller => "questions", :name_prefix => "question_") do |question|
+  map.with_options(:controller => "questions", :name_prefix => "question_") do |question|
     question.connect 'questions/admin_view',  :action => "admin_view"
     question.survey 'questions/show/:userid/:step', :action => "survey", :controller => "questions"
     question.answer "questions/show/:userid/:version/:step/:questionid", :action => "record_answer", :controller => "questions"
     map.resources :questions
+  end
+
+  map.with_options(:controller => "twitter", :name_prefix => "twitter_") do |twitter|
+    twitter.tweet 'twitter/tweet', :action => 'tweet'
+    twitter.tweetit 'twitter/tweet/send', :action => 'tweetit'
+    twitter.thankyou 'twitter/thankyou', :action => 'thankyou'
+    map.resources :twitter
   end
 
   map.with_options(:controller => "pages", :name_prefix => "page_") do |page|

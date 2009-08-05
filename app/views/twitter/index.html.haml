@@ -1,0 +1,15 @@
+.uparrow
+  = image_tag("/images/twitter/arr2.gif", :border => "0", :align => "bottom" )
+#box
+  Help us end Spinal Muscular Atrophy (SMA), the #1 genetic killer of young children, by 
+  sending a simple tweet to your Representatives (Senate & House) and friends.  It only takes 
+  30 seconds to make a difference.
+
+  .title
+    Enter Your ZIP Code:
+  
+  #zip
+    - form_tag(:action => "index") do
+      = text_field_tag "zipcode", nil, :size => 10
+      = submit_tag 'Next >>', :id => "submit"  
+      
