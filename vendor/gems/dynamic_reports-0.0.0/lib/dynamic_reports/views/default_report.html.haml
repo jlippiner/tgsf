@@ -1,0 +1,36 @@
+.dynamic_report{ :id => report.class_name }
+  - if report.title
+    %h2.report_title
+      = report.title
+
+  - if report.sub_title
+    %h3.report_sub_title
+      = report.sub_title
+
+  %table.report{ :cellspacing => "0", :border => "0", :cellpadding => "0" }
+    %thead.report_header
+      %tr.report_header_row
+        - report.columns.each do |column|
+          %th
+            - if column.is_a?(Hash) 
+              - if column.keys.include?(:heading)            
+                = options[:titleize] ? titleize(column[:heading]) : column[:heading]
+              -else
+                = options[:titleize] ? titleize(column.values.first) : column.values.first              
+            -else
+              = options[:titleize] ? titleize(column) : column
+    %tbody.report_body
+      - report.records.each do |record|
+        %tr.report_row
+          - report.columns.each do |column|
+            %td
+              = (options[:commas] == true) ? commify(linkcheck(record,column)) : linkcheck(record,column)
+      
+
+  - if report.charts && report.charts.class === Hash
+    - report.charts.each_pair do |name, chart|
+      .chart
+        %h2
+          = name
+        %img{:src => chart_url(chart), :alt => name}
+

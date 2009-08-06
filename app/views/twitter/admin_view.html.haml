@@ -1,0 +1,12 @@
+.uparrow
+  = image_tag("/images/twitter/arr2.gif", :border => "0", :align => "bottom" )
+#box
+  .report
+    = render :text => TweetsReport.on(@tweets).to_html(:engine => :haml)
+  
+  .report
+    = render :text => TweetDailyReach.on(@daily_reach).to_html(:engine => :haml)
+  
+      
+    
+      

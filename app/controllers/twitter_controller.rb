@@ -86,6 +86,11 @@ class TwitterController < ApplicationController
     render :thankyou
   end
 
+  def admin_view
+      @tweets = Tweet.find(:all, :order => "created_at DESC")
+      @daily_reach = Tweet.find(:all, :select => "DATE_FORMAT(created_at,'%d/%m/%Y') 'date', SUM(number_of_friends) +  SUM(number_of_followers) as reach",
+                                    :group => "DATE_FORMAT(created_at,'%d/%m/%Y')")
+  end
 
   private
 

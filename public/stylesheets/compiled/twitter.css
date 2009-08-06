@@ -60,26 +60,29 @@ body {
       body #container #box .tweet #submit {
         text-align: center;
         padding: 25px; }
-  /* line 67, ../../../app/stylesheets/twitter.sass */
+      /* line 67, ../../../app/stylesheets/twitter.sass */
+      body #container #box .report {
+        font-size: 8px; }
+  /* line 70, ../../../app/stylesheets/twitter.sass */
   body #footer {
     padding-top: 50px;
     font-size: .8em;
     text-align: center; }
 
-/* line 73, ../../../app/stylesheets/twitter.sass */
+/* line 76, ../../../app/stylesheets/twitter.sass */
 #flash .notice, #flash .message {
   border: 5px solid #9c9;
   background-color: #cfc;
   padding: 5px;
   margin: 10px 0; }
-/* line 79, ../../../app/stylesheets/twitter.sass */
+/* line 82, ../../../app/stylesheets/twitter.sass */
 #flash .warning {
   border: 5px solid yellow;
   background-color: #FFFFCC;
   padding: 5px;
   margin: 10px 0;
   color: black; }
-/* line 86, ../../../app/stylesheets/twitter.sass */
+/* line 89, ../../../app/stylesheets/twitter.sass */
 #flash .error {
   border: 5px solid #990000;
   background-color: red;
@@ -87,7 +90,7 @@ body {
   margin: 10px 0;
   color: white; }
 
-/* line 94, ../../../app/stylesheets/twitter.sass */
+/* line 97, ../../../app/stylesheets/twitter.sass */
 .errorExplanation {
   border: 5px solid #990000;
   background-color: red;
@@ -95,6 +98,6 @@ body {
   margin: 10px 0;
   color: white; }
 
-/* line 102, ../../../app/stylesheets/twitter.sass */
+/* line 105, ../../../app/stylesheets/twitter.sass */
 .fieldWithErrors {
   border: 5px solid red; }
