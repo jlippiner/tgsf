@@ -40,7 +40,8 @@ class TwitterController < ApplicationController
       flash.error = "Please enter your twitter username/email and password."
       render :tweet
     else
-      begin
+      client = Twitter::Client.new
+      if client.authenticate?(username, password)
         twitter = Twitter::Client.new(:login => username, :password => password)
 
         # Post messages to reps
@@ -73,8 +74,7 @@ class TwitterController < ApplicationController
 
         # Redirect
         thankyou
-
-      rescue Exception => e
+      else
         flash.error = "We could not authenticate that username and password.  Please try again"
         render :tweet
       end
@@ -87,9 +87,9 @@ class TwitterController < ApplicationController
   end
 
   def admin_view
-      @tweets = Tweet.find(:all, :order => "created_at DESC")
-      @daily_reach = Tweet.find(:all, :select => "DATE_FORMAT(created_at,'%m/%d/%Y') 'date', SUM(number_of_friends) +  SUM(number_of_followers) as reach",
-                                    :group => "DATE_FORMAT(created_at,'%m/%d/%Y')")
+    @tweets = Tweet.find(:all, :order => "created_at DESC")
+    @daily_reach = Tweet.find(:all, :select => "DATE_FORMAT(created_at,'%m/%d/%Y') 'date', SUM(number_of_friends) +  SUM(number_of_followers) as reach",
+    :group => "DATE_FORMAT(created_at,'%m/%d/%Y')")
   end
 
   private
