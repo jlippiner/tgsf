@@ -19,23 +19,27 @@
         <a href="http://bit.ly/aml9l" target="_blank">S. 1158</a>!
   
     %p
-      Please enter your Twitter information below. 
+      The above tweet will be sent to your Congresspeople on your behalf.  Please enter your Twitter information below. 
       %i 
         We respect your privacy.
   
     - form_tag(twitter_tweetit_path, :id => "tweet_form") do
       = hidden_field_tag "zipcode", params[:zipcode]
-      %table.twitter
+      %table.twitter(cellpadding="4")
         %tr
-          %th
-            Twitter username or email: 
+          %th(valign="top")
+            Twitter username: 
           %td
             = text_field_tag "username", nil
         %tr
-          %th
+          %th(valign="top")
             Twitter password:
           %td
             = password_field_tag "password", nil
+            .small.alt
+              We use your username and password to automatically post the tweets to your 
+              representatives on your behalf.  Your password is <b>NOT</b> stored anywhere on our server 
+              and is only used this one time for this function.
         %tr
           %td
           %td

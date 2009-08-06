@@ -7,6 +7,8 @@
   .report
     = render :text => TweetDailyReach.on(@daily_reach).to_html(:engine => :haml)
   
+  .report 
+    = render :text => TweetsPerfCounts.on(@counts).to_html(:engine => :haml)
       
     
       

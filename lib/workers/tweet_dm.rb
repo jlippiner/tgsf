@@ -9,7 +9,7 @@ class TweetDm
         twitter.message(:post, dm_post, follower)
       end
     rescue Exception => e
-      
+        HoptoadNotifier.notify(:error_message => e)
     end
   end
   

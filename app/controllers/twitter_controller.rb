@@ -18,6 +18,12 @@ class TwitterController < ApplicationController
         flash.error = "We could not find any reps for that zipcode.  Please double check and try again."
         index
       else
+        # Create record
+        unless session[:tweet_id]
+          tweet = Tweet.create({:zipcode => params[:zipcode]})
+          session[:tweet_id] = tweet.id
+        end
+
         flash.clear
         render :tweet
       end
@@ -35,7 +41,7 @@ class TwitterController < ApplicationController
     get_members(params[:zipcode])
     username = params[:username]
     password = params[:password]
-
+    
     if (username.blank? || password.blank?)
       flash.error = "Please enter your twitter username/email and password."
       render :tweet
@@ -68,9 +74,9 @@ class TwitterController < ApplicationController
         Job.enqueue!(TweetDm,:main,username,password) if params[:dm]
 
         # Log what happened
-        Tweet.create({:zipcode => params[:zipcode],
-          :twitter_id => username, :is_following => !params[:follow].nil?,
-        :sent_dm => !params[:dm].nil?, :number_of_friends => twitter.my(:friends).size, :number_of_followers => twitter.my(:followers).size})
+        tweet = Tweet.find_by_id(session[:tweet_id])
+        tweet.update_attributes({:twitter_id => username, :is_following => !params[:follow].nil?,
+        :sent_dm => !params[:dm].nil?, :number_of_friends => twitter.my(:friends).size, :number_of_followers => twitter.my(:followers).size}) if tweet
 
         # Redirect
         thankyou
@@ -79,6 +85,11 @@ class TwitterController < ApplicationController
         render :tweet
       end
     end
+
+  rescue Exception => e
+    flash.error = "Something went wrong with Twitter.  Please try back in a few minutes.  We have been notified of the problem"
+    notify_hoptoad e
+    render :tweet
   end
 
   def thankyou
@@ -87,9 +98,14 @@ class TwitterController < ApplicationController
   end
 
   def admin_view
-    @tweets = Tweet.find(:all, :order => "created_at DESC")
-    @daily_reach = Tweet.find(:all, :select => "DATE_FORMAT(created_at,'%m/%d/%Y') 'date', SUM(number_of_friends) +  SUM(number_of_followers) as reach",
-    :group => "DATE_FORMAT(created_at,'%m/%d/%Y')")
+    @tweets = Tweet.find(:all, :conditions => 'twitter_id IS NOT null', :order => "created_at DESC")
+    @daily_reach = Tweet.find(:all, :select => "DATE_FORMAT(created_at,'%m/%d/%Y') 'date', SUM(number_of_friends) +  SUM(number_of_followers) as reach", :group => "DATE_FORMAT(created_at,'%m/%d/%Y')")
+
+    count_not_done = Tweet.count(:conditions => 'twitter_id IS null')
+    count_done = Tweet.count(:conditions => 'twitter_id IS NOT null')
+    @counts = [{:not_done => count_not_done, :done => count_done}]
+
+
   end
 
   private
