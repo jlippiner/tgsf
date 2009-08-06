@@ -4,12 +4,23 @@
   Help us end Spinal Muscular Atrophy (SMA), the #1 genetic killer of young children, by 
   sending a simple tweet to your Representatives (Senate & House) and friends.  It only takes 
   30 seconds to make a difference.
-
-  .title
-    Enter Your ZIP Code:
   
+  %ul.list
+    %li SMA is the <b>#1 genetic killer of young children.</b>
+    %li 1 in every 40 people, or nearly 10 million Americans, UNKNOWINGLY carries the gene responsible for SMA. Few have any known family history.
+    %li There is currently no treatment and no cure, but the National Institutes of Health (NIH) selected SMA as the disease closest to treatment of more than 600 neurological disorders.
+    
+  .point
+    A cure is believed to be 5 years away but we need your support.
+
   #zip
     - form_tag(:action => "index") do
-      = text_field_tag "zipcode", nil, :size => 10
+      %span.title
+        Enter Your ZIP Code:
+      = text_field_tag "zipcode", nil, :size => 8
       = submit_tag 'Next >>', :id => "submit"  
       
+#wall
+  - @profile_pics.each do |pic|
+    %span.pic
+      = image_tag(pic, :border => "0")

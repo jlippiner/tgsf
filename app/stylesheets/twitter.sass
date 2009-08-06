@@ -2,6 +2,19 @@ body
   background:  white url(/images/twitter/bg.gif) 
   font-family:  "Lucida Grande",Arial,Sans-serif
   font-size:  13px
+  line-height: 18px
+  
+  .small
+    font-size: .85em
+  
+  .alt
+    font-style: italic
+    padding: 3px
+    background: #FFFFCC
+    
+    
+  ul.list
+    color: red
   
   #container
     width:  950px
@@ -22,7 +35,7 @@ body
         padding-top: 20px
 
       #zip
-        margin: 15px 0px
+        margin: 25px 0px
       
         #zipcode
           border: 2px solid #DDDDDD
@@ -34,11 +47,18 @@ body
           padding-left: 5px
         
         #submit
-          margin-left: 30px
+          margin-left: 20px
           height: 30px
-          width: 100px
-          padding: 10px
+          width: 80px
+          padding: 5px
           font-weight: bold
+          
+      .point
+        text-align: center
+        font-size: 1.2em
+        color: red
+        font-weight: bold
+        margin: 15px 0px
         
       .tweet
         
@@ -55,10 +75,12 @@ body
           
         table.twitter
           margin-top: 15px
+          width: 100%
         
           th
             font-weight: bold
             text-align: right
+            width: 150px
 
         #submit
           text-align: center
@@ -66,6 +88,15 @@ body
           
       .report
         font-size: 10px
+        margin-bottom: 20px
+        
+    #wall
+      width: 500px
+      margin: 30px
+      
+      %span.pic
+        width: 73
+        heigh: 73
         
   #footer
     padding-top:  50px
