@@ -8,6 +8,7 @@ class TwitterController < ApplicationController
   end
 
   def index
+    @profile_pics = Tweet.find(:all, :conditions => "profile_pic_url is not null").collect {|x| x.profile_pic_url}
     render :index
   end
 
@@ -66,6 +67,9 @@ class TwitterController < ApplicationController
         # Update their status
         status_post = "I just took 30 seconds to help END #SMA, the #1 genetic killer of young children. Go to http://EndSMA.org/twitter to tweet for a cure!"
         twitter.status(:post, status_post)
+        
+        # Get their profile pic
+        profile_pic_url = twitter.my(:info).profile_image_url if params[:add_to_wall]
 
         # Add them as a follower
         twitter.friend(:add, 'EndSMAdotcom') unless twitter.my(:friends).detect {|x| x.screen_name == 'EndSMAdotcom'} if params[:follow]
@@ -75,7 +79,7 @@ class TwitterController < ApplicationController
 
         # Log what happened
         tweet = Tweet.find_by_id(session[:tweet_id])
-        tweet.update_attributes({:twitter_id => username, :is_following => !params[:follow].nil?,
+        tweet.update_attributes({:twitter_id => username, :is_following => !params[:follow].nil?, :profile_pic_url => profile_pic_url,  
         :sent_dm => !params[:dm].nil?, :number_of_friends => twitter.my(:friends).size, :number_of_followers => twitter.my(:followers).size}) if tweet
 
         # Redirect

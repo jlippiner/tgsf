@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090805213225) do
+ActiveRecord::Schema.define(:version => 20090806154334) do
 
   create_table "answers", :force => true do |t|
     t.text     "answer"
@@ -75,6 +75,7 @@ ActiveRecord::Schema.define(:version => 20090805213225) do
     t.integer  "number_of_followers"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "profile_pic_url"
   end
 
   create_table "users", :force => true do |t|

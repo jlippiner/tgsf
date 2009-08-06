@@ -48,9 +48,15 @@
         %tr
           %td
           %td
+            = check_box_tag "add_to_wall", "true", true
+            = label_tag "add_to_wall", "Post my twitter pic on the wall of supporters!"        
+        %tr
+          %td
+          %td
             = check_box_tag "dm", "true", false
             = label_tag "dm", "DM your followers to help end SMA!"
-        
+            
+             
       #submit
         = image_submit_tag "/images/twitter/tweet_button.jpg", :id => "tweet_submit" 
         
