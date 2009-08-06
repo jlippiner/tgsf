@@ -4,7 +4,6 @@ class TweetDailyReach < DynamicReports::Report
   columns :date, :reach
   
   chart :daily_reach do
-    columns :date, :reach
+    columns :reach
   end
-  
 end

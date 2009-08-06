@@ -20,7 +20,7 @@ namespace :production do
     %x{#{ssh_command} "ln -nfs ~/sites/#{application}/shared/log ~/sites/#{application}/#{env}/log"}
 
     puts "running rake db:migrate"
-    %x{#{ssh_command} "source ~/.profile && cd ~/sites/#{application}/#{env} && rake db:migrate RAILS_ENV=#{env}"}
+    %x{#{ssh_command} "cd ~/sites/#{application}/#{env} && rake db:migrate RAILS_ENV=#{env}"}
 
     puts "stopping mongrel"
     %x{#{ssh_command} "/usr/local/bin/mongrel_rails stop -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"}
@@ -29,8 +29,8 @@ namespace :production do
     %x{#{ssh_command} "/usr/local/bin/mongrel_rails start -c /users/home/hihadmin/sites/#{application}/#{env} -p #{port} -d -e #{env} -a 127.0.0.1 -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"}
     
     puts "restarting background fu"
-    %x{#{@ssh_command} "RAILS_ENV=production ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons stop"}
-    %x{#{@ssh_command} "RAILS_ENV=production ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons start"}
+    %x{#{@ssh_command} "source ~/.profile && ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons stop"}
+    %x{#{@ssh_command} "source ~/.profile && ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons start"}
   end
 end
 
@@ -100,7 +100,7 @@ namespace :github do
       %x{#{ssh_command} "ln -nfs ~/sites/#{application}/shared/log ~/sites/#{application}/#{env}/log"}
 
       puts "running rake db:migrate"
-      %x{#{ssh_command} "source ~/.profile && cd ~/sites/#{application}/#{env} && rake db:migrate RAILS_ENV=#{env}"}
+      %x{#{ssh_command} "cd ~/sites/#{application}/#{env} && rake db:migrate RAILS_ENV=#{env}"}
 
       puts "stopping mongrel"
       %x{#{ssh_command} "/usr/local/bin/mongrel_rails stop -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"}
@@ -109,8 +109,8 @@ namespace :github do
       %x{#{ssh_command} "/usr/local/bin/mongrel_rails start -c /users/home/hihadmin/sites/#{application}/#{env} -p #{port} -d -e #{env} -a 127.0.0.1 -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"}
       
       puts "restarting background fu"
-      %x{#{@ssh_command} "RAILS_ENV=production ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons stop"}
-      %x{#{@ssh_command} "RAILS_ENV=production ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons start"}
+      %x{#{@ssh_command} "source ~/.profile && ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons stop"}
+      %x{#{@ssh_command} "source ~/.profile && ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons start"}
     end
   end
 end
