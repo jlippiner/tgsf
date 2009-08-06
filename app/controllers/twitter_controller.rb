@@ -42,45 +42,15 @@ class TwitterController < ApplicationController
     get_members(params[:zipcode])
     username = params[:username]
     password = params[:password]
-    
+
     if (username.blank? || password.blank?)
       flash.error = "Please enter your twitter username/email and password."
       render :tweet
     else
       client = Twitter::Client.new
       if client.authenticate?(username, password)
-        twitter = Twitter::Client.new(:login => username, :password => password)
-
-        # Post messages to reps
-        @members_of_congress.each do |rep|
-          rep_post = "It is important to me that you cosponsor the #SMATreatmentAccelerationAct"
-          rep_post = "@#{rep.twitter_id}: #{rep_post}" unless rep.twitter_id.blank?
-          rep_post = "\##{rep.title}#{rep.firstname}#{rep.lastname}: #{rep_post}" if rep.twitter_id.blank?
-          if (rep.title == "Rep")
-            rep_post = rep_post + ", H.R. 2149! http://bit.ly/1W0Lr"
-          else
-            rep_post = rep_post + ", S. 1158! http://bit.ly/aml9l"
-          end
-          twitter.status(:post, rep_post)
-        end
-
-        # Update their status
-        status_post = "I just took 30 seconds to help END #SMA, the #1 genetic killer of young children. Go to http://EndSMA.org/twitter to tweet for a cure!"
-        twitter.status(:post, status_post)
-        
-        # Get their profile pic
-        profile_pic_url = twitter.my(:info).profile_image_url if params[:add_to_wall]
-
-        # Add them as a follower
-        twitter.friend(:add, 'EndSMAdotcom') unless twitter.my(:friends).detect {|x| x.screen_name == 'EndSMAdotcom'} if params[:follow]
-
-        # DM their friends if selected
-        Job.enqueue!(TweetDm,:main,username,password) if params[:dm]
-
-        # Log what happened
-        tweet = Tweet.find_by_id(session[:tweet_id])
-        tweet.update_attributes({:twitter_id => username, :is_following => !params[:follow].nil?, :profile_pic_url => profile_pic_url,  
-        :sent_dm => !params[:dm].nil?, :number_of_friends => twitter.my(:friends).size, :number_of_followers => twitter.my(:followers).size}) if tweet
+        # Add job
+        Job.enqueue!(TweetProcess,:main,params,session[:tweet_id])
 
         # Redirect
         thankyou
