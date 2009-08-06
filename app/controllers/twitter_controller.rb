@@ -63,7 +63,7 @@ class TwitterController < ApplicationController
           end
           twitter.status(:post, rep_post)
         end
-gi
+
         # Update their status
         status_post = "I just took 30 seconds to help END #SMA, the #1 genetic killer of young children. Go to http://EndSMA.org/twitter to tweet for a cure!"
         twitter.status(:post, status_post)
