@@ -4,4 +4,5 @@ log/*
 config/database.yml
 config/keys.rb
 public/users/*
+public/stylesheets/compiled/*
 lib/tasks/app.rake
