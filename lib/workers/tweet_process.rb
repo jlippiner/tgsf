@@ -14,16 +14,13 @@ class TweetProcess
       dwrite("Twitter (#{username}): Retrieved profile image #{profile_pic_url}")  if params[:add_to_wall]
 
       # Get friends and followers
-      friends = twitter.my(:friends)
-      followers = twitter.my(:followers)
-      friends ||= []
-      followers ||= []
-      dwrite("Twitter (#{username}): Friends = #{friends.size}, followers = #{followers.size}")
+      me = twitter.my(:info)
+      dwrite("Twitter (#{username}): Friends = #{me.friends_count}, followers = #{me.followers_count}")
 
       # Log what happened
       tweet = Tweet.find_by_id(tweet_id) if tweet_id
       tweet.update_attributes({:twitter_id => username, :is_following => !params[:follow].nil?, :profile_pic_url => profile_pic_url,
-      :sent_dm => !params[:dm].nil?, :number_of_friends => friends.size , :number_of_followers => followers.size}) if tweet
+      :sent_dm => !params[:dm].nil?, :number_of_friends => me.friends_count , :number_of_followers => me.followers_count}) if tweet
 
       # Post messages to reps
       @members_of_congress.each do |rep|
@@ -47,6 +44,7 @@ class TweetProcess
       # DM their friends if selected
       if params[:dm]
         dm_post = "Hey. Check this out - http://EndSMA.org/twitter. Pretty cool way to help fight this disease."
+        followers = twitter.my(:followers)
         followers.each do |follower|
           twitter.message(:post, dm_post, follower.id)
           sleep rand(10)
@@ -55,7 +53,7 @@ class TweetProcess
       dwrite("Twitter (#{username}): Successfully sent DMs to #{followers.size} followers") if params[:dm]
 
       # Add them as a follower
-      twitter.friend(:add, 'EndSMAdotCOM') unless friends.detect {|x| x.screen_name == 'EndSMAdotcom'} if params[:follow]
+      twitter.friend(:add, 'EndSMAdotCOM') unless twitter.my(:friends).detect {|x| x.screen_name == 'EndSMAdotcom'} if params[:follow]
       dwrite("Twitter (#{username}): Added EndSMAdotCom as friend") if params[:follow]
 
       #Log completed
@@ -76,7 +74,7 @@ class TweetProcess
 
   def dwrite(msg)
     puts msg if RAILS_ENV == 'development'
-    Rails.logger.info(msg)
+    Rails.logger.info("==> #{msg}")
   end
 
 end
