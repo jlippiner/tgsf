@@ -2,9 +2,14 @@ class TweetProcess
 
   def main(params,tweet_id)
     begin
-      get_members(params[:zipcode])
+      dwrite("Twitter Process: STARTING PROCESS OF TWEET at #{Time.now}")
+      
       username = params[:username]
       password = params[:password]
+      dwrite("Twitter (#{username}): Username and password obtained")
+
+      get_members(params[:zipcode])
+      dwrite("Twitter (#{username}): Retrieved members from API")
 
       twitter = Twitter::Client.new(:login => username, :password => password)
       dwrite("Twitter (#{username}): Logged in successful")
