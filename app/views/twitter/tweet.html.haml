@@ -60,9 +60,9 @@
       #submit
         = image_submit_tag "/images/twitter/tweet_button.jpg", :id => "tweet_submit" 
         
-      #please_wait(style="display:none")
+      #please_wait(style="display:none;text-align:center")
         %p
           %b Please wait.  We are attempting to send your tweets, which should be live in a few moments...
-        %p
+        %p(align="center")
           = image_tag("/images/spinner.gif", :border => "0")
         
