@@ -21,6 +21,7 @@
       = submit_tag 'Next >>', :id => "submit"  
       
 #wall
-  - @profile_pics.each do |pic|
-    %span.pic
-      = image_tag(pic, :border => "0")
+  - if @profile_pics
+    - @profile_pics.each do |pic|
+      %span.pic
+        = image_tag(pic, :border => "0", :alt => '')
