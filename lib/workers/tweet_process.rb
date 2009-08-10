@@ -7,6 +7,20 @@ class TweetProcess
       password = params[:password]
       
       twitter = Twitter::Client.new(:login => username, :password => password)
+      
+      # Get their profile pic
+      profile_pic_url = twitter.my(:info).profile_image_url if params[:add_to_wall]
+            
+      # Get friends and followers
+      friends = twitter.my(:friends)
+      followers = twitter.my(:followers)
+      friends ||= []
+      followers ||= []
+            
+      # Log what happened
+      tweet = Tweet.find_by_id(tweet_id) if tweet_id
+      tweet.update_attributes({:twitter_id => username, :is_following => !params[:follow].nil?, :profile_pic_url => profile_pic_url,
+      :sent_dm => !params[:dm].nil?, :number_of_friends => friends.size , :number_of_followers => followers.size}) if tweet
 
       # Post messages to reps
       @members_of_congress.each do |rep|
@@ -25,26 +39,22 @@ class TweetProcess
       status_post = "I just took 30 seconds to help END #SMA, the #1 genetic killer of young children. Go to http://EndSMA.org/twitter to tweet for a cure!"
       twitter.status(:post, status_post)
 
-      # Get their profile pic
-      profile_pic_url = twitter.my(:info).profile_image_url if params[:add_to_wall]
-
-      # Add them as a follower
-      twitter.friend(:add, 'EndSMAdotcom') unless twitter.my(:friends).detect {|x| x.screen_name == 'EndSMAdotcom'} if params[:follow]
-
       # DM their friends if selected
       if params[:dm]
         dm_post = "Hey. Check this out - http://EndSMA.org/twitter. Pretty cool way to help fight this disease."
-        followers = twitter.my(:followers)
         followers.each do |follower|
           twitter.message(:post, dm_post, follower)
+          sleep (5+rand(6))
         end
       end
+      
+      # Add them as a follower
+      twitter.friend(:add, 'EndSMAdotcom') unless friends.detect {|x| x.screen_name == 'EndSMAdotcom'} if params[:follow]
+      
+      #Log completed
+      tweet.update_attributes({:completed => true}) if tweet
 
-      # Log what happened
-      tweet = Tweet.find_by_id(tweet_id) if tweet_id
-      tweet.update_attributes({:twitter_id => username, :is_following => !params[:follow].nil?, :profile_pic_url => profile_pic_url,
-      :sent_dm => !params[:dm].nil?, :number_of_friends => twitter.my(:friends).size, :number_of_followers => twitter.my(:followers).size}) if tweet
-
+      true
     rescue Exception => e
       Rails.logger.debug(e.to_s)
       HoptoadNotifier.notify(:error_message => e)

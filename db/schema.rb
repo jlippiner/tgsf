@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090806154334) do
+ActiveRecord::Schema.define(:version => 20090810181704) do
 
   create_table "answers", :force => true do |t|
     t.text     "answer"
@@ -76,6 +76,7 @@ ActiveRecord::Schema.define(:version => 20090806154334) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "profile_pic_url"
+    t.boolean  "completed"
   end
 
   create_table "users", :force => true do |t|
