@@ -3,7 +3,7 @@ class TweetProcess
   def main(params,tweet_id)
     begin
       dwrite("Twitter Process: STARTING PROCESS OF TWEET at #{Time.now}")
-      
+
       username = params[:username]
       password = params[:password]
       dwrite("Twitter (#{username}): Username and password obtained")
@@ -54,8 +54,8 @@ class TweetProcess
           twitter.message(:post, dm_post, follower.id)
           sleep rand(10)
         end
+        dwrite("Twitter (#{username}): Successfully sent DMs to #{followers.size} followers")
       end
-      dwrite("Twitter (#{username}): Successfully sent DMs to #{followers.size} followers") if params[:dm]
 
       # Add them as a follower
       twitter.friend(:add, 'EndSMAdotCOM') unless twitter.my(:friends).detect {|x| x.screen_name == 'EndSMAdotcom'} if params[:follow]
