@@ -19,7 +19,7 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
-  config.gem "twitter4r", :lib => "twitter", :version => ">=0.2.4"
+  config.gem 'twitter-auth', :lib => 'twitter_auth'  
   config.gem "json"
   config.gem "ym4r"
   config.gem "sunlight"
@@ -48,5 +48,5 @@ Rails::Initializer.run do |config|
   # config.i18n.default_locale = :de
 end
 
-require 'twitter'
+# require 'twitter'
 require 'dynamic_reports'

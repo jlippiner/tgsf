@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090810181704) do
+ActiveRecord::Schema.define(:version => 20090811004507) do
 
   create_table "answers", :force => true do |t|
     t.text     "answer"
@@ -28,6 +28,23 @@ ActiveRecord::Schema.define(:version => 20090810181704) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "highlight"
+  end
+
+  create_table "hih_users", :force => true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.integer  "survey_number"
+    t.text     "thoughts"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "disease"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
+    t.integer  "diagnosis_month"
+    t.integer  "diagnosis_year"
+    t.string   "relation_to_disease"
   end
 
   create_table "jobs", :force => true do |t|
@@ -80,20 +97,33 @@ ActiveRecord::Schema.define(:version => 20090810181704) do
   end
 
   create_table "users", :force => true do |t|
+    t.string   "twitter_id"
+    t.string   "login"
+    t.string   "access_token"
+    t.string   "access_secret"
+    t.string   "remember_token"
+    t.datetime "remember_token_expires_at"
     t.string   "name"
-    t.string   "email"
-    t.integer  "survey_number"
-    t.text     "thoughts"
+    t.string   "location"
+    t.string   "description"
+    t.string   "profile_image_url"
+    t.string   "url"
+    t.boolean  "protected"
+    t.string   "profile_background_color"
+    t.string   "profile_sidebar_fill_color"
+    t.string   "profile_link_color"
+    t.string   "profile_sidebar_border_color"
+    t.string   "profile_text_color"
+    t.string   "profile_background_image_url"
+    t.boolean  "profile_background_tiled"
+    t.integer  "friends_count"
+    t.integer  "statuses_count"
+    t.integer  "followers_count"
+    t.integer  "favourites_count"
+    t.integer  "utc_offset"
+    t.string   "time_zone"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "disease"
-    t.string   "avatar_file_name"
-    t.string   "avatar_content_type"
-    t.integer  "avatar_file_size"
-    t.datetime "avatar_updated_at"
-    t.integer  "diagnosis_month"
-    t.integer  "diagnosis_year"
-    t.string   "relation_to_disease"
   end
 
 end

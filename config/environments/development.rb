@@ -17,3 +17,6 @@ config.action_controller.perform_caching             = false
 config.action_mailer.raise_delivery_errors = true
 
 Paperclip.options[:command_path] = '/opt/local/bin'
+
+# For TwitterAuth
+OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
