@@ -1,31 +1,23 @@
 class TweetProcess
 
-  def main(params,tweet_id)
-    begin
-      dwrite("Twitter Process: STARTING PROCESS OF TWEET at #{Time.now}")
 
-      username = params[:username]
-      password = params[:password]
-      dwrite("Twitter (#{username}): Username and password obtained")
+  def main(login,tweet_id)
+    dwrite("Twitter Process: Oauth - STARTING PROCESS OF TWEET at #{Time.now}")
 
-      get_members(params[:zipcode])
-      dwrite("Twitter (#{username}): Retrieved members from API")
+    user = User.find_by_login(login) if login
+    tweet = Tweet.find_by_id(tweet_id) if tweet_id
 
-      twitter = Twitter::Client.new(:login => username, :password => password)
-      dwrite("Twitter (#{username}): Logged in successful")
+    if user && tweet
 
-      # Get their profile pic
-      profile_pic_url = twitter.my(:info).profile_image_url if params[:add_to_wall]
-      dwrite("Twitter (#{username}): Retrieved profile image #{profile_pic_url}")  if params[:add_to_wall]
+      get_members(tweet.zipcode)
+      dwrite("Twitter (#{login}): Retrieved members from API")
 
-      # Get friends and followers
-      me = twitter.my(:info)
-      dwrite("Twitter (#{username}): Friends = #{me.friends_count}, followers = #{me.followers_count}")
+      user.twitter.get('/account/verify_credentials')
+      dwrite("Twitter (#{login}): Logged in successful")
 
       # Log what happened
-      tweet = Tweet.find_by_id(tweet_id) if tweet_id
-      tweet.update_attributes({:twitter_id => username, :is_following => !params[:follow].nil?, :profile_pic_url => profile_pic_url,
-      :sent_dm => !params[:dm].nil?, :number_of_friends => me.friends_count , :number_of_followers => me.followers_count}) if tweet
+      tweet.update_attributes({:twitter_id => login, :profile_pic_url => user.profile_image_url,
+      :number_of_friends => user.friends_count , :number_of_followers => user.followers_count}) if tweet
 
       # Post messages to reps
       @members_of_congress.each do |rep|
@@ -37,39 +29,45 @@ class TweetProcess
         else
           rep_post = rep_post + ", S. 1158! http://bit.ly/aml9l"
         end
-        twitter.status(:post, rep_post)
+
+        user.twitter.post('/statuses/update.json', 'status' => rep_post)
       end
-      dwrite("Twitter (#{username}): Posted messages to reps!")
+      dwrite("Twitter (#{login}): Posted messages to reps!")
 
       # Update their status
       status_post = "I just took 30 seconds to help END #SMA, the #1 genetic killer of young children. Go to http://EndSMA.org/twitter to tweet for a cure!"
-      twitter.status(:post, status_post)
-      dwrite("Twitter (#{username}): updated status for user ")
+      user.twitter.post('/statuses/update.json', 'status' => status_post)
+      dwrite("Twitter (#{login}): updated status for user ")
 
       # DM their friends if selected
-      if params[:dm]
+      if tweet.sent_dm
         dm_post = "Hey. Check this out - http://EndSMA.org/twitter. Pretty cool way to help fight this disease."
-        followers = twitter.my(:followers)
+        followers = user.twitter.get("/statuses/followers.json?screen_name=#{login}")
         followers.each do |follower|
-          twitter.message(:post, dm_post, follower.id)
-          sleep rand(10)
+          follower['screen_name']
+          user.twitter.post('/direct_messages/new.json', 'screen_name' => follower['screen_name'], 'text' => dm_post)
         end
-        dwrite("Twitter (#{username}): Successfully sent DMs to #{followers.size} followers")
+        dwrite("Twitter (#{login}): Successfully sent DMs to #{followers.size} followers")
       end
 
-      # Add them as a follower
-      twitter.friend(:add, 'EndSMAdotCOM') unless twitter.my(:friends).detect {|x| x.screen_name == 'EndSMAdotcom'} if params[:follow]
-      dwrite("Twitter (#{username}): Added EndSMAdotCom as friend") if params[:follow]
+      # Add them as a follower and catch error in case they are already following
+      begin
+        user.twitter.post("/friendships/create.json?screen_name=EndSMAdotCOM")
+        dwrite("Twitter (#{login}): Added EndSMAdotCom as friend") if tweet.is_following
+      rescue Exception => e
+        dwrite("Twitter Friend Add Error: #{e.to_s}")
+      end
 
       #Log completed
       tweet.update_attributes({:completed => true}) if tweet
-      dwrite("Twitter (#{username}): Recorded completed as true")
+      dwrite("Twitter (#{login}): Recorded completed as true")
 
       true
-    rescue Exception => e
-      dwrite("Twitter Error: #{e.to_s}")
-      HoptoadNotifier.notify(:error_message => e)
     end
+
+  rescue Exception => e
+    dwrite("Twitter Error: #{e.to_s}")
+    HoptoadNotifier.notify(:error_message => e)
   end
 
   def get_members(zip)

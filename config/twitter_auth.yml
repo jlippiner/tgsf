@@ -1,0 +1,30 @@
+development:
+  strategy: oauth
+  oauth_consumer_key: 7CdYpMr1ShLddGg57zCgYg
+  oauth_consumer_secret: UVWMO2A75Cdn0G1HZB9YPI4rV3cMkgMNK1GiFqvSX4
+  base_url: "https://twitter.com"
+  authorize_path: "/oauth/authenticate"
+  api_timeout: 10
+  remember_for: 14 # days
+  oauth_callback: "http://localhost:3000/twitter/oauth_callback"
+
+test:
+  strategy: oauth
+  oauth_consumer_key: 7CdYpMr1ShLddGg57zCgYg
+  oauth_consumer_secret: UVWMO2A75Cdn0G1HZB9YPI4rV3cMkgMNK1GiFqvSX4
+  base_url: "https://twitter.com"
+  authorize_path: "/oauth/authenticate"
+  api_timeout: 10
+  remember_for: 14 # days
+  oauth_callback: "http://localhost:3000/oauth_callback"
+
+production:
+  strategy: oauth
+  oauth_consumer_key: UlmyeVAQHv0y9Hefug
+  oauth_consumer_secret: SbB8WXFZHYQM8aP7jDpycCYPCQxI35N8OHG1FB1ic 
+  authorize_path: "/oauth/authenticate"
+  base_url: "https://twitter.com"
+  api_timeout: 10
+  remember_for: 14 # days
+  oauth_callback: "http://www.endsma.org/twitter/oauth"
+

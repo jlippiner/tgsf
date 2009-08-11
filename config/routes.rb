@@ -56,6 +56,7 @@ ActionController::Routing::Routes.draw do |map|
     twitter.tweetit 'twitter/tweet/send', :action => 'tweetit'
     twitter.thankyou 'twitter/thankyou', :action => 'thankyou'
     twitter.connect 'twitter/admin_view', :action => 'admin_view' 
+    twitter.connect 'twitter/oauth', :action => 'oauth' 
     map.resources :twitter
   end
 

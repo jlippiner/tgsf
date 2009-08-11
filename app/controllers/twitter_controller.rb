@@ -2,6 +2,7 @@ require 'sunlight'
 
 class TwitterController < ApplicationController
   layout 'twitter'
+  before_filter :login_required, :only => [:oauth]
 
   def show
     render :index
@@ -36,34 +37,26 @@ class TwitterController < ApplicationController
   end
 
   def tweet
+    render :tweet
   end
 
   def tweetit
-    get_members(params[:zipcode])
-    username = params[:username]
-    password = params[:password]
+    tweet = Tweet.find_by_id(session[:tweet_id])
+    tweet.update_attributes({:is_following => !params[:follow].nil?, :sent_dm => !params[:dm].nil?}) if tweet
+    redirect_to :action => "oauth"
+  end
 
-    if (username.blank? || password.blank?)
-      flash.error = "Please enter your twitter username/email and password."
-      render :tweet
+  def oauth
+    if current_user
+      Job.enqueue!(TweetProcess,:main,current_user.login,session[:tweet_id])
+
+      # Redirect
+      thankyou
     else
-      client = Twitter::Client.new
-      if client.authenticate?(username, password)
-        # Add job
-        Job.enqueue!(TweetProcess,:main,params,session[:tweet_id])
-
-        # Redirect
-        thankyou
-      else
-        flash.error = "We could not authenticate that username and password.  Please try again"
-        render :tweet
-      end
+      tweet = Tweet.find_by_id(tweet_id) if tweet_id
+      get_members(tweet.zipcode)
+      render :tweet
     end
-
-  rescue Exception => e
-    flash.error = "Something went wrong with Twitter.  Please try back in a few minutes.  We have been notified of the problem"
-    notify_hoptoad e
-    render :tweet
   end
 
   def thankyou
@@ -78,8 +71,6 @@ class TwitterController < ApplicationController
     count_not_done = Tweet.count(:conditions => 'twitter_id IS null')
     count_done = Tweet.count(:conditions => 'twitter_id IS NOT null')
     @counts = [{:not_done => count_not_done, :done => count_done}]
-
-
   end
 
   private
