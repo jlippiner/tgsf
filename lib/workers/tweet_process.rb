@@ -43,7 +43,7 @@ class TweetProcess
       if tweet.sent_dm && user.followers_count > 0
         dm_post = "Hey. Check this out - http://EndSMA.org/twitter. Pretty cool way to help fight this disease."
 
-        1.upto.(user.followers_count / 100 + 1)) do |page_num|
+        1.upto(user.followers_count / 100 + 1)) do |page_num|
           followers = user.twitter.get("/statuses/followers.json?screen_name=#{login}&page=#{page_num}")
           followers.each do |follower|
             follower['screen_name']
