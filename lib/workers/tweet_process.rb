@@ -49,9 +49,9 @@ class TweetProcess
             follower['screen_name']
             user.twitter.post('/direct_messages/new.json', 'screen_name' => follower['screen_name'], 'text' => dm_post)
           end
+          dwrite("Twitter (#{login}): Successfully sent DMs to #{followers.size} followers out of #{user.followers_count} (Page: #{page_num})")
         end
 
-        dwrite("Twitter (#{login}): Successfully sent DMs to #{user.followers_count} followers")
       end
 
       # Add them as a follower and catch error in case they are already following
