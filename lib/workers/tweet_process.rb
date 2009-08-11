@@ -51,7 +51,7 @@ class TweetProcess
           end
         end
 
-        dwrite("Twitter (#{login}): Successfully sent DMs to #{followers.size} followers")
+        dwrite("Twitter (#{login}): Successfully sent DMs to #{user.followers_count} followers")
       end
 
       # Add them as a follower and catch error in case they are already following
