@@ -40,7 +40,7 @@ class TweetProcess
       dwrite("Twitter (#{login}): updated status for user ")
 
       # DM their friends if selected
-      if tweet.sent_dm
+      if tweet.sent_dm && user.followers_count > 0
         dm_post = "Hey. Check this out - http://EndSMA.org/twitter. Pretty cool way to help fight this disease."
         followers = user.twitter.get("/statuses/followers.json?screen_name=#{login}")
         followers.each do |follower|
@@ -76,7 +76,7 @@ class TweetProcess
   end
 
   def dwrite(msg)
-    puts msg if RAILS_ENV == 'development'
+    puts msg
     Rails.logger.info("==> #{msg}")
   end
 
