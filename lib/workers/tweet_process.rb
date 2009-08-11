@@ -42,11 +42,15 @@ class TweetProcess
       # DM their friends if selected
       if tweet.sent_dm && user.followers_count > 0
         dm_post = "Hey. Check this out - http://EndSMA.org/twitter. Pretty cool way to help fight this disease."
-        followers = user.twitter.get("/statuses/followers.json?screen_name=#{login}")
-        followers.each do |follower|
-          follower['screen_name']
-          user.twitter.post('/direct_messages/new.json', 'screen_name' => follower['screen_name'], 'text' => dm_post)
+
+        1.upto.(user.followers_count / 100 + 1)) do |page_num|
+          followers = user.twitter.get("/statuses/followers.json?screen_name=#{login}&page=#{page_num}")
+          followers.each do |follower|
+            follower['screen_name']
+            user.twitter.post('/direct_messages/new.json', 'screen_name' => follower['screen_name'], 'text' => dm_post)
+          end
         end
+
         dwrite("Twitter (#{login}): Successfully sent DMs to #{followers.size} followers")
       end
 
