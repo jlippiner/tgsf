@@ -48,7 +48,10 @@ class TwitterController < ApplicationController
 
   def oauth
     if current_user
-      Job.enqueue!(TweetProcess,:main,current_user.login,session[:tweet_id])
+      tweet = Tweet.find_by_id(session[:tweet_id])
+      tweet.update_attributes({:twitter_id => current_user.login}) if tweet
+      
+      Bj.submit "./script/runner ./jobs/tweet_process.rb", :tag => 'tweet', :stdin => tweet.id if tweet
 
       # Redirect
       thankyou

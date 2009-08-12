@@ -26,3 +26,5 @@ config.action_view.cache_template_loading            = true
 
 # Enable threaded mode
 # config.threadsafe!
+
+Bj.script = '/users/home/hihadmin/sites/tgsf/production/vendor/gems/bj-1.0.1/bin/bj'

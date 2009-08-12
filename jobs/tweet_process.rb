@@ -1,13 +1,12 @@
-class TweetProcess
+def main
+  STDIN.each do |arg|
+    dwrite("Twitter Process: Oauth - STARTING PROCESS OF TWEET at #{Time.now} for Tweet ID : #{arg}")
 
-
-  def main(login,tweet_id)
-    dwrite("Twitter Process: Oauth - STARTING PROCESS OF TWEET at #{Time.now}")
-
-    user = User.find_by_login(login) if login
-    tweet = Tweet.find_by_id(tweet_id) if tweet_id
+    tweet = Tweet.find_by_id(arg) if arg
+    user = User.find_by_login(tweet.twitter_id) if tweet
 
     if user && tweet
+      login = tweet.twitter_id
 
       get_members(tweet.zipcode)
       dwrite("Twitter (#{login}): Retrieved members from API")
@@ -43,7 +42,7 @@ class TweetProcess
       if tweet.sent_dm && user.followers_count > 0
         dm_post = "Hey. Check this out - http://EndSMA.org/twitter. Pretty cool way to help fight this disease."
 
-        1.upto(user.followers_count / 100 + 1)) do |page_num|
+        1.upto(user.followers_count / 100 + 1) do |page_num|
           followers = user.twitter.get("/statuses/followers.json?screen_name=#{login}&page=#{page_num}")
           followers.each do |follower|
             follower['screen_name']
@@ -68,20 +67,22 @@ class TweetProcess
 
       true
     end
-
-  rescue Exception => e
-    dwrite("Twitter Error: #{e.to_s}")
-    HoptoadNotifier.notify(:error_message => e)
   end
 
-  def get_members(zip)
-    Sunlight::Base.api_key = '160a62531299fec8f90bc2f894526d8f'
-    @members_of_congress = Sunlight::Legislator.all_in_zipcode(zip)
-  end
-
-  def dwrite(msg)
-    puts msg
-    Rails.logger.info("==> #{msg}")
-  end
-
+rescue Exception => e
+  dwrite("Twitter Error: #{e.to_s}")
+  HoptoadNotifier.notify(:error_message => e)
 end
+
+def get_members(zip)
+  Sunlight::Base.api_key = '160a62531299fec8f90bc2f894526d8f'
+  @members_of_congress = Sunlight::Legislator.all_in_zipcode(zip)
+end
+
+def dwrite(msg)
+  puts msg
+  Rails.logger.info("==> #{msg}")
+end
+
+#run it
+main
