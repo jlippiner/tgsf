@@ -28,9 +28,6 @@ namespace :production do
     puts "starting mongrel"
     %x{#{ssh_command} "/usr/local/bin/mongrel_rails start -c /users/home/hihadmin/sites/#{application}/#{env} -p #{port} -d -e #{env} -a 127.0.0.1 -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"}
     
-    puts "restarting background fu"
-    %x{#{@ssh_command} "source ~/.profile && ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons stop"}
-    %x{#{@ssh_command} "source ~/.profile && ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons start"}
   end
 end
 
@@ -51,9 +48,6 @@ namespace :production do
     puts "/usr/local/bin/mongrel_rails start -c /users/home/hihadmin/sites/#{application}/#{env} -p #{port} -d -e #{env} -a 127.0.0.1 -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"
     %x{#{ssh_command} "/usr/local/bin/mongrel_rails start -c /users/home/hihadmin/sites/#{application}/#{env} -p #{port} -d -e #{env} -a 127.0.0.1 -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"}
     
-    puts "restarting background fu"
-    %x{#{@ssh_command} "RAILS_ENV=production ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons stop"}
-    %x{#{@ssh_command} "RAILS_ENV=production ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons start"}
   end
 end
 
@@ -107,10 +101,6 @@ namespace :github do
 
       puts "starting mongrel"
       %x{#{ssh_command} "/usr/local/bin/mongrel_rails start -c /users/home/hihadmin/sites/#{application}/#{env} -p #{port} -d -e #{env} -a 127.0.0.1 -P /users/home/hihadmin/var/run/mongrel-#{application}_#{env}-#{port}.pid"}
-      
-      puts "restarting background fu"
-      %x{#{@ssh_command} "source ~/.profile && ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons stop"}
-      %x{#{@ssh_command} "source ~/.profile && ruby /users/home/hihadmin/sites/#{application}/#{env}/script/daemons start"}
     end
   end
 end

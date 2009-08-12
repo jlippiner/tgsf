@@ -64,6 +64,7 @@ class TwitterController < ApplicationController
 
   def thankyou
     flash.clear
+    cookies.delete :remember_token
     render :thankyou
   end
 
