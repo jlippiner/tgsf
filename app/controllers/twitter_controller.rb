@@ -9,7 +9,7 @@ class TwitterController < ApplicationController
   end
 
   def index
-    @profile_pics = Tweet.find(:all, :conditions => "profile_pic_url is not null").collect {|x| x.profile_pic_url}
+    @profile_pics = Tweet.find(:all, :conditions => "profile_pic_url is not null and profile_pic_url not like '%default_profile_normal.png%'").collect {|x| x.profile_pic_url}
     render :index
   end
 
