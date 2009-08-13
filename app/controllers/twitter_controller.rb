@@ -10,6 +10,8 @@ class TwitterController < ApplicationController
 
   def index
     @profile_pics = Tweet.find(:all, :conditions => "profile_pic_url is not null and profile_pic_url not like '%default_profile_normal.png%'", :order => "created_at DESC").collect {|x| x.profile_pic_url}
+    @tweet_reach = commify(Tweet.find(:first, :select => "SUM(number_of_friends) +  SUM(number_of_followers) as reach").reach)
+    @tweet_count = commify(Tweet.count(:conditions => 'twitter_id IS NOT null'))
     render :index
   end
 
@@ -86,5 +88,13 @@ class TwitterController < ApplicationController
 
   def zipcode_valid(zip)
     zip =~ /^\d{5}([\-]\d{4})?$/
+  end
+  
+  def commify(object)
+    if object.is_a?(Numeric)
+      object.to_s.gsub(/(\d)(?=(\d{3})+$)/,'\1,')
+    else
+      object
+    end
   end
 end
