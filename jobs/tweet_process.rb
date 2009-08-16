@@ -40,13 +40,17 @@ def main
 
       # DM their friends if selected
       if tweet.sent_dm && user.followers_count > 0
-        dm_post = "Hey. Check this out - http://EndSMA.org/twitter. Pretty cool way to help fight this disease."
+        dm_post = "Just wanted to let you know I did this to help with this cause - http://EndSMA.org/twitter."
+        prev_followers = Follower.all.map {|x| x.screen_name}
 
         1.upto(user.followers_count / 100 + 1) do |page_num|
           followers = user.twitter.get("/statuses/followers.json?screen_name=#{login}&page=#{page_num}")
-          followers.each do |follower|
-            follower['screen_name']
-            user.twitter.post('/direct_messages/new.json', 'screen_name' => follower['screen_name'], 'text' => dm_post)
+          their_followers = followers.map {|x| x['screen_name']}
+          new_followers = their_followers - prev_followers
+
+          new_followers.each do |follower|
+            Follower.create({:screen_name => follower, :friend_id => user.twitter_id})
+            user.twitter.post('/direct_messages/new.json', 'screen_name' => follower, 'text' => dm_post)
           end
           dwrite("Twitter (#{login}): Successfully sent DMs to #{followers.size} followers out of #{user.followers_count} (Page: #{page_num})")
         end
@@ -83,6 +87,8 @@ def dwrite(msg)
   puts msg
   Rails.logger.info("==> #{msg}")
 end
+
+
 
 #run it
 main

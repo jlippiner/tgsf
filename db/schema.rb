@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090812005823) do
+ActiveRecord::Schema.define(:version => 20090816221817) do
 
   create_table "answers", :force => true do |t|
     t.text     "answer"
@@ -74,6 +74,13 @@ ActiveRecord::Schema.define(:version => 20090812005823) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "highlight"
+  end
+
+  create_table "followers", :force => true do |t|
+    t.string   "screen_name"
+    t.integer  "friend_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "hih_users", :force => true do |t|
