@@ -31,7 +31,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :presses
   map.resources :unites
   map.resources :unite_donations
-  map.resources :ufac
+  map.resources :uftc
   
   map.root :controller => "pages"
 end

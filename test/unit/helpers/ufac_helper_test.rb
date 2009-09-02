@@ -1,4 +1,4 @@
 require 'test_helper'
 
-class UfacHelperTest < ActionView::TestCase
+class uftcHelperTest < ActionView::TestCase
 end

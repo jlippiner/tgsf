@@ -1,4 +1,4 @@
-class UfacController < ApplicationController
+class UftcController < ApplicationController
   def index
     @donations = UniteDonation.sum(:amount, :group => :unite, :order => "sum(amount) desc")
     @total = UniteDonation.sum(:amount)
