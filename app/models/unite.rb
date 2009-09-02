@@ -12,5 +12,5 @@
 class Unite < ActiveRecord::Base
   has_many :unite_donations, :order => "donated_at DESC"
   
-  validates_presence_of :name, :tag
+  validates_presence_of :name
 end
