@@ -18,6 +18,22 @@ class UniteDonationsController < ApplicationController
     end
   end
 
+  def filter
+    @unite_donation = UniteDonation.new({:donated_at => Date.today})
+
+    if params[:filter]
+      @donations = []
+      UniteDonation.find_all_by_donation_type('Check').inject(@donations) {|arr,x| arr << x} if params[:filter][:check]
+      UniteDonation.find_all_by_donation_type('Cash').inject(@donations) {|arr,x| arr << x} if params[:filter][:cash]
+      UniteDonation.find_all_by_donation_type('Credit').inject(@donations) {|arr,x| arr << x} if params[:filter][:credit]
+    else
+      @donations = UniteDonation.all(:order => "donated_at DESC")
+    end
+
+
+    render :new
+  end
+
   # GET /unite_donations/new
   # GET /unite_donations/new.xml
   def new

@@ -1,3 +1,20 @@
+- form_tag filter_path do 
+  %table(width="300")
+    %tr
+      %td
+        %b Filter:
+      %td
+        = check_box_tag "filter[check]", "1", cb_check(:check)
+        = label_tag "filter_check", "Check"
+      %td
+        = check_box_tag "filter[credit]", "1", cb_check(:credit)
+        = label_tag "filter_credit", "Credit Card"
+      %td
+        = check_box_tag "filter[cash]", "1", cb_check(:cash)
+        = label_tag "filter_cash", "Cash"
+      %td
+        = submit_tag "Filter"
+
 %table.fancy
   %tr
     %th
