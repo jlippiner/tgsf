@@ -1,0 +1,12 @@
+%h1
+  = @unite.name
+
+%p
+  %b
+    Name:
+  = h @unite.name
+
+#controls
+  = link_to 'Edit', edit_unite_path(@unite)
+  |
+  = link_to 'Back', unites_path

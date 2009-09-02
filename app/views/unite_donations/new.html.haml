@@ -1,0 +1,35 @@
+%h1
+  New United For The Cure Donation
+
+%table.fancy
+  %tr
+    %th
+      Uniter
+    %th
+      First Name
+    %th
+      Last Name
+    %th
+      Amount
+    %th
+      Type
+    %th
+      Message
+    %th
+      Donated On
+    %th
+  = render :partial => "form"
+  
+
+#unite_donations
+  = render :partial => "donations"
+
+%p
+  = link_to 'Unite Families', unites_path
+  |
+  = link_to "UFAC Home", ufac_index_path
+
+:javascript
+  $(function(){
+    $('.unite_donation_donated_at').datepicker();
+  })

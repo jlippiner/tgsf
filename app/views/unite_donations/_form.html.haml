@@ -1,0 +1,25 @@
+- form_for @unite_donation do |f|
+  - unless f.error_messages.blank?
+    %tr
+      %td(colspan="8")
+        = f.error_messages
+
+  %tr
+    %td
+      = f.select :unite_id, Unite.all.map {|x| [x.name,x.id]}, { :include_blank => true }
+    %td
+      = f.text_field :first_name, :size => 20
+    %td
+      = f.text_field :last_name, :size => 20
+    %td
+      = f.text_field :amount, :size => 8
+    %td
+      = f.select :donation_type, options_for_select(%w{Check Cash Credit})
+    %td
+      = f.text_field :message
+    %td
+      = f.text_field :donated_at, :size => 8, :class => 'unite_donation_donated_at' 
+    %td
+      = f.submit 'Submit'
+
+

@@ -1,0 +1,33 @@
+%p
+  %b
+    Unite:
+  = h @unite_donation.unite_id
+%p
+  %b
+    Amount:
+  = h @unite_donation.amount
+%p
+  %b
+    First name:
+  = h @unite_donation.first_name
+%p
+  %b
+    Last name:
+  = h @unite_donation.last_name
+%p
+  %b
+    Type:
+  = h @unite_donation.donation_type
+%p
+  %b
+    Message:
+  = h @unite_donation.message
+%p
+  %b
+    Donated at:
+  = h @unite_donation.donated_at
+  
+#controls
+  = link_to 'Edit', edit_unite_donation_path(@unite_donation)
+  |
+  = link_to 'Back', unite_donations_path

@@ -1,0 +1,2 @@
+module UfacHelper
+end

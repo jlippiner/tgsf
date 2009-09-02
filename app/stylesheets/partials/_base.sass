@@ -1,0 +1,143 @@
+
+=left
+  :text-align left
+  
+=right
+  :text-align right
+  
+=middle
+  vertical-align: middle
+
+=center
+  text-align: center  
+  
+=border 
+  border: solid 1px gray
+  
+=border-red
+  border: dotted 2px red
+  
+=alt
+  :font-family "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif
+  :font-style italic  
+
+=black-alt
+  :color #black
+  :font-weight bolder
+  :font-size 1.2em
+  +alt
+  
+=block
+  overflow: hidden
+  
+=bold
+  font-weight: bold
+  
+=normal
+  font-size= !base_font_size
+  
+=large
+  font-size: 1.15em
+
+=larger
+  font-size: 1.30em
+
+=largest
+  font-size: 1.5em
+  
+=huge
+  font-size: 2.5em
+  
+=small
+  font-size: .95em
+
+=smaller
+  font-size: .9em
+
+=smallest
+  font-size: .85em
+
+=formatted_table
+  +border
+  tr
+    th
+      background-color: #CCCCCC
+      +black-alt
+    th, td
+      +left
+      vertical-align: top
+      padding: 3px 10px   
+      border-bottom: solid 1px #CCCCCC
+      
+  
+=bottom-line
+  border-bottom: 1px dotted gray
+  margin-bottom: 3px
+  
+=info-box-label
+  +smaller
+  padding: 1px 8px 1px 4px
+  margin: 3px 3px 
+  width: 70px
+  +float-left
+  +right
+  
+table.fancy
+  +formatted_table
+
+.block
+  +block
+  
+.hidden
+  position: absolute
+  top: 0
+  left: -9999px
+  width: 1px
+  height: 1px
+  overflow: hidden
+
+.hide
+  display: none
+
+.typewriter
+  font-family: Courier
+
+.tooltip
+  padding: 10px
+  margin: 10px
+  width: 500px
+  background-color: white
+
+.gray
+  color: gray  
+  
+.red
+  color: 'red'
+  font-weight: bold
+  
+.alt
+  +alt
+  
+.line
+  height: 5px
+  +bottom-line
+
+.small
+  +small
+  
+.smaller
+  +smaller
+  
+.smallest
+  +smallest
+  
+.labelOverlay
+  color: gray
+  
+.border-red
+  +border-red
+  
+caption, th, td
+  vertical-align: top
+
+

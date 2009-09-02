@@ -1,7 +1,6 @@
 # == Schema Information
-# Schema version: 20090620001551
 #
-# Table name: users
+# Table name: hih_users
 #
 #  id                  :integer(4)      not null, primary key
 #  name                :string(255)

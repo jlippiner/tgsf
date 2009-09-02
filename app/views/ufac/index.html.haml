@@ -1,0 +1,23 @@
+%h1
+  = "#{number_to_currency(@total)} of $100,000 Raised To Date!"
+  
+%table.fancy(width="750")
+  %tr
+    %th
+      Family
+    %th
+      Amount Raised To Date
+    %th
+      Goal
+    %th
+      Percentage
+  - @donations.each do |unite, amount|
+    %tr
+      %td
+        = link_to unite.name, ufac_path(unite.id)
+      %td
+        = number_to_currency(amount)
+      %td
+        $5,000
+      %td 
+        = number_to_percentage(amount/5000*100)

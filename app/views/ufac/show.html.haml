@@ -1,0 +1,34 @@
+%h1
+  = "#{@uniter.name} Has Raised #{number_to_currency(@total_raised)} To Date!"
+  
+%table.fancy
+  %tr
+    %th
+      First Name
+    %th
+      Last Name
+    %th
+      Amount
+    %th
+      Type
+    %th
+      Message
+    %th
+      Donated On
+  - @donations.each do |d|
+    %tr
+      %td
+        = d.first_name
+      %td
+        = d.last_name
+      %td
+        = "#{number_to_currency(d.amount)}"
+      %td
+        = d.donation_type
+      %td
+        = d.message
+      %td
+        = d.donated_at.strftime('%m/%d/%Y')
+
+
+

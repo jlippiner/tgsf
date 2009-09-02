@@ -1,0 +1,32 @@
+<h1>Listing unite_donations</h1>
+
+<table>
+  <tr>
+    <th>Unite</th>
+    <th>Amount</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Type</th>
+    <th>Message</th>
+    <th>Donated at</th>
+  </tr>
+
+<% @unite_donations.each do |unite_donation| %>
+  <tr>
+    <td><%=h unite_donation.unite_id %></td>
+    <td><%=h unite_donation.amount %></td>
+    <td><%=h unite_donation.first_name %></td>
+    <td><%=h unite_donation.last_name %></td>
+    <td><%=h unite_donation.type %></td>
+    <td><%=h unite_donation.message %></td>
+    <td><%=h unite_donation.donated_at %></td>
+    <td><%= link_to 'Show', unite_donation %></td>
+    <td><%= link_to 'Edit', edit_unite_donation_path(unite_donation) %></td>
+    <td><%= link_to 'Destroy', unite_donation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New unite_donation', new_unite_donation_path %>

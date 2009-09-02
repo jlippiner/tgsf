@@ -1,5 +1,4 @@
 # == Schema Information
-# Schema version: 20090805184853
 #
 # Table name: tweets
 #
@@ -12,6 +11,8 @@
 #  number_of_followers :integer(4)
 #  created_at          :datetime
 #  updated_at          :datetime
+#  profile_pic_url     :string(255)
+#  completed           :boolean(1)
 #
 
 class Tweet < ActiveRecord::Base

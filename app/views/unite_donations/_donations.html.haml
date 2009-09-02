@@ -1,0 +1,39 @@
+%table.fancy
+  %tr
+    %th
+      Uniter
+    %th
+      First Name
+    %th
+      Last Name
+    %th
+      Amount
+    %th
+      Type
+    %th
+      Message
+    %th
+      Donated On
+    %th(colspan=2)
+  - @donations.each do |d|
+    %tr
+      %td
+        = d.unite.name
+      %td
+        = d.first_name
+      %td
+        = d.last_name
+      %td
+        = "$#{d.amount}"
+      %td
+        = d.donation_type
+      %td
+        = d.message
+      %td
+        = d.donated_at.strftime('%m/%d/%Y')
+      %td
+        = link_to 'Edit', edit_unite_donation_path(d)
+      %td
+        = link_to 'Destroy', d, :confirm => 'Are you sure?', :method => :delete
+      
+

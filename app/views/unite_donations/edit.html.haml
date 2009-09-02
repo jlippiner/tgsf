@@ -1,0 +1,28 @@
+%h1
+  Editing Unite Donation For 
+  = @unite_donation.unite.name
+
+%table.fancy
+  %tr
+    %th
+      Uniter
+    %th
+      First Name
+    %th
+      Last Name
+    %th
+      Amount
+    %th
+      Type
+    %th
+      Message
+    %th
+      Donated On
+    %th
+  = render :partial => "form"
+
+#controls
+
+  = link_to 'Show', @unite_donation
+  |
+  = link_to 'Back', unite_donations_path

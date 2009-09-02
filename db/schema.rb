@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20090816221817) do
+ActiveRecord::Schema.define(:version => 20090902050828) do
 
   create_table "answers", :force => true do |t|
     t.text     "answer"
@@ -147,6 +147,31 @@ ActiveRecord::Schema.define(:version => 20090816221817) do
     t.datetime "updated_at"
     t.string   "profile_pic_url"
     t.boolean  "completed"
+  end
+
+  create_table "unite_donations", :force => true do |t|
+    t.integer  "unite_id"
+    t.float    "amount"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "donation_type"
+    t.string   "message"
+    t.datetime "donated_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "uniters", :force => true do |t|
+    t.string   "name"
+    t.string   "tag"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "unites", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
