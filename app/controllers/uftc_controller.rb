@@ -11,6 +11,7 @@ class UftcController < ApplicationController
     if params[:access_code] == 'cure'
       @uftc_access ||= true
       cookies[:uftc_access] = { :value => true, :expires => 1.year.from_now }
+      flash.notice = "Authorization code accepted."
     elsif !params[:access_code].blank?
       flash.error = "Sorry.  That code is unauthorized."
     end
