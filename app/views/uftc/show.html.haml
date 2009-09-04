@@ -1,36 +1,49 @@
-#div(style="text-align:left;margin:15px")
+#div(style="text-align:right;margin:15px")
   = image_tag("http://uniteforthecure.files.wordpress.com/2009/08/cropped-untitled-1.jpg", :border => "0", :width => "300")
 %h1
   = "#{@uniter.name} Has Raised #{number_to_currency(@total_raised)} To Date!"
   
-%table.fancy
-  %tr
-    %th
-      First Name
-    %th
-      Last Name
-    %th
-      Amount
-    %th
-      Type
-    %th
-      Message
-    %th
-      Donated On
-  - @donations.each do |d|
+- if @uftc_access 
+  %table.fancy
     %tr
-      %td
-        = d.first_name
-      %td
-        = d.last_name
-      %td
-        = "#{number_to_currency(d.amount)}"
-      %td
-        = d.donation_type
-      %td
-        = d.message
-      %td
-        = d.donated_at.strftime('%m/%d/%Y')
+      %th
+        First Name
+      %th
+        Last Name
+      %th
+        Amount
+      %th
+        Type
+      %th
+        Message
+      %th
+        Donated On
+    - @donations.each do |d|
+      %tr
+        %td
+          = d.first_name
+        %td
+          = d.last_name
+        %td
+          = "#{number_to_currency(d.amount)}"
+        %td
+          = d.donation_type
+        %td
+          = d.message
+        %td
+          = d.donated_at.strftime('%m/%d/%Y')
 
+- else
+  %h3
+    This page is reserved for the families of Unite For The Cure.  
+    
+  %p(style="margin-top:30px")
+    If you are a UFTC family, please enter your access code below:
+
+  %p
+    - form_tag uftc_path(@uniter), :method => "get"  do |f|
+      %b Access Code:
+      = text_field_tag "access_code"
+      = submit_tag "Submit"
 
 

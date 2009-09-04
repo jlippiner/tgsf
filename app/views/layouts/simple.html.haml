@@ -1,0 +1,49 @@
+!!! Strict
+%html{ :xmlns => "http://www.w3.org/1999/xhtml" }
+  %head
+    %meta{ :content => "text/html; charset=iso-8859-1", "http-equiv" => "Content-Type" }
+    %title
+      The Gwendolyn Strong Foundation -
+      = @meta_subtitle
+    %meta{ :name => "keywords", :content => @meta_keywords }
+    %meta{ :name => "description", :content => @meta_description }
+    = javascript_include_tag 'jquery.min', 'jquery-ui-1.7.2.custom.min', 'application', params[:controller]
+    = stylesheet_link_tag 'compiled/application', 'compiled/admin', 'start/jquery-ui-1.7.2.custom'
+    = yield :head
+  %body
+    #container
+      %table{ :cellspacing => "0", :border => "0", :align => "center", :width => "917", :cellpadding => "0" }
+        %tr
+          %td
+            %table{ :cellspacing => "4", :border => "0", :width => "100%", :cellpadding => "0" }
+              %tr
+                %td
+                  %table{ :cellspacing => "0", :border => "0", :align => "center", :width => "100%", :cellpadding => "0" }
+                    %tr
+                      %td{ :rowspan => "2", :width => "32%" }
+                        = link_to image_tag("logo_TGSF.gif", :alt => "The Gwendolyn Strong Foundation"), root_path
+                      %td{ :height => "40", :valign => "top", :align => "right"}
+                        = link_to image_tag("img_icons/icon_home.gif"), root_path
+                        = link_to "Home", root_path
+                        |
+                        = link_to "Contact Us", page_contact_us_path
+
+              %tr
+                %td.main
+                  #flash
+                    = render_flash_messages
+                  = render :partial=>"layouts/#{controller.sub_layout}"
+    #footer
+      \&copy; 2009 Gwendolyn Strong Foundation. All Rights Reserved.  |
+      %a{ :href => "#" }
+        Terms of Use
+      %div{ :style => "margin:10px" }
+        = link_to "Design by Create Method", "http://www.createmethod.com", :target => "_blank"
+    %script{ :type => "text/javascript" }
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    %script{ :type => "text/javascript" }
+      try {
+      var pageTracker = _gat._getTracker("UA-8641341-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
