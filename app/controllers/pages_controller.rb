@@ -41,7 +41,7 @@ class PagesController < ApplicationController
 
 
   def press
-    @presses = Press.all
+    @presses = Press.all(:order => "created_at desc")
     @press_active = true
   end
 

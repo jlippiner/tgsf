@@ -1,0 +1,250 @@
+- content_for :head do
+  = javascript_include_tag "tools.scrollable-1.0.3.min"
+  = stylesheet_link_tag "scrollable-vertical"
+
+%style{ :type => "text/css" }
+  \#progress {
+  height: 44px;
+  margin-bottom: 11px;
+  margin-top: 20px
+  }
+  
+  \.pad {
+  margin: 0pt auto;
+  width: 250px;
+  }
+  
+  \#progress h3 {
+  float: left;
+  height: 22px;
+  margin: 6px 6px 0pt 0pt;
+  width: 100%;
+  }
+  
+  \.hide {
+  float: left;
+  margin-left: -999em;
+  }
+  
+  \#progressBar {
+  background: transparent url(/images/meter/progressBg.gif) repeat-x scroll left top;
+  border: 1px solid #000000;
+  float: left;
+  height: 16px;
+  margin-top: 7px;
+  width: 100%;
+  }
+  
+  \#progressBar #mercury {
+  width: 0%;
+  }
+  
+  \#progressBar #mercury {
+  background: transparent url(/images/meter/mercuryBg.gif) repeat-x scroll left top;
+  border-right: 1px solid #AC7B00;
+  height: 16px;
+  }
+  
+  \#progressBar #mercury #raised {
+  display: none;
+  float: right;
+  font-size: 10px;
+  height: 16px;
+  line-height: 16px;
+  padding: 0pt 5px 0pt 0pt;
+  text-align: right;
+  width: 95px
+  }
+  
+  \#progress #key div {
+  float: left;
+  font-size: 10px;
+  width: 33%
+  }
+  
+  \#progress #left {
+  text-align: left;
+  }
+  
+  \#progress #center {
+  text-align: center;
+  }
+  
+  \#progress #right {
+  text-align: right;
+  }
+  
+  \#progressBar #mercury .beyond {
+  background: transparent url(/images/meter/beyond.gif) no-repeat scroll right top;
+  font-size: 11px;
+  font-weight: bold;
+  }
+  
+%table{ :cellspacing => "0", :border => "0", :width => "100%", :cellpadding => "5" }
+  %tr
+    %td{ :valign => "top" }
+      .sponsor
+        = link_to image_tag("img_sponsors/FNB.jpg", :alt => "First National Bank", :width => "150", :border => 0), "http://webfnb.com/", :target => "_blank"
+      .sponsor
+        = link_to image_tag("img_sponsors/care2.jpg", :alt => "Care2", :width => "125", :border => 0), "http://care2.com/", :target => "_blank"
+      .sponsor
+        = link_to image_tag("img_sponsors/ameristar.jpg", :alt => "Ameristar Casinos", :width => "125", :border => 0), "http://ameristarcasinos.com/", :target => "_blank"
+      .sponsor
+        = link_to image_tag("img_sponsors/KOA.jpg", :alt => "KOA", :width => "115", :height => "115", :border => 0), "http://koa.com/", :target => "_blank"
+      .sponsor
+        = link_to image_tag("img_sponsors/DMV.gif", :alt => "DMVCheatSheets.com", :width => "150", :height => 40, :border => 0), "http://www.dmvcheatsheets.com/", :target => "_blank"
+      .sponsor
+        = link_to image_tag("img_sponsors/FRCBsmall.jpg", :alt => "FunRCBoats.com", :width => "150", :height => 40, :border => 0), "http://www.funrcboats.com/", :target => "_blank"
+      .sponsor
+        = link_to image_tag("img_sponsors/Raceprepsmall.jpg", :alt => "RacePrepHobbies.com", :width => "150", :height => 40, :border => 0), "http://www.raceprephobbies.com/", :target => "_blank"
+   
+    %td.incontent{ :width => "500" }
+      %table{ :cellspacing => "0", :border => "0", :align => "center", :width => "100%", :cellpadding => "0" }
+        %tr
+          %td
+            #rnd2_container
+              %b.rnd2_top
+                %b.rnd2_b1
+                %b.rnd2_b2
+                %b.rnd2_b3
+                %b.rnd2_b4
+              .rnd2_content{ :style => "position:relative" }
+                %div{ :style => "z-index:0;" }
+                  = image_tag("posters/sponsor_a_mile.jpg", :width => "400", :border => "0")
+                %div{ :style => "position:absolute;left:400px;top:0px" }
+                  = image_tag("posters/sponsor_button.gif", :width => "150", :border => "0")
+              %b.rnd2_bottom
+                %b.rnd2_b4
+                %b.rnd2_b3
+                %b.rnd2_b2
+                %b.rnd2_b1
+                
+    %td.inrg{ :width => "150" }
+      %div{ :style => "margin-top:130px;text-align:center" }
+        #rnd_container
+          %b.rnd_top
+            %b.rnd_b1
+            %b.rnd_b2
+            %b.rnd_b3
+            %b.rnd_b4
+          .rnd_content
+            %table{ :cellspacing => "0", :border => "0", :width => "100%", :cellpadding => "0" }
+              %tr
+                %td
+                  %div{ :style => "margin:0px" }
+                    Join our drive to END SMA!
+                    %br
+                    $10 per mile.
+                    %br
+                    Sponsor a mile (or several)
+                    %br
+                    to help find a cure!
+                    %br
+              %tr
+                %td{ :style => "padding:15px 0px" }
+                  %form{ :method => "post", :action => "https://www.paypal.com/cgi-bin/webscr" }
+                    %input{ :name => "cmd", :value => "_s-xclick", :type => "hidden" }
+                    %input{ :name => "hosted_button_id", :value => "6102444", :type => "hidden" }
+                    %input{ :name => "submit", :src => "https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif", :border => "0", :type => "image", :alt => "PayPal - The safer, easier way to pay online!" }
+                    %img{ :src => "https://www.paypal.com/en_US/i/scr/pixel.gif", :border => "0", :height => "1", :alt => "", :width => "1" }
+              %tr
+                %td{ :style => "border-top:1px dashed gray;border-bottom:1px dashed gray;padding:5px;" }
+                  %div{ :style => "text-align:center;" }
+                    %a#pp_click{ :href => "#", :style => "font-style:italic;font-size:90%" }
+                      Problems with PayPal? Click
+                      here...
+                  #paypal_problems{ :style => "padding:20px 0px;display:none;text-align:left;" }
+                    %p
+                      We are sorry you are having trouble with PayPal. As an alternative, please consider sending a
+                      check.
+                    %br
+                    %p
+                      Please make your check payable to "
+                      %b
+                        Gwendolyn Strong Foundation
+                      " and send to:
+                    %p
+                      %br
+                      Wells Fargo Bank
+                      %br
+                      1036 Anacapa Street
+                      %br
+                      Santa Barbara, California 93101
+                      %br
+              %tr
+                %td
+                  %div{ :style => "font-style:italic;font-size:90%;padding-top:10px" }
+                    Our application for tax exempt 501(c)(3) status is in process. While our application is pending, we
+                    cannot assure donors that contributions will be tax deductible.
+          %b.rnd_bottom
+            %b.rnd_b4
+            %b.rnd_b3
+            %b.rnd_b2
+            %b.rnd_b1
+        %div{ :style => "margin-top:20px" }
+          %a{ :href => "http://www.addthis.com/bookmark.php?v=250", :onmouseover => "return addthis_open(this, '', 'http://www.gwendolynstrongfoundation.org/get_involved', 'Sponsor-A-Mile To End SMA')", :onclick => "return addthis_sendto()", :onmouseout => "addthis_close()" }
+            %img{ :src => "http://s7.addthis.com/static/btn/lg-share-en.gif", :height => "16", :alt => "Bookmark and Share", :style => "border:0", :width => "125" }
+          %script{ :src => "http://s7.addthis.com/js/250/addthis_widget.js?pub=strongbill", :type => "text/javascript" }
+        - if (@donations.size > 3)
+          #progress
+            .pad
+              %h3
+                Thank You To Our
+                = @donations.size
+                Supporters
+              #progressBar
+                #mercury
+                  %span#raised
+                    $
+                    = comma_numbers(@raised.to_i)
+              #seasonal
+              %br
+              %br
+              #key
+                #left
+                  $0
+                #center
+                  $25,000
+                #right
+                  $50,000
+          %br
+          %center
+            .scrollable{ :style => "height:250px" }
+              .items
+                - @donations.each do |d|
+                  %div{:class => "#{highlight if d.highlight}"}
+                    = d.name.titleize
+                    %br
+                    %span{ :style => "font-size:10pt" }
+                      = d.location
+                %div
+
+:javascript
+  $(document).ready(function() { // on document load
+    $("#mercury").animate({width: "<haml:loud> &quot;#{@percent}%&quot; </haml:loud>"}, 10, '', function() {
+    $(this).find("#raised").show()
+    }
+    ); // animate a div
+  
+    $('#pp_click').click(function() {
+    $('#paypal_problems').toggle().effect("highlight", {}, 2000);
+    })
+  
+    if (!$.browser.msie) {
+    $("div.scrollable").scrollable({
+    vertical:true,
+    size: 4,
+    interval: 2000,
+    loop: true,
+    speed: 600,
+    onBeforeSeek: function() {
+    this.getItems().fadeTo(300, 0.2);
+    },
+    onSeek: function() {
+    this.getItems().fadeTo(300, 1);
+    }
+    });
+    } else {
+    $('div.scrollable').hide();
+    }
+  });

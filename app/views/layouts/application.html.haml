@@ -7,8 +7,8 @@
       = @meta_subtitle
     %meta{ :name => "keywords", :content => @meta_keywords }
     %meta{ :name => "description", :content => @meta_description }
-    = javascript_include_tag 'jquery.min', 'jquery-ui-1.7.1.custom.min', 'application', params[:controller]
-    = stylesheet_link_tag 'jquery-ui-1.7.1.custom'
+    = javascript_include_tag 'jquery.min', 'jquery-ui-1.7.2.custom.min', 'application', params[:controller]
+    = stylesheet_link_tag 'start/jquery-ui-1.7.2.custom'
     = stylesheet_link_tag 'styles.css', :media => 'screen, projection'
     = yield :head
   %body
@@ -51,6 +51,8 @@
       \&copy; 2009 Gwendolyn Strong Foundation. All Rights Reserved.  |
       %a{ :href => "#" }
         Terms of Use
+      %div{ :style => "margin:10px" }
+        The Gwendolyn Strong Foundation is a nonprofit 501(c)(3) public charity
       %div{ :style => "margin:10px" }
         = link_to "Design by Create Method", "http://www.createmethod.com", :target => "_blank"
     %script{ :type => "text/javascript" }
