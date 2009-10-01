@@ -1,0 +1,29 @@
+.admin
+  .involvement
+    %h2
+      = h @involvement.title
+    %p
+      %b
+        Is featured:
+      = h @involvement.is_featured
+    %p
+      %b
+        Title:
+      = h @involvement.title
+    %p
+      %b
+        Body:
+      .body
+        = RedCloth.new(@involvement.body).to_html
+    %p
+      %b
+        Dates:
+      = h @involvement.dates
+    %p
+      %b
+        Is active:
+      = h @involvement.is_active
+  
+    = link_to 'Edit', edit_involvement_path(@involvement)
+    |
+    = link_to 'Back', involvements_path

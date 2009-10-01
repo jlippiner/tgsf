@@ -1,0 +1,9 @@
+.get_involved
+  .show
+    %h1
+      = @involvement.title
+    .dates
+      = @involvement.dates
+    .body
+      = RedCloth.new(@involvement.body).to_html
+  

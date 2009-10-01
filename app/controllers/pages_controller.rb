@@ -19,14 +19,19 @@ class PagesController < ApplicationController
     @get_involved_active = true
     @index_active = true
 
-    @meta_description = "Sponsor-A-Mile to END SMA.  Help end the #1 genetic killer of infants."
-    @meta_keywords = "SMA, sponsor, disease, infants"
+    @featured_involvement = Involvement.find_by_is_featured(true)
+    @active_involvements = Involvement.find_all_by_is_active_and_is_featured(true,false)
+    @inactive_involvements = Involvement.find_all_by_is_active(false)
 
-    sponsored = Donation.for_campaign('SAM').highlighted.sort_by {rand}
-    not_sponsored = Donation.for_campaign('SAM').not_highlighted.sort_by {rand}
-    @donations = alternate(not_sponsored,sponsored)
-    @raised = @donations.inject(0) {|sum,n| sum + n.amount.to_i}
-    @percent = (@raised.to_f / 50000) * 100
+    @meta_description = "Help end the #1 genetic killer of infants."
+    @meta_description += @featured_involvement.title if @featured_involvement
+    @meta_keywords = "SMA, sponsor, disease, infants"
+  end
+
+  def get_involved_show
+    @involvement = Involvement.find_by_id(params[:id])
+    @get_involved_active = true
+    render :template => 'pages/get_involved/show' 
   end
 
   def alternate(a,b)
@@ -73,9 +78,8 @@ class PagesController < ApplicationController
     @what_we_do_active = true
   end
 
-
   def sub_layout
-    if @our_story_active 
+    if @our_story_active
       "our_story"
     elsif @what_we_do_active
       "what_we_do"

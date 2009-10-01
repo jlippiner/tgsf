@@ -21,6 +21,7 @@ ActionController::Routing::Routes.draw do |map|
     pages.each {|p|
       page.send(p.intern, "#{p}", :action => "#{p}", :controller => "pages")
     }
+    page.get_involved_show "get_involved/:id", :action => "get_involved_show" 
   end
 
   map.connect 'users/admin_view', :action => "admin_view", :controller => "users"
@@ -30,6 +31,8 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :donations
   map.resources :presses
   map.resources :unites
+  map.resources :involvements
+  
   
   map.resources :unite_donations do |ud|
     map.filter 'unite_donations/filter', :action => 'filter', :controller => 'unite_donations'  

@@ -1,1 +1,43 @@
-= render :partial => "pages/get_involved/sponsor_a_mile"
+.get_involved
+  - if @featured_involvement
+    .featured
+      #rnd2_container
+        .rnd2_top
+          .rnd2_b1
+          .rnd2_b2
+          .rnd2_b3
+          .rnd2_b4
+        .rnd2_content
+          %h1
+            = @featured_involvement.title
+          .dates
+            = @featured_involvement.dates
+          .body
+            = RedCloth.new(@featured_involvement.body).to_html
+
+        .rnd2_bottom
+          .rnd2_b4
+          .rnd2_b3
+          .rnd2_b2
+          .rnd2_b1
+     
+        
+  - unless @active_involvements.empty?
+    .active
+      %h3
+        Current Initiatives & Events
+      %ul
+        - @active_involvements.each do |i|
+          %li
+            = link_to i.title, page_get_involved_show_path(i)
+            = "- #{i.dates}"
+  
+  - unless @inactive_involvements.empty?
+    .inactive
+      %h3
+        Previous Initiatives & Events
+      %ul
+        - @inactive_involvements.each do |i|
+          %li
+            = link_to i.title, page_get_involved_show_path(i)
+            = "- #{i.dates}"

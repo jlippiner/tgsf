@@ -1,0 +1,27 @@
+%h1
+  Listing presses
+%table.fancy
+  %tr
+    %th
+      Title
+    %th
+      Is Featured?
+    %th
+      Active?
+    %th(colspan=3)
+  - @involvements.each do |i|
+    %tr
+      %td
+        = h i.title
+      %td
+        = h i.is_featured
+      %td
+        = h i.is_active
+      %td
+        = link_to 'Show', i
+      %td
+        = link_to 'Edit', edit_involvement_path(i)
+      %td
+        = link_to 'Destroy', i, :confirm => 'Are you sure?', :method => :delete
+%br
+= link_to 'New Involvment', new_involvement_path
