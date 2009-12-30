@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def index
-    @index_active = true
+    @public_layout = true
   end
 
   def our_story
@@ -77,13 +77,17 @@ class PagesController < ApplicationController
   def research
     @what_we_do_active = true
   end
+  
+  def chase
+    render :layout => "simple"
+  end
 
   def sub_layout
     if @our_story_active
       "our_story"
     elsif @what_we_do_active
       "what_we_do"
-    elsif @index_active
+    elsif @public_layout
       "public"
     else
       "pages"

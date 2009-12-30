@@ -16,17 +16,16 @@ Rails::Initializer.run do |config|
 
   # Specify gems that this application depends on and have them installed with rake gems:install
   config.gem "bj"
-  # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
-  # config.gem "sqlite3-ruby", :lib => "sqlite3"
-  # config.gem "aws-s3", :lib => "aws/s3"
   config.gem 'twitter-auth', :lib => 'twitter_auth'  
   config.gem "json"
   config.gem "ym4r"
   config.gem "sunlight"
   config.gem "RedCloth"
-  config.gem "haml"
+  config.gem "haml-edge", :lib => "haml" 
   config.gem "dynamic_reports"
   config.gem "highline"
+  config.gem 'compass', :lib => 'compass', :source => "http://gems.github.com", :version => ">=0.10.0.pre2" 
+  config.gem 'fancy-buttons'
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named

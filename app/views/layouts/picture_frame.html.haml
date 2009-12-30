@@ -32,7 +32,7 @@
                 %td.main
                   #flash
                     = render_flash_messages
-                  = yield
+                  = render :partial=>"layouts/#{controller.sub_layout}"
     #footer
       \&copy; 2009 Gwendolyn Strong Foundation. All Rights Reserved.  |
       %a{ :href => "#" }

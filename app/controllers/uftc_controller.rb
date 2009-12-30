@@ -1,5 +1,5 @@
 class UftcController < ApplicationController
-  layout "simple"
+  layout "picture_frame"
 
   def index
     @donations = UniteDonation.sum(:amount, :group => :unite, :order => "sum(amount) desc")
