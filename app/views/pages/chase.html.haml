@@ -19,14 +19,41 @@
             In December 2009, with the support of thousands, we were voted one of the top 100 nonprofits of more than 500,000 organizations in the $5M Chase Community Giving campaign on Facebook. Now, we’re in the final round with a chance at $1 Million.
           %p
             Your simple, free vote moves us one step closer to a miracle. $1 Million WILL help CURE this disease FOREVER. Be part of it!
+              
+
+  %table.call
+    %tr
+      %td.lines
+        %hr
+      %td
+        .action
           %center
             %button
               = image_tag("img_icons/icon_fb.png", :border => "0")
-              Vote To Cure SMA
-              
+              Click To Vote To Cure SMA
+      %td.lines
+        %hr
               
   %table.sub
     %tr
+      %td
+        .rnd_box.what_is_sma
+          %h2
+            WHAT IS SMA?
+          %p
+            Babies with SMA are born perfectly healthy. 
+          %p
+            %b Their mind is never impacted. 
+          %p  
+            Yet, within months of an SMA diagnosis their bodies begin to fail them. 
+          %p
+            %b They become completely paralyzed and require machines to help them eat, cough, swallow, and breathe. 
+          %p
+            These vibrant, intelligent children will slowly become “locked-in” and over 90% die by their 2nd birthday.
+
+          %p
+            = link_to "Click here to learn more about SMA", page_about_sma_path
+
       %td
         .rnd_box.humbled
           %h2
@@ -39,26 +66,20 @@
             Thank you!
             
       %td
-        .rnd_box.what_is_sma
-          %h2
-            WHAT IS SMA?
-          %p
-            Babies with SMA are born perfectly healthy. Their mind is never impacted. Yet, within months of an SMA diagnosis their bodies begin to fail them. They become completely paralyzed and require machines to help them eat, cough, swallow, and breathe. These vibrant, intelligent children will slowly become “locked-in” and over 90% die by their 2nd birthday.
-          %p
-            SMA is a degenerative and terminal disease that causes weakness and wasting of the voluntary muscles in infants and children. 1 in every 40 people carries the gene that causes SMA. 1 in 40!
-
-          %p
-            = link_to "Click here to learn more about SMA", page_about_sma_path
-            
-      %td
         .rnd_box.our_big_idea
           %h2
             OUR BIG IDEA
           %p
             Be part of a MIRACLE. Help cure SMA, the leading genetic killer of babies. $1 Million has the real potential to cure SMA and save the beautiful babies it kills. 
           %p  
-            GSF will direct 100% of the $1 Million awarded from Chase directly to SMA awareness and cure focused research programs. Who better to decide where this critical funding goes than those directly impacted by this cruel disease? 
+            GSF will direct 100% of the $1 Million awarded from Chase directly to SMA awareness and cure focused research programs. 
           %p  
             GSF will select the most promising SMA projects in need of funding and empower the SMA community to decide where the $1 Million is distributed. Be part of a MIRACLE. Vote for the Gwendolyn Strong Foundation in the $5M Chase Community Giving campaign on Facebook.
           %p
             = link_to 'Click here to learn more about our “Big Idea”', '#'
+            
+            
+:javascript
+  $(function(){
+    $('.sub').hide().animate({opacity:1},15000).fadeIn(2000); 
+  })
