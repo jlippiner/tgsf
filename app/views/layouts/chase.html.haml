@@ -18,8 +18,20 @@
             %table{ :cellspacing => "4", :border => "0", :width => "100%", :cellpadding => "0" }
               %tr
                 %td
-                  %center
-                    = link_to image_tag("logo_TGSF.gif", :alt => "The Gwendolyn Strong Foundation"), root_path
+                  %table{ :cellspacing => "0", :border => "0", :align => "center", :width => "100%", :cellpadding => "0" }
+                    %tr
+                      %td{ :rowspan => "2", :width => "32%" }
+                        = link_to image_tag("logo_TGSF.gif", :alt => "The Gwendolyn Strong Foundation"), root_path
+                      %td{ :height => "40", :valign => "top", :align => "right"}
+                        = link_to image_tag("img_icons/icon_home.gif"), root_path
+                        = link_to "Home", root_path
+                        |
+                        = link_to "Contact Us", page_contact_us_path
+                        
+                        %p
+                          %br
+                          = link_to "Vote To Cure SMA On Facebook >>", '#', :class => 'button' 
+
               %tr
                 %td.main
                   #flash

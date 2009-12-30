@@ -31,7 +31,7 @@ class PagesController < ApplicationController
   def get_involved_show
     @involvement = Involvement.find_by_id(params[:id])
     @get_involved_active = true
-    render :template => 'pages/get_involved/show' 
+    render :template => 'pages/get_involved/show'
   end
 
   def alternate(a,b)
@@ -77,7 +77,7 @@ class PagesController < ApplicationController
   def research
     @what_we_do_active = true
   end
-  
+
   def chase
     render :layout => "simple"
   end
