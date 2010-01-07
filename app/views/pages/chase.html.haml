@@ -14,15 +14,15 @@
           %h1
             BE PART OF A MIRACLE!
           %p
-            Spinal Muscular Atrophy - SMA - kills more babies than any other genetic disease. SMA is currently a death sentence. But, research is mature and there is hope!
+            SMA - Spinal Muscular Atrophy - kills more babies than any other genetic disease. SMA is currently a death sentence. But, there is enormous HOPE! Research is on the brink of a cure, but in desperate need of funding.
           %p
-            Bill and Victoria Strong are fighting alongside their daughter, Gwendolyn, and other SMA parents to end this disease. They are giving 100% of the Chase Community Giving grant to SMA programs focused on accelerating that cure; to save Gwendolyn, all SMA children, and ensure no more babies are stolen by this cruel disease.
+            Our daughter, Gwendolyn, and thousands of other children are dying of SMA. We are fighting to end this disease and $1 Million will have an immediate and direct impact on making a cure attainable -- to save Gwendolyn, to save all children battling SMA, and to ensure no future babies are stolen by this cruel disease.
           %p
-            $1 Million will help cure this disease forever and your simple, free vote through Facebook moves us one step closer to that miracle. Vote today and be part of it!
+            $1 Million will help cure this disease forever and your simple, FREE vote through Facebook moves us one step closer to that miracle. Vote today and be part of it!
           
           %p
             %center
-              = link_to "Click to vote for us on Facebook", '#'
+              = link_to "Click to vote for us on Facebook", 'http://apps.facebook.com/chasecommunitygiving/charities/710566'
 
   #fade
     %table.call
@@ -32,7 +32,7 @@
         %td
           .action
             %center
-              %button
+              %button.facebook
                 = image_tag("img_icons/icon_fb.png", :border => "0")
                 Click To Vote To Cure SMA
         %td.lines
@@ -46,7 +46,7 @@
               = image_tag("img_icons/icon_butterfly.gif", :border => "0")
               WHAT IS SMA?
             %p
-              SMA is a degenerative, terminal genetic disease.
+              SMA is a degenerative, terminal genetic disease. 1 in 40 people unknowingly carries the SMA gene. 
             %p
               %b
                 Babies with SMA are born perfectly healthy.
@@ -68,7 +68,8 @@
             %p.chase-logo
               = image_tag("img_misc/chase_community.png", :border => "0")
             %p
-              In December 2009, our supporters voted us to one of the top 100 nonprofits of more than 500,000 organizations in the $5M Chase Community Giving campaign on Facebook. This is incredible and another humbling example of how vibrant the SMA community is and how collectively we can accomplish anything as one, united, motivated voice. Together we will cure SMA.
+              In December 2009, GSF was voted to one of the top 100 nonprofits of more than 500,000 organizations in the $5M Chase Community Giving campaign on Facebook. This is incredible and another example of the indelible impact children with SMA leave on the world. The $25,000 grant from this first round is already in the lab and pushing us closer to a cure. With your support rallying beside the inspiring SMA children and the vibrant SMA community, we can accomplish anything as one, united, motivated voice. Together we will cure SMA.
+
             %p
               %b Thank you!
             
@@ -78,11 +79,12 @@
               = image_tag("img_icons/icon_butterfly.gif", :border => "0")
               OUR BIG IDEA
             %p
-              Be part of a miracle! Help cure SMA, the leading genetic killer of babies. $1 Million has the real potential to cure SMA and save the beautiful babies it kills.
+              Be part of a miracle! Help cure SMA, the leading genetic killer of babies. $1 Million will help cure SMA and save the beautiful babies it kills.
             %p
-              We are giving 100% of the $1 Million awarded from Chase directly to SMA awareness and cure focused research programs. Who better to decide where this critical funding goes than those directly impacted by this cruel disease?
+              We are giving 100% of the $1 Million awarded by Chase directly to SMA awareness and cure focused research programs. 
             %p
-              We will select the most promising SMA projects in need of funding and empower the SMA community to decide where the $1 Million is distributed. Be part of a miracle! Vote for the Gwendolyn Strong Foundation in the $5M Chase Community Giving campaign on Facebook.            
+              Who better to decide where this critical funding goes than those directly impacted by this cruel disease. We will select the most promising SMA projects in need of funding and empower the SMA community to decide where the $1 Million is distributed. Be part of a miracle! Vote for the Gwendolyn Strong Foundation in the $5M Chase Community Giving campaign on Facebook.
+
             %p
               = link_to 'Click here to learn more about our “Big Idea”', '#'
             
@@ -90,4 +92,7 @@
 :javascript
   $(function(){
     $('#fade').hide().animate({opacity:1},3000).fadeIn(1000); 
+    $('button.facebook').click(function(){
+      location.href = 'http://apps.facebook.com/chasecommunitygiving/charities/710566';
+    })
   })

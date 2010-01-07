@@ -3,18 +3,17 @@
   %head
     %meta{ :content => "text/html; charset=iso-8859-1", "http-equiv" => "Content-Type" }
     %title
-      EndSMA.org - Tweet For A Cure
-      = @meta_subtitle
+      VoteForACure.com
     %meta{ :name => "keywords", :content => @meta_keywords }
     %meta{ :name => "description", :content => @meta_description }
-    = javascript_include_tag 'jquery.min', 'jquery.corners.min', 'jquery.livequery','flash', 'common_utils', 'application', params[:controller]
+    = javascript_include_tag 'jquery.min', 'jquery.corners.min', 'jquery.livequery', 'flash', 'common_utils', 'application', params[:controller]
     = stylesheet_link_tag 'dynamic_reports'
-    = stylesheet_link_tag 'compiled/twitter.css', :media => 'screen, projection'
+    = stylesheet_link_tag 'compiled/application.css', :media => 'screen, projection'
     = yield :head
   %body
     #container
       #logo
-        = link_to image_tag("/images/twitter/tweet_title.png", :border => "0"), "/twitter"
+        = link_to image_tag("/images/vfac_logo.png", :border => "0"), "/twitter"
         
       #flash
         = render_flash_messages
@@ -22,12 +21,12 @@
       = yield
       
     #footer
-      \&copy; 2009 EndSMA.org. All Rights Reserved.
+      \&copy; 2010 GwendolynStrongFoundation.org. All Rights Reserved.
       %p
         %a{ :href => "#" }
           Terms of Use
       %div{ :style => "margin:10px" }
-        = link_to "Design by Create Method", "http://www.createmethod.com", :target => "_blank"
+        = link_to "Design by Noctivity.com", "http://www.noctivity.com", :target => "_blank"
         
         
     %script{ :type => "text/javascript" }
