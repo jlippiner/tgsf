@@ -1,6 +1,5 @@
 require 'compass'
 require 'compass-colors'
-require 'fancy-buttons'
 
 # If you have any compass plugins, require them here.
 Compass.configuration.parse(File.join(RAILS_ROOT, "config", "compass.config"))

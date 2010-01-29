@@ -21,11 +21,10 @@ Rails::Initializer.run do |config|
   config.gem "ym4r"
   config.gem "sunlight"
   config.gem "RedCloth"
-  config.gem "haml-edge", :lib => "haml" 
   config.gem "dynamic_reports"
   config.gem "highline"
-  config.gem 'compass', :lib => 'compass', :source => "http://gems.github.com", :version => ">=0.10.0.pre2" 
-  config.gem 'fancy-buttons'
+  config.gem "haml"
+  config.gem 'compass', :lib => 'compass', :source => "http://gems.github.com", :version => ">=0.10.0.pre4" 
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named

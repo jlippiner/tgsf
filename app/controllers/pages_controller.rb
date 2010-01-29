@@ -79,7 +79,7 @@ class PagesController < ApplicationController
   end
 
   def chase
-    render :layout => "simple"
+
   end
 
   def sub_layout

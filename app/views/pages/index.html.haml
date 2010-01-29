@@ -63,7 +63,7 @@
             = link_to image_tag("img_buttons/btn_newlydiagnosed.gif", :alt=>"Newly Diagnosed? Click here"), page_newly_diagnosed_path
     %td.content
       %table{ :cellspacing => "0", :border => "0", :cellpadding => "0", :width => "414" }
-        - if Date.today > Date.new(2010,1,23)
+        - if Date.today > Date.new(2010,4,1)
           %tr
             %td{ :bgcolor => "#45331A" }
               %img{ :src => "images/img_pics/pic_gwendolyn_hp.jpg", :height => "284", :alt => "", :width => "414" }
@@ -79,11 +79,10 @@
           %tr
             %td#note
               %p
-                %img{ :src => "images/img_headings/hp_title_were_a_finalist.png", :alt => "We're A Finalist!!!"}
+                %b 2010 Chase Community Giving "Winner's Circle"
               %p
                 %br
-                Our supporters voted us to one of the top 100 nonprofits of more than 500,000 organizations in the Chase Community Giving campaign on Facebook. 
-                Now, we're a finalist with a chance to win $1 Million for SMA awareness and research. 
+                The Gwendolyn Strong Foundation (GSF) was humbled to be voted #6 out of more than 500,000 organizations in the 2010 Chase Community Giving campaign on Facebook. For that honor, GSF received a $100,000 grant from Chase...
               %p
                 %br
                 = link_to "Click to learn more...", page_chase_path
