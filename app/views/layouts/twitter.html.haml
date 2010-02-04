@@ -3,7 +3,7 @@
   %head
     %meta{ :content => "text/html; charset=iso-8859-1", "http-equiv" => "Content-Type" }
     %title
-      VoteForACure.com
+      Tweet For A Cure - Gwendolyn Strong Foundation
     %meta{ :name => "keywords", :content => @meta_keywords }
     %meta{ :name => "description", :content => @meta_description }
     = javascript_include_tag 'jquery.min', 'jquery.corners.min', 'jquery.livequery', 'flash', 'common_utils', 'application', params[:controller]
@@ -13,7 +13,7 @@
   %body
     #container
       #logo
-        = link_to image_tag("/images/vfac_logo.png", :border => "0"), "/twitter"
+        = link_to image_tag("/images/twitter/tweet_title.png", :border => "0"), "/twitter"
         
       #flash
         = render_flash_messages
