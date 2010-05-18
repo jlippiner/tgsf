@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# .rvmrc file for tdt application
+
+if [[ "Darwin" = "$(uname)" ]] ; then
+  # rvm use 1.9.1-p378%tdt
+  rvm use ree-1.8.7-2010.01@gsf
+else
+  # rvm 1.9.1-p378
+  rvm ree-1.8.7-2010.01@gsf
+fi

@@ -23,7 +23,7 @@ img
 
 
   .header
-    background-image: url(/images/img_misc/bg_top.gif) background-repeat: no-repeat
+    background-image: url(/images/img_misc/bg_top.gif) background-repeat no-repeat
     background-position: right top
     font-size: 0.9em
     text-align: right
@@ -56,6 +56,17 @@ img
 .sponsor
   margin: 20px 0px
 
+.badges
+  overflow: hidden
+  text-align: center
+
+  a
+    float: left
+    padding: 1.5em .35em
+    
+    img
+      width: 100px
+    
 
 #box
   margin: 0px
@@ -192,9 +203,6 @@ img
   #line td
     padding-top: 3px
     padding-bottom: 3px
-    border-bottom-width: 1px
-    border-bottom-style: dotted
-    border-bottom-color: #62A830
     vertical-align: top
 
 
@@ -208,10 +216,12 @@ img
 
 
 .rnd_content
-  #xline td
+  .xline td
     padding-top: 6px
     padding-bottom: 3px
     vertical-align: top
+    border-top: 1px dotted #62A830
+    
 
   a
     color: #53ABB5

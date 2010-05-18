@@ -129,22 +129,30 @@
                 %table{ :cellspacing => "0", :border => "0", :cellpadding => "0", :width => "100%" }
                   %tr#line
                     %td{ :width => "34%" }
-                      = link_to image_tag("img_icons/icon_twitter.gif"), "http://twitter.com/gsfoundation" , :target => "_blank"
+                      = link_to image_tag("img_icons/icon_twitter.gif", :border => 0), "http://twitter.com/gsfoundation" , :target => "_blank"
                     %td{ :width => "66%" }
                       = link_to "Follow us on Twitter!", "http://twitter.com/gsfoundation", :target => "_blank"
                       %p
                         Stay current with GSF on Twitter
-                  %tr#xline
+                  %tr.xline
                     %td
-                      = link_to image_tag("img_icons/icon_fb.gif"), "http://apps.facebook.com/causes/278809?m=cc366e79", :target => "_blank"
+                      = link_to image_tag("img_icons/icon_fb.gif", :border => 0), "http://apps.facebook.com/causes/278809?m=cc366e79", :target => "_blank"
                     %td
                       = link_to "Cause on Facebook", "http://apps.facebook.com/causes/278809?m=cc366e79", :target => "_blank"
                       %p
-                        Stay connected with GSF through Facebook
+                        Stay connected with GSF through Facebook                  
+                  %tr.xline
+                    %td
+                      = link_to image_tag("img_icons/icon_blog.jpg", :width => "48", :height  => "48", :border => 0), "http://GwendolynStrong.com", :target => "_blank"
+                    %td
+                      = link_to "Check out our blog", "http://GwendolynStrong.com", :target => "_blank"
+                      %p
+                        Stay up to date on all things Gwendolyn and GSF through our blog.
               %b.rnd_bottom
                 %b.rnd_b4
                 %b.rnd_b3
                 %b.rnd_b2
                 %b.rnd_b1
-            %div{ :style => "padding:15px 0px" }
+            %div.badges
               = link_to image_tag("img_buttons/btn_shoptoendsma.gif", :border => "0"), "http://www.shoptoendsma.com"
+              = link_to image_tag("img_misc/gs_blog_badge.jpg", :border => "0"), "http://GwendolynStrong.com/"
