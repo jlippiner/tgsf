@@ -4,8 +4,8 @@
 
 if [[ "Darwin" = "$(uname)" ]] ; then
   # rvm use 1.9.1-p378%tdt
-  rvm use ree-1.8.7-2010.01@gsf
+  rvm use ree-1.8.7-2010.02@gsf
 else
   # rvm 1.9.1-p378
-  rvm ree-1.8.7-2010.01@gsf
+  rvm ree-1.8.7-2010.02@gsf
 fi
