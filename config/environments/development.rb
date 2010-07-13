@@ -21,6 +21,6 @@ Paperclip.options[:command_path] = '/opt/local/bin'
 # For TwitterAuth
 OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 
-Bj.script = '/Users/jlippiner/.gem/ruby/1.8/gems/bj-1.0.1/bin/bj'
+# Bj.script = '/Users/jlippiner/.gem/ruby/1.8/gems/bj-1.0.1/bin/bj'
 
 require 'ruby-debug'
