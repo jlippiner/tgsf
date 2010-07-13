@@ -63,29 +63,15 @@
             = link_to image_tag("img_buttons/btn_newlydiagnosed.gif", :alt=>"Newly Diagnosed? Click here"), page_newly_diagnosed_path
     %td.content
       %table{ :cellspacing => "0", :border => "0", :cellpadding => "0", :width => "414" }
-        - if Date.today > Date.new(2010,4,1)
-          %tr
-            %td{ :bgcolor => "#45331A" }
-              %img{ :src => "images/img_pics/pic_gwendolyn_hp.jpg", :height => "284", :alt => "", :width => "414" }
-          %tr
-            %td#note
-              %p
-                %img{ :src => "images/img_headings/h_ourmission.gif", :height => "26", :alt => "Our Mission", :width => "137" }
-              The Gwendolyn Strong Foundation (GSF) seeks to raise awareness about and fund research for Spinal Muscular Atrophy (SMA), the leading genetic killer of young children, and support those impacted by SMA and other life-altering diseases.
-        - else
-          %tr
-            %td{ :bgcolor => "#45331A" }
-              = link_to image_tag("img_misc/hp_chase.png", :border => "0", :alt => "Chase Community Giving and Gwendolyn Strong Foundation"), page_chase_path
-          %tr
-            %td#note
-              %p
-                %b 2010 Chase Community Giving "Winner's Circle"
-              %p
-                %br
-                The Gwendolyn Strong Foundation (GSF) was humbled to be voted #6 out of more than 500,000 organizations in the 2010 Chase Community Giving campaign on Facebook. For that honor, GSF received a $100,000 grant from Chase...
-              %p
-                %br
-                = link_to "Click to learn more...", page_chase_path
+        %tr
+          %td{ :bgcolor => "#45331A" }
+            = link_to image_tag("img_pics/pic_200K_sma.gif", :height => "284", :alt => "", :width => "414"), 'http://www.gwendolynstrong.com/2010/07/help-us-raise-200k-for-sma-gene-therapy-research.html', :target => "_blank" 
+        %tr
+          %td#note
+            %p
+              %div{:style => "font-size:2.2em;margin-bottom:.5em;font-weight:normal;font-family:'brush script mt', arial"} $200K For SMA!
+            %p
+              Help us raise $200,000 in 2010 for FightSMA's gene therapy program to help bring this promising research to human clinical trial. One person and one dollar at a time. Together we can end SMA!
 
         %tr
           %td.gallery
