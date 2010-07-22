@@ -18,4 +18,5 @@ gem "oauth"
 gem 'twitter-auth', :require => 'twitter_auth'
 gem 'ruby-debug'
 gem 'nifty-generators'
+gem 'hoptoad_notifier'
 
