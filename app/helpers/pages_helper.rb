@@ -18,6 +18,10 @@ module PagesHelper
     @header_url = url
   end
   
+  def get_header_pic
+    @header_url ? @header_url : 'img_pics/pic_about.jpg'
+  end
+  
   def hide_right_sidebar
     @hide_right_sidebar = true
   end

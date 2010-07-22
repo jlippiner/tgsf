@@ -6,7 +6,7 @@
       %table{ :cellspacing => "0", :border => "0", :align => "center", :width => "557", :cellpadding => "0" }
         %tr
           %td.headerpic
-            = image_tag (@header_url ||  'img_pics/pic_about.jpg'), :height => "147", :alt => "", :width => "557" 
+            = image_tag get_header_pic, :height => "147", :alt => "", :width => "557" 
         %tr
           %td
             #rnd2_container
