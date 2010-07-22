@@ -37,7 +37,7 @@
       %h3
         Previous Initiatives & Events
       %ul
-        - @inactive_involvements.each do |i|
+        - @inactive_involvements.reverse.each do |i|
           %li
             = link_to i.title, page_get_involved_show_path(i)
             = "- #{i.dates}"

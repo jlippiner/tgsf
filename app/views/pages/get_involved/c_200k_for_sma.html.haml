@@ -1,0 +1,88 @@
+- content_for :head do
+  = javascript_include_tag "tools.scrollable-1.0.3.min"
+  = stylesheet_link_tag "scrollable-vertical", 'meter'
+          
+- header_pic 'img_pics/pic_200k_for_sma.png'
+
+#copy
+  %h1 $200K For SMA!
+  %h2= "Together we've raised #{number_to_currency(@raised,:precision => 0)}"
+    
+  %p
+    GSF created the "$200K for SMA" campaign in July 2010 to direct 100% of your generous donations to fund groundbreaking gene therapy research with the potential to treat SMA forever. We’ve partnered with FightSMA, who has a long-standing stake in gene therapy, to fund specific strategic portions of a promising research program at Nationwide Children's Hospital and The Ohio State University to help make a decade-old dream come true. One person and one dollar at a time. Together we can end SMA!
+    
+  %hr
+  %p
+    For more information on the "$200k For SMA" program, 
+    = link_to "click here.", 'http://www.gwendolynstrong.com/2010/07/help-us-raise-200k-for-sma-gene-therapy-research.html'
+    
+  %hr
+  %p
+    To donate now
+    = link_to "click here.", "http://gwendolynstrongfoundation.org/donation"
+    
+  %hr
+  %p
+    To email GSF about getting involved in helping us raise "$200k For SMA", 
+    = mail_to "victoria@theGSF.org"
+          
+- content_for :sidebar do
+  %table{ :cellspacing => "0", :border => "0", :width => "100%", :cellpadding => "0" }
+    %tr
+      = side_nav "More Information", 'http://www.gwendolynstrong.com/2010/07/help-us-raise-200k-for-sma-gene-therapy-research.html'
+    %tr
+      = side_nav "Donate Towards the $200K!","http://gwendolynstrongfoundation.org/donation"
+    %tr
+      %td.nav
+        = mail_to "vstrong@theGSF.org", "Email to Get Involved"
+        
+- hide_right_sidebar
+- content_for :right_sidebar do
+  %center{:style => "margin-top:1em"}
+    .donate_button
+      = link_to image_tag("img_buttons/btn_donatenow.jpg", :border => "0", :alt => "Show your support - Donate Now!"), page_donation_path unless(params[:action]=='donation')
+    .raised
+      .tag_line RAISED
+      .number= number_to_currency(@raised,:precision => 0)
+      .tag_line OF $200,000
+    .scrollable{ :style => "height:400px" }
+      .items
+        - @donations.each do |d|
+          %div{:class => "#{'highlight' if d.highlight}"}
+            = d.name.titleize
+            %br
+            %span{ :style => "font-size:10pt" }
+              = number_to_currency d.amount
+
+:javascript
+  $(document).ready(function() { // on document load
+    window.setTimeout('animate_meter()',1000)
+    
+    $("#mercury").animate({width: "#{(@raised.to_f / 200000.00)*100}%"}, 10, '', function() {
+      $(this).find("#raised").show()
+    }
+    ); // animate a div
+  
+    $('#pp_click').click(function() {
+    $('#paypal_problems').toggle().effect("highlight", {}, 2000);
+    })
+  
+    if (!$.browser.msie) {
+    $("div.scrollable").scrollable({
+    vertical:true,
+    size: 4,
+    interval: 2000,
+    loop: true,
+    speed: 600,
+    onBeforeSeek: function() {
+    this.getItems().fadeTo(300, 0.2);
+    },
+    onSeek: function() {
+    this.getItems().fadeTo(300, 1);
+    }
+    });
+    } else {
+    $('div.scrollable').hide();
+    }
+  });
+  

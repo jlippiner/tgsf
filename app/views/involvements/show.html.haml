@@ -1,28 +1,29 @@
 .admin
   .involvement
     %h2
-      = h @involvement.title
+      = h "#{@involvement.title} - (#{@involvement.short_name})"
+    %h3.alt
+      %b= @involvement.is_active ? 'Is Active and ' : 'Is NOT Active and '    
+      %b= @involvement.is_featured ? 'Is Featured' : 'Is NOT Featured'
     %p
-      %b
-        Is featured:
-      = h @involvement.is_featured
-    %p
-      %b
-        Title:
-      = h @involvement.title
-    %p
-      %b
-        Body:
-      .body
-        = RedCloth.new(@involvement.body).to_html
+      - if @involvement.partial_file_name.blank?
+        %b Body:
+        .body
+          = RedCloth.new(@involvement.body).to_html
+      - else
+        %b Template Used:
+        = @involvement.partial_file_name      
+    
+    - unless @involvement.campaign.blank?
+      %p
+        %b Campaign:
+        = @involvement.campaign
+    
     %p
       %b
         Dates:
       = h @involvement.dates
-    %p
-      %b
-        Is active:
-      = h @involvement.is_active
+
   
     = link_to 'Edit', edit_involvement_path(@involvement)
     |

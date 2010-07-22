@@ -17,3 +17,5 @@ gem "highline"
 gem "oauth"
 gem 'twitter-auth', :require => 'twitter_auth'
 gem 'ruby-debug'
+gem 'nifty-generators'
+

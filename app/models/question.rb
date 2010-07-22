@@ -1,11 +1,10 @@
 # == Schema Information
-# Schema version: 20090620001551
 #
 # Table name: questions
 #
 #  id          :integer(4)      not null, primary key
 #  question    :string(255)
-#  is_personal :boolean(1)
+#  is_personal :boolean(1)      default(FALSE)
 #  created_at  :datetime
 #  updated_at  :datetime
 #

@@ -1,11 +1,12 @@
 %table{ :cellspacing => "0", :border => "0", :width => "100%", :cellpadding => "0" }
   %tr
     %td.inlf{ :width => "178" }
+      = yield :sidebar
     %td.incontent{ :width => "569" }
       %table{ :cellspacing => "0", :border => "0", :align => "center", :width => "557", :cellpadding => "0" }
         %tr
           %td.headerpic
-            = image_tag "img_pics/pic_about.jpg", :height => "147", :alt => "", :width => "557" 
+            = image_tag (@header_url ||  'img_pics/pic_about.jpg'), :height => "147", :alt => "", :width => "557" 
         %tr
           %td
             #rnd2_container
@@ -22,10 +23,15 @@
                 %b.rnd2_b2
                 %b.rnd2_b1
     %td.inrg{ :width => "170" }
-      %table{ :cellspacing => "0", :border => "0", :width => "173", :cellpadding => "0" }
-        %tr
-          %td.sidepic
-            = image_tag "img_pics/pic_about_side.jpg", :height => "255", :alt => "", :width => "170" 
-        %tr
-          %td
-            = link_to image_tag("img_buttons/btn_donatenow.jpg", :border => "0", :alt => "Show your support - Donate Now!"), page_donation_path unless(params[:action]=='donation')
+      - unless @hide_right_sidebar
+        %table{ :cellspacing => "0", :border => "0", :width => "173", :cellpadding => "0" }
+          %tr
+            %td.sidepic
+              = image_tag "img_pics/pic_about_side.jpg", :height => "255", :alt => "", :width => "170" 
+          %tr
+            %td
+              = link_to image_tag("img_buttons/btn_donatenow.jpg", :border => "0", :alt => "Show your support - Donate Now!"), page_donation_path unless(params[:action]=='donation')
+            
+      = yield :right_sidebar
+      
+

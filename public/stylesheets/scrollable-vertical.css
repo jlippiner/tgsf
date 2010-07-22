@@ -6,14 +6,23 @@ div.scrollable {
 	overflow:hidden;	
 
 	/* vertical scrollers have typically larger height than width */	
-	height: 250px;
-	width: 250px;
+	height: 650px;
+	width: 170px;
 	
 	/* decoration */
 	padding:0px 5px 0px 5px;
-        margin:0px;
+  margin:10px;
 	border:1px outset #ccc;
 	background-color:#E1EDA6;
+	
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
 }
 
 
@@ -34,9 +43,9 @@ div.scrollable div.items {
 */
 div.scrollable div.items div {
 	text-align:center;
-	width:240px;
+	width:168px;
 	padding:5px 0px 0px 0px;
-	font-size:18px;
+	font-size:14px;
 	font-family: 'bitstream vera sans';
 	border:1px outset #ccc;
 	background-color: #fff;

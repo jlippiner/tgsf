@@ -1,27 +1,6 @@
 %h1
   New involvement
-- form_for(@involvement) do |f|
-  = f.error_messages
-  %p
-    = f.label :is_featured
-    %br
-    = f.check_box :is_featured
-  %p
-    = f.label :title
-    %br
-    = f.text_field :title
-  %p
-    = f.label :body
-    %br
-    = f.text_area :body
-  %p
-    = f.label :dates
-    %br
-    = f.text_field :dates
-  %p
-    = f.label :is_active
-    %br
-    = f.check_box :is_active
-  %p
-    = f.submit 'Create'
+  
+= render :partial => "form"
+  
 = link_to 'Back', involvements_path

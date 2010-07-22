@@ -8,8 +8,18 @@ module PagesHelper
     if (params[:action]==nav_item)
       "<td class='nav' id='selected'><span>#{text_to_display}</span></td>"
     else
-      link = "page_#{nav_item}".intern
+      link = nav_item if nav_item.starts_with?('http')
+      link ||= "page_#{nav_item}".intern
       "<td class='nav'>#{link_to text_to_display, link}</td>"
     end
   end
+  
+  def header_pic(url=nil)
+    @header_url = url
+  end
+  
+  def hide_right_sidebar
+    @hide_right_sidebar = true
+  end
+
 end

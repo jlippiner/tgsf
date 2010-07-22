@@ -2,16 +2,16 @@
 #
 # Table name: unite_donations
 #
-#  id         :integer(4)      not null, primary key
-#  uniter_id  :integer(4)
-#  amount     :float
-#  first_name :string(255)
-#  last_name  :string(255)
-#  type       :string(255)
-#  message    :string(255)
-#  donated_at :datetime
-#  created_at :datetime
-#  updated_at :datetime
+#  id            :integer(4)      not null, primary key
+#  unite_id      :integer(4)
+#  amount        :float
+#  first_name    :string(255)
+#  last_name     :string(255)
+#  donation_type :string(255)
+#  message       :string(255)
+#  donated_at    :datetime
+#  created_at    :datetime
+#  updated_at    :datetime
 #
 
 require 'test_helper'

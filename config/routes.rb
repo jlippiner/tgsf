@@ -1,5 +1,4 @@
 ActionController::Routing::Routes.draw do |map|
-
   map.with_options(:controller => "questions", :name_prefix => "question_") do |question|
     question.connect 'questions/admin_view',  :action => "admin_view"
     question.survey 'questions/show/:userid/:step', :action => "survey", :controller => "questions"

@@ -1,5 +1,7 @@
 class InvolvementsController < ApplicationController
   layout 'admin'
+  before_filter :get_partial_list, :except => [:show, :index]
+  before_filter :get_campaigns, :except => [:show, :index]
 
   # GET /involvements
   # GET /involvements.xml
@@ -84,4 +86,15 @@ class InvolvementsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  private
+
+    def get_partial_list
+      Dir.chdir("#{Rails.root}/app/views/pages/get_involved/")
+      @files = Dir.glob("*.haml")
+    end
+    
+    def get_campaigns
+      @campaigns = Donation.all.map(&:campaign).uniq
+    end
 end

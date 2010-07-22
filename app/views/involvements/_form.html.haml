@@ -1,0 +1,38 @@
+- form_for(@involvement) do |f|
+  = f.error_messages
+  %p
+    = f.label :short_name
+    %br
+    = f.text_field :short_name
+    .alt This is the name to appear in the URL, such as http://www.gwendolynstrongfoundation.org/get_involved/<b>short_name</b>
+  %p
+    = f.label :title
+    %br
+    = f.text_field :title
+  %p
+    = f.label :body
+    %br
+    = f.text_area :body
+  %p
+    = f.label "Template File Name"
+    %br
+    = f.select :partial_file_name, @files, :include_blank => true
+    %b
+      .alt Note: If you select a template for this involvement then it will display that page a not the title or body entered here.
+  %p
+    = f.label :campaign
+    %br
+    = f.select :campaign, @campaigns, :include_blank => true
+    .alt If this involvement relates to a campaign where people are donating, select the campaign identifier 
+  %p
+    = f.label :dates
+    %br
+    = f.text_field :dates
+  %p
+    = f.check_box :is_featured
+    = f.label :is_featured
+  %p
+    = f.check_box :is_active
+    = f.label :is_active
+  %p
+    = f.submit 'Submit'

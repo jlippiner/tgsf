@@ -30,8 +30,20 @@ class PagesController < ApplicationController
 
   def get_involved_show
     @involvement = Involvement.find_by_id(params[:id])
+    @involvement ||= Involvement.find_by_short_name(params[:id])
+    
     @get_involved_active = true
-    render :template => 'pages/get_involved/show'
+    
+    unless @involvement.campaign.blank?
+      @donations = Donation.for_campaign(@involvement.campaign)
+      @raised = Donation.for_campaign(@involvement.campaign).sum(:amount)
+    end
+    
+    if @involvement.partial_file_name.blank?
+      render :template => 'pages/get_involved/show'
+    else
+      render :template => "pages/get_involved/#{@involvement.partial_file_name}"
+    end
   end
 
   def alternate(a,b)
