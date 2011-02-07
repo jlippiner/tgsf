@@ -1,7 +1,7 @@
 # A sample Gemfile
 source :gemcutter
 #
-gem "rails"
+gem "rails", '2.3.8'
 gem "mysql"
 
 gem 'net-ssh', :require => 'net/ssh' 
@@ -18,4 +18,4 @@ gem "oauth"
 gem 'twitter-auth', :require => 'twitter_auth'
 gem 'ruby-debug'
 gem 'nifty-generators'
-
+gem 'unicorn'
