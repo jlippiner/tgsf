@@ -9,6 +9,4 @@ class ApplicationController < ActionController::Base
     "public"
   end
 
-
-
 end

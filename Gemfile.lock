@@ -17,6 +17,7 @@ GEM
       main (>= 2.6.0)
       orderedhash (>= 0.0.3)
       systemu (>= 1.2.0)
+    builder (3.0.0)
     columnize (0.3.2)
     compass (0.10.6)
       haml (>= 3.0.4)
@@ -25,6 +26,9 @@ GEM
     fattr (2.2.0)
     haml (3.0.25)
     highline (1.6.1)
+    hoptoad_notifier (2.4.5)
+      activesupport
+      builder
     json (1.5.1)
     kgio (2.2.0)
     linecache (0.43)
@@ -71,6 +75,7 @@ DEPENDENCIES
   dynamic_reports
   haml
   highline
+  hoptoad_notifier
   json
   net-ssh
   nifty-generators
