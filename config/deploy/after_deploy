@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+source ~/.bashrc
+
+RAILS_ENV="${RAILS_ENV:-development}"
+
+cd $current_path
+
+$scripts_path/log "info" "RVM loading gems..."
+bundle install --without test development
+
+$scripts_path/log "info" "Running migrations..."
+rake db:migrate --trace >> ~/shared/log/migrate.log 2>&1
+
+# $scripts_path/log "info" "Updating cron via whenever..."
+# whenever --set environment=production -w 
+
+mkdir -p $current_path/tmp/pids
+
+# $scripts_path/log "info" "Starting delayed job..."
+# ruby script/delayed_job start
+
+# rake hoptoad:deploy TO=$environment
+
+$scripts_path/log "info" "Restarting unicorns..."
+bdsm unicorn restart

@@ -18,7 +18,7 @@ gem 'twitter-auth', :require => 'twitter_auth'
 gem 'ruby-debug'
 gem 'nifty-generators'
 gem 'unicorn'
-gem 'hoptoad_notifier'
+# gem 'hoptoad_notifier'
 
 group :production do
   gem "mysql"
