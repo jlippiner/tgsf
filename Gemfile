@@ -1,7 +1,7 @@
 # A sample Gemfile
 source :gemcutter
 #
-gem "rails", '2.3.8'
+gem "rails", '2.3.11'
 
 gem 'net-ssh', :require => 'net/ssh' 
 gem 'compass'
