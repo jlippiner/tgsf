@@ -2,20 +2,20 @@
 #
 # Table name: hih_users
 #
-#  id                  :integer(4)      not null, primary key
+#  id                  :integer         not null, primary key
 #  name                :string(255)
 #  email               :string(255)
-#  survey_number       :integer(4)
+#  survey_number       :integer
 #  thoughts            :text
 #  created_at          :datetime
 #  updated_at          :datetime
 #  disease             :string(255)
 #  avatar_file_name    :string(255)
 #  avatar_content_type :string(255)
-#  avatar_file_size    :integer(4)
+#  avatar_file_size    :integer
 #  avatar_updated_at   :datetime
-#  diagnosis_month     :integer(4)
-#  diagnosis_year      :integer(4)
+#  diagnosis_month     :integer
+#  diagnosis_year      :integer
 #  relation_to_disease :string(255)
 #
 

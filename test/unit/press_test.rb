@@ -2,7 +2,7 @@
 #
 # Table name: presses
 #
-#  id            :integer(4)      not null, primary key
+#  id            :integer         not null, primary key
 #  item          :string(255)
 #  source        :string(255)
 #  story_date_at :date

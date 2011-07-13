@@ -7,7 +7,7 @@ RAILS_ENV="${RAILS_ENV:-development}"
 enter $release_path
 
 info "RVM loading gems..."
-bundle install --without test development
+bundle update
 
 info "Running migrations..."
 rake db:migrate --trace >> ~/shared/log/migrate.log 2>&1

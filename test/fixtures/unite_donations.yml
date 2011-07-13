@@ -2,8 +2,8 @@
 #
 # Table name: unite_donations
 #
-#  id            :integer(4)      not null, primary key
-#  unite_id      :integer(4)
+#  id            :integer         not null, primary key
+#  unite_id      :integer
 #  amount        :float
 #  first_name    :string(255)
 #  last_name     :string(255)

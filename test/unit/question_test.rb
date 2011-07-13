@@ -2,9 +2,9 @@
 #
 # Table name: questions
 #
-#  id          :integer(4)      not null, primary key
+#  id          :integer         not null, primary key
 #  question    :string(255)
-#  is_personal :boolean(1)      default(FALSE)
+#  is_personal :integer(2)
 #  created_at  :datetime
 #  updated_at  :datetime
 #

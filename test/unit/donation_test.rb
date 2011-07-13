@@ -2,7 +2,7 @@
 #
 # Table name: donations
 #
-#  id            :integer(4)      not null, primary key
+#  id            :integer         not null, primary key
 #  name          :string(255)
 #  campaign      :string(255)
 #  location      :string(255)
@@ -10,7 +10,7 @@
 #  amount        :integer(10)
 #  created_at    :datetime
 #  updated_at    :datetime
-#  highlight     :boolean(1)
+#  highlight     :boolean
 #
 
 require 'test_helper'

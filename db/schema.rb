@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100722144328) do
+ActiveRecord::Schema.define(:version => 20110713144708) do
 
   create_table "answers", :force => true do |t|
     t.text     "answer"
@@ -101,16 +101,16 @@ ActiveRecord::Schema.define(:version => 20100722144328) do
   end
 
   create_table "involvements", :force => true do |t|
-    t.boolean  "is_featured"
     t.string   "title"
     t.text     "body"
     t.string   "dates"
-    t.boolean  "is_active"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "short_name"
     t.string   "partial_file_name"
     t.string   "campaign"
+    t.boolean  "is_active"
+    t.boolean  "is_featured"
   end
 
   create_table "jobs", :force => true do |t|
@@ -128,9 +128,9 @@ ActiveRecord::Schema.define(:version => 20100722144328) do
     t.datetime "updated_at"
   end
 
-  add_index "jobs", ["priority"], :name => "index_jobs_on_priority"
-  add_index "jobs", ["start_at"], :name => "index_jobs_on_start_at"
-  add_index "jobs", ["state"], :name => "index_jobs_on_state"
+  add_index "jobs", ["priority"], :name => "jobs_priority_idx"
+  add_index "jobs", ["start_at"], :name => "jobs_start_at_idx"
+  add_index "jobs", ["state"], :name => "jobs_state_idx"
 
   create_table "presses", :force => true do |t|
     t.string   "item"
@@ -144,7 +144,7 @@ ActiveRecord::Schema.define(:version => 20100722144328) do
 
   create_table "questions", :force => true do |t|
     t.string   "question"
-    t.boolean  "is_personal", :default => false
+    t.integer  "is_personal", :limit => 2
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -152,14 +152,14 @@ ActiveRecord::Schema.define(:version => 20100722144328) do
   create_table "tweets", :force => true do |t|
     t.string   "zipcode"
     t.string   "twitter_id"
-    t.boolean  "sent_dm"
-    t.boolean  "is_following"
+    t.integer  "sent_dm",             :limit => 2
+    t.integer  "is_following",        :limit => 2
     t.integer  "number_of_friends"
     t.integer  "number_of_followers"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "profile_pic_url"
-    t.boolean  "completed"
+    t.integer  "completed",           :limit => 2
   end
 
   create_table "unite_donations", :force => true do |t|
@@ -199,14 +199,14 @@ ActiveRecord::Schema.define(:version => 20100722144328) do
     t.string   "description"
     t.string   "profile_image_url"
     t.string   "url"
-    t.boolean  "protected"
+    t.integer  "protected",                    :limit => 2
     t.string   "profile_background_color"
     t.string   "profile_sidebar_fill_color"
     t.string   "profile_link_color"
     t.string   "profile_sidebar_border_color"
     t.string   "profile_text_color"
     t.string   "profile_background_image_url"
-    t.boolean  "profile_background_tiled"
+    t.integer  "profile_background_tiled",     :limit => 2
     t.integer  "friends_count"
     t.integer  "statuses_count"
     t.integer  "followers_count"

@@ -2,9 +2,9 @@
 #
 # Table name: followers
 #
-#  id          :integer(4)      not null, primary key
+#  id          :integer         not null, primary key
 #  screen_name :string(255)
-#  friend_id   :integer(4)
+#  friend_id   :integer
 #  created_at  :datetime
 #  updated_at  :datetime
 #
